@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="http://users.cs.cf.ac.uk/FinneganD/" rel="alternate"></link><link href="http://users.cs.cf.ac.uk/FinneganD/feeds/all.atom.xml" rel="self"></link><id>http://users.cs.cf.ac.uk/FinneganD/</id><updated>2019-07-30T00:00:00+02:00</updated><entry><title>Joining Cardiff University</title><link href="http://users.cs.cf.ac.uk/FinneganD/cadiff-may-2019.html" rel="alternate"></link><published>2019-05-06T00:00:00+02:00</published><updated>2019-05-06T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2019-05-06:/FinneganD/cadiff-may-2019.html</id><summary type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
+The past week has been a gentle introduction to the School, having completed induction training, I&amp;#8217;m looking forward to taking part in the probationary training courses over the coming weeks.
+I&amp;#8217;ve picked up …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
+The past week has been a gentle introduction to the School, having completed induction training, I&amp;#8217;m looking forward to taking part in the probationary training courses over the coming weeks.
+I&amp;#8217;ve picked up my staff access card, shifted over my website from Bath, which was painless thanks to &lt;a href="https://blog.getpelican.com/"&gt;pelican&lt;/a&gt; and my own custom batch and python scripts, and set up my &lt;span class="caps"&gt;HR&lt;/span&gt; account here at the university.
+I&amp;#8217;ve also spent the past few days browsing the university&amp;#8217;s intranet soaking up all the information I&amp;nbsp;can.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m slowly getting to know the city, and am looking forward to meeting all my new colleagues at the University.
+Setting my goals for the summer, I&amp;#8217;m excited about everything I&amp;#8217;m going to learn and teach in my new post and meeting the new 2019/20 cohort of students at&amp;nbsp;Cardiff.&lt;/p&gt;</content><category term="cardiff"></category><category term="lecturer"></category><category term="teaching"></category><category term="moving"></category><category term="pelican"></category><category term="python"></category></entry><entry><title>New Publication @ CHI PLAY 2018!</title><link href="http://users.cs.cf.ac.uk/FinneganD/chiplay-2018.html" rel="alternate"></link><published>2018-09-03T00:00:00+02:00</published><updated>2019-05-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-09-03:/FinneganD/chiplay-2018.html</id><summary type="html">&lt;p&gt;We&amp;#8217;ve had a publication accepted at &lt;span class="caps"&gt;CHI&lt;/span&gt; &lt;span class="caps"&gt;PLAY&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;Historical narratives of conflict typically revolve around heroes and villains or perpetrators and victims.
+However, this dichotomy of events and people into good and evil greatly reduces the extent to which the past can be analysed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We&amp;#8217;ve had a publication accepted at &lt;span class="caps"&gt;CHI&lt;/span&gt; &lt;span class="caps"&gt;PLAY&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;Historical narratives of conflict typically revolve around heroes and villains or perpetrators and victims.
+However, this dichotomy of events and people into good and evil greatly reduces the extent to which the past can be analysed, explained, and understood.
+To truly understand the actions that lead to conflict, one must appreciate the dense network of relationships between social agents, each with their own personal motivations and ideals.
+A contemporary political viewpoint capturing this multiperspectivity is that of Agonism.
+Focusing on the characters and events, Agonism emphasises the socio-cultural interactions and relationships between all agents involved including bystanders and, crucially, perpetrators. 
+We discuss two &amp;#8216;Games for a Social Change&amp;#8217; that we have developed to promote an Agonistic view: &lt;em&gt;Endless Blitz&lt;/em&gt; and &lt;em&gt;Umschlag &amp;#8216;43&lt;/em&gt;.
+We describe the games themselves, and the framework of memory studies that informs our&amp;nbsp;work.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s a demo reel of both Endless Blitz and Umschlagplatz &amp;#8216;43 in&amp;nbsp;action!&lt;/p&gt;
+&lt;!-- [![Endless Blitz](https://i.imgur.com/hr70Dge.png)](https://drive.google.com/file/d/1EODVqZ7YuxX5pWay5lDQEH2uxsR_aWei/view?usp=sharing "Endless Blitz") --&gt;
+
+&lt;p align="center"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9YT1if8fZ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;De Angeli, D., Finnegan, D. J., Scott, L., Bull, A., O&amp;#8217;Neill, E.&lt;br&gt;
+Agonistic Games: Multiperspective and Unsettling Games for a Social Change.&lt;br&gt;
+&lt;span class="caps"&gt;CHI&lt;/span&gt; &lt;span class="caps"&gt;PLAY&lt;/span&gt; &amp;#8216;18 Extended Abstracts.&lt;br&gt;
+&lt;a href="http://dx.doi.org/10.1145/3270316.3270594"&gt;&lt;span class="caps"&gt;DOI&lt;/span&gt;: 10.1145/3270316.3270594&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://users.cs.cf.ac.uk/FinneganD/documents/chiplay-2018.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category><category term="acm"></category><category term="conference proceedings"></category><category term="agonism"></category><category term="games"></category><category term="chiplay"></category><category term="endless blitz"></category><category term="umschlagplatz '43"></category></entry><entry><title>New Publication @ ECCV 2018!</title><link href="http://users.cs.cf.ac.uk/FinneganD/eccv-2018.html" rel="alternate"></link><published>2018-07-26T00:00:00+02:00</published><updated>2019-07-23T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-07-26:/FinneganD/eccv-2018.html</id><summary type="html">&lt;p&gt;We&amp;#8217;ve had a publication accepted at &lt;span class="caps"&gt;ECCV&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;This work presents a novel hand pose estimation framework via intermediate dense guidance map supervision. 
+By leveraging the advantage of predicting heat maps of hand joints in detection-based methods, we propose to use dense feature maps through …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We&amp;#8217;ve had a publication accepted at &lt;span class="caps"&gt;ECCV&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;This work presents a novel hand pose estimation framework via intermediate dense guidance map supervision. 
+By leveraging the advantage of predicting heat maps of hand joints in detection-based methods, we propose to use dense feature maps through intermediate supervision in a regression-based framework that is not limited to the resolution of the heat map. 
+Our dense feature maps are delicately designed to encode the hand geometry and the spatial relation between local joint and global hand. 
+The proposed framework significantly improves the state-of-the-art in both 2D and 3D on the recent benchmark&amp;nbsp;datasets.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://xkunwu.github.io/"&gt;Xiaokun Wu&lt;/a&gt; wrote up an awesome post on the project on his &lt;a href="https://xkunwu.github.io/research/18HandPose/18HandPose"&gt;website&lt;/a&gt;.
+I recommend reading it!
+They say pictures speak a thousand words, so here&amp;#8217;s a gif Xiaokun made giving the general idea in a succint&amp;nbsp;way.&lt;/p&gt;
+&lt;p align="center"&gt;
+    &lt;img src="https://xkunwu.github.io/projects/hand-track/test_seq.gif" alt="gif of hand tracking software" /&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;Wu, X., Finnegan, D. J., O&amp;#8217;Neill, E., Yang, Y.&lt;br&gt;
+HandMap: Robust Hand Pose Estimation via Intermediate Dense Guidance Map Supervision.&lt;br&gt;
+&lt;span class="caps"&gt;ECCV&lt;/span&gt; 2018: Proceedings of the 15th European Conference on Computer Vision.&lt;br&gt;
+&lt;a href="http://dx.doi.org/10.1007/978-3-030-01270-0_15"&gt;&lt;span class="caps"&gt;DOI&lt;/span&gt;: 10.1007/978-3-030-01270-0_15&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://users.cs.cf.ac.uk/FinneganD/documents/eccv-2018.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category><category term="ieee"></category><category term="conference proceedings"></category><category term="computer vision"></category><category term="hand tracking"></category></entry><entry><title>Invited talk at the Sherborne Science Cafe</title><link href="http://users.cs.cf.ac.uk/FinneganD/sherborne-science-cafe-2018.html" rel="alternate"></link><published>2018-07-26T00:00:00+02:00</published><updated>2019-07-30T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-07-26:/FinneganD/sherborne-science-cafe-2018.html</id><summary type="html">&lt;p&gt;Last night I gave a talk at &lt;a href="https://sherbornescafe.wixsite.com/sherbornescafe"&gt;The Sherborne Science Cafe&lt;/a&gt; in the beautiful town of &lt;a href="https://goo.gl/maps/VyXNB3UwwBU2"&gt;Sherborne&lt;/a&gt;.
+It was the biggest audience I&amp;#8217;ve spoken to so far (&amp;gt;&amp;gt; 50 people).
+The talk was the same talk I gave at this years &lt;a href="http://users.cs.cf.ac.uk/FinneganD/pint-of-science-may-2018.html"&gt;Pint of Science&lt;/a&gt; with some tweaks from feedback after …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last night I gave a talk at &lt;a href="https://sherbornescafe.wixsite.com/sherbornescafe"&gt;The Sherborne Science Cafe&lt;/a&gt; in the beautiful town of &lt;a href="https://goo.gl/maps/VyXNB3UwwBU2"&gt;Sherborne&lt;/a&gt;.
+It was the biggest audience I&amp;#8217;ve spoken to so far (&amp;gt;&amp;gt; 50 people).
+The talk was the same talk I gave at this years &lt;a href="http://users.cs.cf.ac.uk/FinneganD/pint-of-science-may-2018.html"&gt;Pint of Science&lt;/a&gt; with some tweaks from feedback after PoS itself.
+There were many great questions from the audience ranging from the purpose of &lt;span class="caps"&gt;VR&lt;/span&gt;, the &lt;a href="https://www.oxfordscholarship.com/view/10.1093/oso/9780199674923.001.0001/oso-9780199674923-chapter-62"&gt;ethics of &lt;span class="caps"&gt;VR&lt;/span&gt;&lt;/a&gt; and machine intelligence more generally, and of course, &amp;#8216;When will we have the&amp;nbsp;holodeck!?*&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;The science cafe have written a report of the night and put it up on &lt;a href="https://drive.google.com/file/d/1WXt0zayox9fwx4lq-7tmgBG7p-5L4F52/view"&gt;their site&lt;/a&gt; which you can check out.
+For video links, check out my post on the &lt;a href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html"&gt;Raven Science&amp;nbsp;Cafe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;*&lt;a href="https://www.youtube.com/watch?v=QGUhFcRjgus"&gt;We already&amp;nbsp;do&lt;/a&gt;&lt;/p&gt;</content><category term="cafe"></category><category term="science"></category><category term="public engagement"></category></entry><entry><title>Avalon board game companion application</title><link href="http://users.cs.cf.ac.uk/FinneganD/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2018-07-12T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-07-12:/FinneganD/avalon-callout.html</id><summary type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This past week during the evenings, I wrote a small android application just for fun.
+It consists of a 3 screen &lt;span class="caps"&gt;UI&lt;/span&gt; for selecting the characters in the game of &lt;a href="https://boardgamegeek.com/boardgame/128882/resistance-avalon"&gt;Avalon&lt;/a&gt;.
+Once selected, it generates …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This past week during the evenings, I wrote a small android application just for fun.
+It consists of a 3 screen &lt;span class="caps"&gt;UI&lt;/span&gt; for selecting the characters in the game of &lt;a href="https://boardgamegeek.com/boardgame/128882/resistance-avalon"&gt;Avalon&lt;/a&gt;.
+Once selected, it generates the &lt;a href="https://youtu.be/b5iJjQJkWEQ?t=4m30s"&gt;callout&lt;/a&gt; for the game, and then begins to speak it back to the players via&amp;nbsp;text-to-speech.&lt;/p&gt;
+&lt;p&gt;Its very rough around the edges (to be fair, I made in a total of about 2.5 working hours over a few days) and contains no accessibility features as of yet.
+However, some people may find it useful; I know I sure&amp;nbsp;will!&lt;/p&gt;
+&lt;p&gt;Its &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is available from my &lt;a href="https://github.com/Ps2Fino/Avalon-App/"&gt;Github&lt;/a&gt;.
+Its also &lt;a href="http://users.cs.cf.ac.uk/FinneganD/updater.html"&gt;Updater&lt;/a&gt;&amp;nbsp;compatible.&lt;/p&gt;</content><category term="C#"></category><category term="development"></category></entry><entry><title>Updater — A cmake template engine</title><link href="http://users.cs.cf.ac.uk/FinneganD/updater.html" rel="alternate"></link><published>2018-05-30T00:00:00+02:00</published><updated>2019-07-23T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-05-30:/FinneganD/updater.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
+Updater essentially creates a templated directory structure along with initial &lt;code&gt;CMakeLists.txt&lt;/code&gt; files.
+This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
+&lt;p&gt;Updater grew …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
+Updater essentially creates a templated directory structure along with initial &lt;code&gt;CMakeLists.txt&lt;/code&gt; files.
+This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
+&lt;p&gt;Updater grew from an observation I made working with students.
+As they&amp;#8217;re still learning how to program, it can be overwhelming for them to ensure their code is well maintained and structured.
+Using Updater enables them to focus on the implementation task, while giving me some assurance that I will always be able to build the&amp;nbsp;project.&lt;/p&gt;
+&lt;p&gt;Updater is &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.
+It is available from my &lt;a href="https://github.com/Ps2Fino/Updater/releases/tag/v1.5.1"&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="python"></category><category term="development"></category><category term="research"></category></entry><entry><title>Invited talk @ Pint of Science</title><link href="http://users.cs.cf.ac.uk/FinneganD/pint-of-science-may-2018.html" rel="alternate"></link><published>2018-04-09T00:00:00+02:00</published><updated>2018-05-15T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-04-09:/FinneganD/pint-of-science-may-2018.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been invited to talk at Bath&amp;#8217;s Pint of Science next Month.
+If you&amp;#8217;re in Bath and missed &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html"&gt;my previous talk at The Raven&lt;/a&gt;, then why not come and hear v2.0!?
+I&amp;#8217;ll be talking about the close relationship between psychology and the technology involved in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been invited to talk at Bath&amp;#8217;s Pint of Science next Month.
+If you&amp;#8217;re in Bath and missed &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html"&gt;my previous talk at The Raven&lt;/a&gt;, then why not come and hear v2.0!?
+I&amp;#8217;ll be talking about the close relationship between psychology and the technology involved in virtual reality (&lt;span class="caps"&gt;VR&lt;/span&gt;), and some of my latest research on perception in &lt;span class="caps"&gt;VR&lt;/span&gt;.
+You can buy &lt;a class="reference external" href="https://pintofscience.co.uk/event/super-computers-and-ai-who-is-ruling-who"&gt;tickets for the event here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;The night was a success!!
+Some great questions asked from a curious audience.
+The event was sold out, and I was delighted to take part this year.
+I very much hope to do so again next&amp;nbsp;year.&lt;/p&gt;
+&lt;p&gt;Slides are available &lt;a class="reference external" href="https://drive.google.com/file/d/1LyhotLGBgOXW-NqTphK5WkWKU7WTN5Ph/view?usp=sharing"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="video-links"&gt;
+&lt;h2&gt;Video&amp;nbsp;links&lt;/h2&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=6JONMYxaZ_s"&gt;Change blindness&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=E_uZ6-0FsXo"&gt;Redirected Walking with Change Blindness&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=v-5u0z4zA_8"&gt;Haptic Retargeting&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://drive.google.com/file/d/1efA10c9_o5ckRyXciuEEHLawdiVtfxeL/view?usp=sharing"&gt;Showreel of my work&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="public engagement"></category><category term="vr"></category></entry><entry><title>Invited talk @ CUBRIC</title><link href="http://users.cs.cf.ac.uk/FinneganD/cubric_may_2018.html" rel="alternate"></link><published>2018-04-05T00:00:00+02:00</published><updated>2018-05-25T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-04-05:/FinneganD/cubric_may_2018.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been invited to talk at Cardiff&amp;#8217;s &lt;a class="reference external" href="https://sites.cardiff.ac.uk/cubric/"&gt;&lt;span class="caps"&gt;CUBRIC&lt;/span&gt;&lt;/a&gt; on best programming practices in open science.
+I&amp;#8217;ll cover the typeseting language &lt;a class="reference external" href="https://www.latex-project.org/about/"&gt;LaTeX&lt;/a&gt; and how it can be used in coordination with technology such as &lt;a class="reference external" href="https://www.sharelatex.com/"&gt;ShareLaTeX&lt;/a&gt; and &lt;a class="reference external" href="https://www.overleaf.com/"&gt;Overleaf&lt;/a&gt; for collaborative science writing.
+I&amp;#8217;ll update this post closer to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been invited to talk at Cardiff&amp;#8217;s &lt;a class="reference external" href="https://sites.cardiff.ac.uk/cubric/"&gt;&lt;span class="caps"&gt;CUBRIC&lt;/span&gt;&lt;/a&gt; on best programming practices in open science.
+I&amp;#8217;ll cover the typeseting language &lt;a class="reference external" href="https://www.latex-project.org/about/"&gt;LaTeX&lt;/a&gt; and how it can be used in coordination with technology such as &lt;a class="reference external" href="https://www.sharelatex.com/"&gt;ShareLaTeX&lt;/a&gt; and &lt;a class="reference external" href="https://www.overleaf.com/"&gt;Overleaf&lt;/a&gt; for collaborative science writing.
+I&amp;#8217;ll update this post closer to the time, but the &lt;a class="reference external" href="https://sciprogramming.wordpress.com/schedule/"&gt;preliminary schedule is up for now&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;The talk was a success!
+I had a great time; awesome to see so much enthusiasm for open science communication and software tools.
+I hope I encouraged a few more folks to take the LaTeX plunge and start using it for their research&amp;nbsp;papers.&lt;/p&gt;
+&lt;p&gt;Slides are &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/documents/cubric-2018.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="http://users.cs.cf.ac.uk/FinneganD/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2018-05-21T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-03-26:/FinneganD/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
+A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
+I don&amp;#8217;t want to add to that, so I&amp;#8217;ve decided to collate this …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
+A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
+I don&amp;#8217;t want to add to that, so I&amp;#8217;ve decided to collate this list of grant/project proposals and applications that have been rejected; an anti-&lt;span class="caps"&gt;CV&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;div class="first line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Lectureship at &lt;span class="caps"&gt;XXX&lt;/span&gt; University&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Application rejected before interview stage&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: November 2018&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;div class="first line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;&lt;span class="caps"&gt;XXX&lt;/span&gt; Journal Editorial Board&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Bid for editor role; rejected after EoI submission&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: May 2018&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Journal site:&lt;/em&gt; &lt;a class="reference external" href="https://www.press-start.gla.ac.uk/index.php/press-start"&gt;https://www.press-start.gla.ac.uk/index.php/press-start&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;div class="first line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Gamified Employability and Transferable Skills Development&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Internal &lt;span class="caps"&gt;TDF&lt;/span&gt; bid; rejected after EoI submission&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: February 2018&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Amount requested: £15,000&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="proposals"></category><category term="projects"></category><category term="rejections"></category><category term="rejection"></category></entry><entry><title>Techspark Feature</title><link href="http://users.cs.cf.ac.uk/FinneganD/techspark_march_2018.html" rel="alternate"></link><published>2018-03-15T00:00:00+01:00</published><updated>2018-03-15T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-03-15:/FinneganD/techspark_march_2018.html</id><summary type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
+The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/pages/cv.html"&gt;&lt;span class="caps"&gt;CV&lt;/span&gt; page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
+You can &lt;a class="reference external" href="https://techspark.co/the-bath-research-centre-discovering-what-it-takes-to-create-a-believable-virtual-environment/"&gt;read the …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
+The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/pages/cv.html"&gt;&lt;span class="caps"&gt;CV&lt;/span&gt; page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
+You can &lt;a class="reference external" href="https://techspark.co/the-bath-research-centre-discovering-what-it-takes-to-create-a-believable-virtual-environment/"&gt;read the piece here&lt;/a&gt;.&lt;/p&gt;
+</content><category term="article"></category><category term="vr"></category><category term="techspark"></category><category term="public engagement"></category></entry><entry><title>How to solve virtual reality’s human perception problem</title><link href="http://users.cs.cf.ac.uk/FinneganD/the_conversation_march_2018.html" rel="alternate"></link><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-03-05:/FinneganD/the_conversation_march_2018.html</id><summary type="html">&lt;p&gt;I wrote a piece for The Conversation on my work in psychophysics.
+You can read the &lt;a class="reference external" href="https://theconversation.com/how-to-solve-virtual-realitys-human-perception-problem-92128"&gt;published article here&lt;/a&gt;.
+Below is the original unedited draft I wrote for those&amp;nbsp;interested.&lt;/p&gt;
+&lt;div class="section" id="unedited-article"&gt;
+&lt;h2&gt;Unedited&amp;nbsp;Article&lt;/h2&gt;
+&lt;p&gt;Outside of entertainment, virtual reality (&lt;span class="caps"&gt;VR&lt;/span&gt;) has seen significant uptake in more practical domains.
+For example, using &lt;span class="caps"&gt;VR …&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;I wrote a piece for The Conversation on my work in psychophysics.
+You can read the &lt;a class="reference external" href="https://theconversation.com/how-to-solve-virtual-realitys-human-perception-problem-92128"&gt;published article here&lt;/a&gt;.
+Below is the original unedited draft I wrote for those&amp;nbsp;interested.&lt;/p&gt;
+&lt;div class="section" id="unedited-article"&gt;
+&lt;h2&gt;Unedited&amp;nbsp;Article&lt;/h2&gt;
+&lt;p&gt;Outside of entertainment, virtual reality (&lt;span class="caps"&gt;VR&lt;/span&gt;) has seen significant uptake in more practical domains.
+For example, using &lt;span class="caps"&gt;VR&lt;/span&gt; to piece together parts of a car engine to test out a look and feel before the manufacturing process. Or to try on the latest fashion accessory before you buy.
+&lt;a class="reference external" href="https://www.youtube.com/watch?v=7T4bdlRDOdk"&gt;Our own recent work&lt;/a&gt; at Bath has applied &lt;span class="caps"&gt;VR&lt;/span&gt; to exercise; imagine going to the gym to take part in the Tour de France and race against the world’s top&amp;nbsp;cyclists.&lt;/p&gt;
+&lt;p&gt;While &lt;span class="caps"&gt;VR&lt;/span&gt; has been successful, it is not without its kinks.
+Designing an interactive system does not stop at the hardware and software; the human must be factored in too.
+Perception is the term for how we take information from the world and build understanding from it.
+Our perception of reality is what we base our decisions on, and &lt;a class="reference external" href="http://dx.doi.org/10.1109/TVCG.2017.2657138"&gt;mostly determines our sense of presence in an environment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So how to tackle the problem of designing &lt;span class="caps"&gt;VR&lt;/span&gt; systems that really transport us to new worlds with an acceptable sense of presence?
+As the scale of the problem grows, it becomes difficult to quantify the contribution each element of the experience makes to the person&amp;#8217;s sense of presence.
+For example, when watching a 360 film in &lt;span class="caps"&gt;VR&lt;/span&gt;, it is difficult to determine if the on screen animations contribute more or less than the 360 audio technology deployed in the experience.
+What we need is a method for studying &lt;span class="caps"&gt;VR&lt;/span&gt; in a reductionist manner; removing the clutter then adding piece by piece to observe the effect each has in&amp;nbsp;turn.&lt;/p&gt;
+&lt;p&gt;One theory blends together computer science and psychology: maximum likelihood estimation explains how we combine the information we receive across all our senses, integrating it together to inform our understanding of the environment.
+In its simplest form, it states that we combine sensory information in an optimal fashion; each sense contributes an estimate of the environment but it is&amp;nbsp;noisy.&lt;/p&gt;
+&lt;p&gt;This scenario is depicted in the figure below which shows how the estimates from our eyes and ears combine to give an optimal estimate somewhere in the middle.
+Note how the blue curve is slimmer than the other two showing decreased variance; the combined estimate takes the best of both worlds.
+It is also positioned between the two sensory estimates, showing a compromise of the two.
+Finally, note it is taller: this corresponds to a higher likelihood in its&amp;nbsp;estimate.&lt;/p&gt;
+&lt;img alt="Pictorial description of maximum likelihood estimation. 2 sensory signals are combined, with result being a signal of less variance, with a mean value in between the sensory signals" src="http://users.cs.cf.ac.uk/FinneganD/images/march-2018/mle.png" /&gt;
+&lt;p&gt;This has many applications in &lt;span class="caps"&gt;VR&lt;/span&gt;. &lt;a class="reference external" href="http://dx.doi.org/10.1109/SIVE.2017.7901607"&gt;Our recent work&lt;/a&gt; has applied this to solving a problem in &lt;span class="caps"&gt;VR&lt;/span&gt; with how people estimate distances.
+Imagine using a driving simulator for teaching people how to drive.
+If people compress distances in &lt;span class="caps"&gt;VR&lt;/span&gt;, then using it as a learning environment would be&amp;nbsp;inappropriate.&lt;/p&gt;
+&lt;p&gt;Understanding how people integrate information from their senses is crucial to &lt;span class="caps"&gt;VR&lt;/span&gt; because it is not solely visual. Maximum Likelihood Estimation is a tool to model how effectively a &lt;span class="caps"&gt;VR&lt;/span&gt; system &lt;em&gt;needs&lt;/em&gt; to render its multisensory environment in order to deliver the desired experience. Understanding perception will lead to more immersive &lt;span class="caps"&gt;VR&lt;/span&gt; experiences.
+It&amp;#8217;s not a matter of separating each signal from the noise; it&amp;#8217;s a matter of taking all signals with the noise to give the most likely&amp;nbsp;result.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="article"></category><category term="vr"></category></entry><entry><title>New Publication @ CHI 2018!</title><link href="http://users.cs.cf.ac.uk/FinneganD/chi-2018.html" rel="alternate"></link><published>2018-02-16T00:00:00+01:00</published><updated>2019-07-18T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-02-16:/FinneganD/chi-2018.html</id><summary type="html">&lt;p&gt;We&amp;#8217;ve had a paper accepted at &lt;span class="caps"&gt;CHI&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;One of the big challenges today is to keep people healthy through sufficient exercise. 
+In this project we developed a new method for improving exercise performance in a motivating manner using a &lt;span class="caps"&gt;VR&lt;/span&gt; exergame.
+Players can work …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We&amp;#8217;ve had a paper accepted at &lt;span class="caps"&gt;CHI&lt;/span&gt; 2018!
+Here&amp;#8217;s the&amp;nbsp;abstract:&lt;/p&gt;
+&lt;p&gt;One of the big challenges today is to keep people healthy through sufficient exercise. 
+In this project we developed a new method for improving exercise performance in a motivating manner using a &lt;span class="caps"&gt;VR&lt;/span&gt; exergame.
+Players can work out on an exercycle doing high-intensity interval training while wearing a &lt;span class="caps"&gt;VR&lt;/span&gt; headset and racing in a virtual world. 
+Our method is an interactive adaptation of Feedforward, a type of training used to achieve rapid improvements by creating self models showing previously unachieved performance levels. 
+The game lets players compete against themselves, making it a bit harder for them so they are able to surpass their own previous performance. 
+Our method helped players perform better and also have a better experience compared to racing against a virtual&amp;nbsp;competitor.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s a video of the work, and you can follow the the &lt;a href="https://www.bath.ac.uk/research-centres/reality-and-virtual-environments-augmentation-labs-reveal/"&gt;ReVEaL&lt;/a&gt; to see more about what we&amp;nbsp;do.&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7T4bdlRDOdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;Barathi, S. C., Finnegan, D. J., Farrow, M., Whaley, A., Heath, P., Buckley, J., Dowrick, P. W., Wünsche, B. C., Bilzon, &lt;span class="caps"&gt;J. L.&lt;/span&gt; J., O&amp;#8217;Neill, E. &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Lutteroth, C.&lt;br&gt;
+Interactive Feedforward for Improving Performance and Maintaining Intrinsic Motivation in &lt;span class="caps"&gt;VR&lt;/span&gt; Exergaming.&lt;br&gt;
+&lt;span class="caps"&gt;CHI&lt;/span&gt; 18&amp;#8217;: Proceedings of the 2018 &lt;span class="caps"&gt;CHI&lt;/span&gt; Conference on Human Factors in Computing Systems.&lt;br&gt;
+&lt;a href="http://dx.doi.org/10.1145/3173574.3173982"&gt;&lt;span class="caps"&gt;DOI&lt;/span&gt;: 10.1145/3173574.3173982&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://users.cs.cf.ac.uk/FinneganD/documents/chi-2018.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category><category term="acm"></category><category term="conference proceedings"></category><category term="exergame"></category><category term="games"></category></entry><entry><title>Bath Science Cafe @ The Raven</title><link href="http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html" rel="alternate"></link><published>2018-01-09T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-01-09:/FinneganD/bath_science_cafe.html</id><summary type="html">&lt;p&gt;Last night I gave a talk at &lt;a class="reference external" href="https://goo.gl/maps/9rip47NfQnS2"&gt;The Raven&lt;/a&gt; in town as part of the &lt;a class="reference external" href="http://bathsciencecafe.org/2018/01/03/8th-january-2018-designing-virtual-reality-experiences-with-perception-in-mind/"&gt;Bath Science Cafe&lt;/a&gt;.
+I was thrilled to be invited!!
+My talk discussed how understanding perception can help to design virtual worlds that appear fluid and immersive.
+I covered elements such as &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Redirected_walking"&gt;redirected walking&lt;/a&gt; and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Foveated_rendering"&gt;foveated …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Last night I gave a talk at &lt;a class="reference external" href="https://goo.gl/maps/9rip47NfQnS2"&gt;The Raven&lt;/a&gt; in town as part of the &lt;a class="reference external" href="http://bathsciencecafe.org/2018/01/03/8th-january-2018-designing-virtual-reality-experiences-with-perception-in-mind/"&gt;Bath Science Cafe&lt;/a&gt;.
+I was thrilled to be invited!!
+My talk discussed how understanding perception can help to design virtual worlds that appear fluid and immersive.
+I covered elements such as &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Redirected_walking"&gt;redirected walking&lt;/a&gt; and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Foveated_rendering"&gt;foveated rendering&lt;/a&gt; emphasising how both techniques take advantage of human perception and deliver experiences that maintain quality while significantly reducing constraints around physical space and computational power.
+I ended the talk with my own work on designing &lt;a class="reference external" href="http://dx.doi.org/10.1109/SIVE.2017.7901607"&gt;incongruent audiovisual environments&lt;/a&gt; to reduce issues with distance and scale perception in &lt;span class="caps"&gt;VR&lt;/span&gt;.
+The talk was well received, and I hope to deliver it again&amp;nbsp;someday!&lt;/p&gt;
+&lt;div class="section" id="slides"&gt;
+&lt;h2&gt;Slides&lt;/h2&gt;
+&lt;p&gt;Slides are available &lt;a class="reference external" href="https://docs.google.com/presentation/d/1DQkUe9jdKwKPgNbAmYaOJCp1nNjq7rx06rOF134fNu4/edit?usp=sharing"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="video-links"&gt;
+&lt;h2&gt;Video&amp;nbsp;links&lt;/h2&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=6JONMYxaZ_s"&gt;Change blindness&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=THk92rev1VA"&gt;Unlimited Corridor&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=E_uZ6-0FsXo"&gt;Redirected Walking with Change Blindness&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=y74GjjBMets"&gt;Plausibility Illusion&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="cafe"></category><category term="science"></category><category term="public engagement"></category></entry><entry><title>EngD = Done!</title><link href="http://users.cs.cf.ac.uk/FinneganD/engd_complete.html" rel="alternate"></link><published>2017-06-13T00:00:00+02:00</published><updated>2017-06-13T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2017-06-13:/FinneganD/engd_complete.html</id><summary type="html">&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;A copy of my thesis is now available from my &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/pages/cv.html"&gt;cv page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Today I successfully defended my thesis Compensating for Distance Compression in Virtual Audiovisual Environments, passing my viva voce with minor corrections!
+Once my corrections have been completed and submitted, I&amp;#8217;ll stick a &lt;span class="caps"&gt;PDF&lt;/span&gt; up here for …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update&lt;/h2&gt;
+&lt;p&gt;A copy of my thesis is now available from my &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/pages/cv.html"&gt;cv page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Today I successfully defended my thesis Compensating for Distance Compression in Virtual Audiovisual Environments, passing my viva voce with minor corrections!
+Once my corrections have been completed and submitted, I&amp;#8217;ll stick a &lt;span class="caps"&gt;PDF&lt;/span&gt; up here for anyone who might be interested.
+The past 4 years have been a whirlwind, as I&amp;#8217;ve written about &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/first-post.html"&gt;previously&lt;/a&gt; and I have learned so much.
+Thanks go to my academic advisors, Prof. Eamonn O&amp;#8217;Neill &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Dr. Michael Proulx who have mentored me through the years, teaching me lessons I can&amp;#8217;t even describe in words.
+Thanks also to Rob McHardy, my industrial advisor, who helped hone my software skills further from my BSc days into my&amp;nbsp;EngD.&lt;/p&gt;
+&lt;p&gt;Thanks also to the myriad of people I have interacted with over the years; each of you has influenced my thinking in a variety of different ways.
+Its been one hell of a journey.
+Celebrating the end of my EngD over the coming days, I look forward to my career.
+Now that I have my license, I&amp;#8217;m excied over future prospects and the projects I will get my teeth stuck&amp;nbsp;into!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="engd"></category><category term="viva"></category><category term="phd"></category></entry><entry><title>New paper accepted into SIVE 2017!</title><link href="http://users.cs.cf.ac.uk/FinneganD/sive-ieeevr-2017.html" rel="alternate"></link><published>2017-02-28T00:00:00+01:00</published><updated>2019-07-18T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2017-02-28:/FinneganD/sive-ieeevr-2017.html</id><summary type="html">&lt;p&gt;My paper titled &amp;#8220;An Approach to Reducing Distance Compression in Audiovisual Virtual Environments&amp;#8221; has been accepted into the &lt;a href="http://imi.aau.dk/~sts/SIVE17/"&gt;&lt;span class="caps"&gt;SIVE&lt;/span&gt; (Sonic Interactions in Virtual Environments)&lt;/a&gt; workshop as part of &lt;a href="http://ieeevr.org/2017/"&gt;&lt;span class="caps"&gt;IEEE&lt;/span&gt; &lt;span class="caps"&gt;VR&lt;/span&gt; 2017&lt;/a&gt;!
+I will be presenting my paper and it will be published as part of the conference proceedings.
+See you …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My paper titled &amp;#8220;An Approach to Reducing Distance Compression in Audiovisual Virtual Environments&amp;#8221; has been accepted into the &lt;a href="http://imi.aau.dk/~sts/SIVE17/"&gt;&lt;span class="caps"&gt;SIVE&lt;/span&gt; (Sonic Interactions in Virtual Environments)&lt;/a&gt; workshop as part of &lt;a href="http://ieeevr.org/2017/"&gt;&lt;span class="caps"&gt;IEEE&lt;/span&gt; &lt;span class="caps"&gt;VR&lt;/span&gt; 2017&lt;/a&gt;!
+I will be presenting my paper and it will be published as part of the conference proceedings.
+See you in &lt;span class="caps"&gt;LA&lt;/span&gt;!&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;Finnegan, D. J., O&amp;#8217;Neill, E., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Proulx, &lt;span class="caps"&gt;M. J.&lt;/span&gt;&lt;br&gt;
+An approach to reducing distance compression in audiovisual virtual environments.&lt;br&gt;
+In Sonic Interactions for Virtual Environments (&lt;span class="caps"&gt;SIVE&lt;/span&gt;), 2017 &lt;span class="caps"&gt;IEEE&lt;/span&gt; 3rd &lt;span class="caps"&gt;VR&lt;/span&gt; Workshop on (pp. 1-6). &lt;span class="caps"&gt;IEEE&lt;/span&gt;.&lt;br&gt;
+&lt;a href="http://dx.doi.org/10.1109/SIVE.2017.7901607"&gt;&lt;span class="caps"&gt;DOI&lt;/span&gt;: 10.1109/&lt;span class="caps"&gt;SIVE&lt;/span&gt;.2017.7901607&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://users.cs.cf.ac.uk/FinneganD/documents/sive-2017.pdf"&gt;&lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="ieee"></category><category term="VR"></category><category term="binaural"></category><category term="paper"></category><category term="conference proceedings"></category></entry><entry><title>Research, Anxiety, and Overcoming it all through Applied Psychology</title><link href="http://users.cs.cf.ac.uk/FinneganD/next-steps.html" rel="alternate"></link><published>2016-09-16T00:00:00+02:00</published><updated>2018-05-09T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2016-09-16:/FinneganD/next-steps.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I&amp;#8217;ve interacted with over the past 4 years.
+I&amp;#8217;ve experienced the ups and downs, the observed PhD curve and I&amp;#8217;ve grown a&amp;nbsp;lot.&lt;/p&gt;
+&lt;p&gt;The biggest thing I&amp;#8217;ve …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I&amp;#8217;ve interacted with over the past 4 years.
+I&amp;#8217;ve experienced the ups and downs, the observed PhD curve and I&amp;#8217;ve grown a&amp;nbsp;lot.&lt;/p&gt;
+&lt;p&gt;The biggest thing I&amp;#8217;ve learned though, over the past 4 years, is about research attitudes.
+Knowing that there are &lt;a class="reference external" href="https://en.wikipedia.org/wiki/There_are_known_knowns"&gt;unknown unknowns&lt;/a&gt; and having the humility to accept that.
+When I began my research, I felt overwhelmed: I tried and tried to review fields and areas where &amp;#8216;more research was needed&amp;#8217; to no avail.
+I became frustrated, anxious, and felt hopelessly lost in a sea of &amp;#8216;potential areas of interest&amp;#8217; and began questioning my own ability.
+Not from the healthy perspective; questions like &amp;#8220;Am I right?&amp;#8221;
+Or &amp;#8220;What if there is another way?&amp;#8221;
+These are good questions, and fall under my &amp;#8220;humility&amp;#8221; heading.
+Instead, I was asking &amp;#8220;Can I do this?&amp;#8221; and &amp;#8220;How do I know where to&amp;nbsp;begin?&amp;#8221;&lt;/p&gt;
+&lt;p&gt;I recently completed an application for an &lt;span class="caps"&gt;RA&lt;/span&gt; position at &lt;a class="reference external" href="http://www.bath.ac.uk"&gt;Bath&lt;/a&gt;, and when I was writing my personal statement, I thought about my own approach to my research and realised that an interesting theory&amp;nbsp;applied&amp;#8230;.&lt;/p&gt;
+&lt;div class="section" id="the-big-five"&gt;
+&lt;h2&gt;The Big&amp;nbsp;Five&lt;/h2&gt;
+&lt;p&gt;How would you describe personality?
+Sure, you can to great lengths, with use of colorful adjectives and poetic prose to describe personality.
+This is great if you&amp;#8217;re writing a book, or a reference for someone, but scientifically its way too much.
+Its difficult to compare and discuss personalities from a scientific point of view with such a high dimensionality or &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)"&gt;degrees of freedom&lt;/a&gt;.
+Rather, some clever psychologists attempted to reduce this dimensionality to a set of 5 core traits, and claimed that personality can be described by plotting across these five dimensions.
+Sometimes called the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Big_Five_personality_traits"&gt;&lt;span class="caps"&gt;OCEAN&lt;/span&gt;&lt;/a&gt; model (scientists love acronyms, especially when those acronyms equate to actual words with ambigiously related semantics to what the acronym itself represents), it is widely applicable to many domains, and is useful as a measurement tool of personality.
+Once you can measure something, you can cluster data into categories, and then develop around these&amp;nbsp;clusters.&lt;/p&gt;
+&lt;p&gt;From a &lt;span class="caps"&gt;HCI&lt;/span&gt; perspective, one of the most novel applications I&amp;#8217;ve come across of the &lt;span class="caps"&gt;OCEAN&lt;/span&gt; theory is the thory applied to gamers (i.e people who play games often).
+&lt;a class="reference external" href="https://twitter.com/the_darklorde"&gt;Jason Vandenburghe&lt;/a&gt; gave a talk at the 2014 &lt;a class="reference external" href="http://dl.acm.org/citation.cfm?id=2658537&amp;amp;CFID=668436578&amp;amp;CFTOKEN=99793062"&gt;CHIPlay&lt;/a&gt; conference in Toronto.
+Sadly I wasn&amp;#8217;t at the talk, but I&amp;#8217;d seen Vandenburghe&amp;#8217;s earlier &lt;a class="reference external" href="http://gdcvault.com/play/1015364/The-5-Domains-of-Play"&gt;&lt;span class="caps"&gt;GDC&lt;/span&gt; talk&lt;/a&gt; in 2012.
+Vandenburghe applies &lt;span class="caps"&gt;OCEAN&lt;/span&gt; as a way of modelling player behaviour and their expectations from a game.
+The gist is that, if you can identify personality traits of players, for example those who are more open to exploration versus those who are more introverted, perhaps less keen on direct competition, you can adjust the game mechanics and dynamics to suit that player.
+Obviously, this is of direct interest to the games industry, and is useful for game designers to take into consideration.
+In my personal statement, I applied &lt;span class="caps"&gt;OCEAN&lt;/span&gt; to a PhD candidate, explaining the sides of the spectrum I feel a good candidate would lie.
+You can read my statement &lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/documents/teaching-research-statement.pdf"&gt;here&lt;/a&gt;, but I&amp;#8217;ll elaborate on my choices here.
+I&amp;#8217;ve also kept them discipline agnostic; while I&amp;#8217;m sure this can be further refined to fit specific disciplines (a model is a model though; always be weary of &lt;a class="reference external" href="http://blog.minitab.com/blog/adventures-in-statistics/the-danger-of-overfitting-regression-models"&gt;overfitting&lt;/a&gt;), I&amp;#8217;ve opted to keep things general.
+These are qualities of traits I feel any PhD student should&amp;nbsp;possess.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="an-ocean-phd"&gt;
+&lt;h2&gt;An &lt;span class="caps"&gt;OCEAN&lt;/span&gt;&amp;nbsp;PhD&lt;/h2&gt;
+&lt;p&gt;I guess at this point, I should probably elaborate a bit on the &lt;span class="caps"&gt;OCEAN&lt;/span&gt; dimensions.
+The first, Openness relates to a person&amp;#8217;s apetite for new experiences.
+Rather than sticking to what works, a good PhD candidate is someone who embraces new opportunities and experiences, open to failure and a tenacity to take risks.
+A PhD is ultimately about learning how to deal with failure.
+All the paper rejections, deadlines missed for various reasons, and feelings of complete inability to complete anything is part of the learning process.
+My advisor said to me &amp;#8220;There&amp;#8217;ll always be another deadline&amp;#8221;.
+It took me a while to fully appreciate the gravity of that sentence.
+It wasn&amp;#8217;t just to pick me up, but to really drill home the notion of research as an endless cycle.
+There will always be unknown unknowns, therefore there&amp;#8217;ll always be more research to do.
+If theres always more research to do, there&amp;#8217;ll always be another conference venue or journal&amp;nbsp;deadline.&lt;/p&gt;
+&lt;p&gt;The second trait is Conscientousness.
+This relates to ones ability to be resourceful and self sustainable.
+&lt;a class="reference external" href="http://www.cs.bath.ac.uk/~pjw/"&gt;Professor Philip Willis&lt;/a&gt; once sent a departmental email around about how in the &lt;span class="caps"&gt;US&lt;/span&gt; they use the term PhD &amp;#8216;advisor&amp;#8217; rather than the term used in the &lt;span class="caps"&gt;UK&lt;/span&gt; and Ireland, &amp;#8216;supervisor&amp;#8217;.
+This stuck with me as I really saw it as a more appropriate term.
+A PhD should not require supervision; when you apply for a PhD in computer graphics, I would assume you have working knowledge of vector math and some experience with practical rendering techniques in theory and code.
+The same applies for any discipline be it music, geography, history, politics.
+The point is that this is already assumed: I would expect you to be capable of studying and working without supervision.
+However, at time what you will need is guidance.
+You may strike a mental wall in your research.
+Advice in the form of guidance is more effective here, perhaps suggesting related avenues that you may have overlooked, or indirect research areas that, with a bit of creative thinking, may lead to breakthrough methods just waiting to be applied to your&amp;nbsp;research.&lt;/p&gt;
+&lt;p&gt;Up next is Extraversion.
+A PhD student needs to be extraverted.
+Gone are the days of solo PhD theses; massive texts stuffed full of secluded work done in a lab or an office over the course of 3 years.
+The world has shifted, with globalisation catapulting us into the age of fast communication of ideas, and an ever expanding space of research domains opening up.
+Its impossible to do good research alone.
+Yes, I understand that a PhD is &lt;em&gt;your&lt;/em&gt; work, but that work is done in a context of people, other disciplines, and more and more information on a daily basis.
+Some people even consider doing a PhD is &lt;a class="reference external" href="https://www.reddit.com/r/Futurology/comments/42boek/university_degrees_irrelevant_to_big_employers_is/"&gt;irrelevant&lt;/a&gt;.
+My point here is that, tying in with Openness, a good PhD is someone who embraces methods and approaches from related research fields, and adopts an extraverted mind in approaching skill development.
+Complex problems in your field may only be complex because the right tools either do not exist, or do exist, but are applied in other disciplines where they also are approriate.
+Be&amp;nbsp;adventurous!&lt;/p&gt;
+&lt;p&gt;Agreeablenss is an interesting one, as a good PhD is somewhere in the middle.
+You should agree with data that opposes your initial hypotheses and beliefs, as painful as it may be to swallow.
+However, this does not mean you do so blindly.
+Ask &lt;em&gt;why&lt;/em&gt; this data is the way it is?
+What does it mean for your hypothesis?
+Is it wrong, or just misguided?
+How can you learn from it?
+What if your hypothesis was originally based upon previous studies, a la &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Bayes%27_theorem"&gt;Bayes Theorem&lt;/a&gt;?
+Following Bayes logic, new information should not alter your view so much if you already have a substantial background in the opposing direction.
+The point here is to take in this new information, reflect on it, and then feed it back in to your new&amp;nbsp;thinking.&lt;/p&gt;
+&lt;p&gt;Finally, we have Neuroticism.
+I&amp;#8217;m not saying a good PhD is a never neurotic; you&amp;#8217;d have to be a sociopath to not feel upset at times during the course of your PhD.
+However, it is important to constantly reflect on your situation and understand that it is a bump in the road, not a road block.
+Remain calm in the face of opposition.
+Rather than a fit of hysteria, react to oppposition in a way that is productive.
+Process it, then fire some questions back at it.
+Don&amp;#8217;t take it at face value, but rather assimilate it and refine it.
+You may find that what was initially the polar opposite may actually only have issue with certain aspects of your standpoint.
+Be dynamic and invite opposition.
+It&amp;#8217;ll make your PhD richer in the&amp;nbsp;end.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I understand this post turned into a self help piece.
+I hope you found it enlightenting and perhaps even learned a thing or two.
+I have found The Big Five highly applicable to PhD candidates, and looking back now, as pretentious as this may sound, I do see myself fitting nicely into this model.
+Lets just hope I got the directionality right; that I fit into the model rather than the model fitting around&amp;nbsp;me!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="research"></category><category term="teaching"></category></entry><entry><title>The Simpsons &amp; their Mathematical Secrets</title><link href="http://users.cs.cf.ac.uk/FinneganD/simpsons-maths.html" rel="alternate"></link><published>2015-02-04T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2015-02-04:/FinneganD/simpsons-maths.html</id><summary type="html">&lt;!-- Some directives defined for the Paul erdos link. This was tricky --&gt;
+&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.simonsingh.net/Simpsons_Mathematics/"&gt;Simon Singh&lt;/a&gt;&amp;#8216;s book titled &amp;#8216;The Simpsons &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; their Mathematical Secrets&amp;#8217; and thought I&amp;#8217;d write a review as it was a riveting literary account of the history of mathematics, as told through personal interviews with the writing team of both &amp;#8216;The Simpsons&amp;#8217; &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; &amp;#8216;Futurama&amp;#8217;.
+The book does …&lt;/p&gt;</summary><content type="html">&lt;!-- Some directives defined for the Paul erdos link. This was tricky --&gt;
+&lt;p&gt;I recently finished reading &lt;a class="reference external" href="http://www.simonsingh.net/Simpsons_Mathematics/"&gt;Simon Singh&lt;/a&gt;&amp;#8216;s book titled &amp;#8216;The Simpsons &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; their Mathematical Secrets&amp;#8217; and thought I&amp;#8217;d write a review as it was a riveting literary account of the history of mathematics, as told through personal interviews with the writing team of both &amp;#8216;The Simpsons&amp;#8217; &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; &amp;#8216;Futurama&amp;#8217;.
+The book does not demand extensive knowledge nor professional ability and grasp at Mathematics; instead it actually illuminates some of the more difficult problems, translating them into understandable&amp;nbsp;language.&lt;/p&gt;
+&lt;div class="section" id="synopsis"&gt;
+&lt;h2&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;The book details how &amp;#8216;The Simpsons&amp;#8217; has spent the past 3 decades sneakily including some nontrivial mathematics within its episodes; the reason seemingly being that the writers felt it was humourous and would engage the more mathematically inclined viewers.
+Singh talks about how some episodes contain what is known as &amp;#8216;Freeze Frame&amp;#8217; gags, where the visual joke appears for less than 5 frames, forcing interested parties to pause the video playback to view it.
+However, other episodes place the maths in full view of the audience, in what appears to be random numbers or equations. However, upon further investigation it can be shown that the symbols and equations in episodes are far from meaningless combinations.
+One of my personal favorites is as Singh describes an episode of &amp;#8216;Futurama&amp;#8217; where Bender, a talking, drunken android protagonist sees a random binary sequency written in blood. Paying homage to that scene in Stanley Kubrick&amp;#8217;s The Shining&amp;#8217;, He then sees the reversed sequence through a mirror and is horrified!!
+Only those with some knowledge of binary number representation would appreciate this joke; read the book to find out&amp;nbsp;more!&lt;/p&gt;
+&lt;p&gt;Singh introduces many famous figures in the world of mathematics throughout the book.
+He spans centuries of history, from &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Archimedes"&gt;Archimedes&lt;/a&gt; to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Leonhard_Euler"&gt;Euler&lt;/a&gt;, from &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"&gt;Gauss&lt;/a&gt; to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Sophie_Germain"&gt;Germain&lt;/a&gt;, and right up to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan"&gt;Ramanujan&lt;/a&gt; and &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Paul_Erd%C5%91s"&gt;Erdős&lt;/a&gt; (he even throws in a reference to Bill Gates of Microsoft fame and his one and only published academic paper).
+Some chapters are dedicated to individual mathematicians, using their achievements as a narrative, and introducing some of the problems they commited their lives too.
+With each new mathematician, Singh demonstrates his ability for morphing mathematics from what can be (for most people I presume) a difficult thing to understand into intuitive, clear and sometimes beautiful explanations about one of the worlds truly fascinating&amp;nbsp;subjects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="engagement"&gt;
+&lt;h2&gt;Engagement&lt;/h2&gt;
+&lt;p&gt;The book reignited an old passion in me for mathematics. Having strayed from the discipline for quite some time (I developed a paralyzing fear of maths during my undergraduate studies at University after having loved the subject and performed reasonably well during highschool), I found Singh to phrase the theorems in the book in such a way that they weren&amp;#8217;t terrifying any longer.
+Instead, the mathematics is juxtaposed with music, paintings, and other forms of art. It is clear from the outset that Singh believed mathematics deserves a place in this exclusive domain and does in fact state this explicitly though a quote from &lt;a class="reference external" href="http://web.stanford.edu/~kdevlin/"&gt;Keith Devlin&lt;/a&gt; regarding the degree to which &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Euler%27s_identity"&gt;Euler&amp;#8217;s equation&lt;/a&gt; reaches into the &amp;#8216;very depths of existence&amp;#8217;.
+Singh cleverly strays from deep technical derivations of some of the more complex topics within the main body of the book, opting to include them as appendices at the end.
+This avoids a context switch from consuming some fascinating history to remembering group theory, fractals, and prime numbers.
+This fits every reader from the casually piqued to the mathematics finatics obsessed with the underlying theory to satisfy their thirst for some proofs.
+After all, this book is really more of a historical passage through the catacombs of modern mathematics as opposed to a university freshman textbook on linear algebra.
+I found the book grossly engaging; I couldn&amp;#8217;t put it down and gorged upon its satisfactory ~250 pages in a&amp;nbsp;weekend.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="verdict"&gt;
+&lt;h2&gt;Verdict&lt;/h2&gt;
+&lt;p&gt;I really enjoyed the book (as I imagine is quite obvious from my excited tone).
+Not only did I enjoy reading about the people behind the shows, my view of the Simpsons as a &amp;#8216;dumb&amp;#8217; tv show has been radically altered.
+I have developed a new found appreciation for it (indeed, I&amp;#8217;ll be looking for some Freeze Frame gags myself over the next few months in re-runs!), and also some of the issues I&amp;#8217;ve had with mathematics since my undergraduate years have been lifted.
+I feel more confident and open to reading about mathematics again.
+In a way this book has truly illuminated my bleak view on the&amp;nbsp;subject.&lt;/p&gt;
+&lt;p&gt;What more can I say other than; &lt;span class="caps"&gt;GO&lt;/span&gt; &lt;span class="caps"&gt;READ&lt;/span&gt; &lt;span class="caps"&gt;IT&lt;/span&gt;!&amp;nbsp;:-)&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="mathematics"></category><category term="review"></category></entry><entry><title>Rendering spatial audio on a desktop: The SSR and APF libraries</title><link href="http://users.cs.cf.ac.uk/FinneganD/ssr.html" rel="alternate"></link><published>2015-02-01T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2015-02-01:/FinneganD/ssr.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
+a binaural soundscape for a project I&amp;#8217;m working on.
+Whilst a great library, I struggled to get to grips with it for a few days.
+The library makes heavy use of templates (a powerful paradigm of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
+a binaural soundscape for a project I&amp;#8217;m working on.
+Whilst a great library, I struggled to get to grips with it for a few days.
+The library makes heavy use of templates (a powerful paradigm of C++ but can be awkward to read) and is written
+using some design patterns I had never encountered&amp;nbsp;before.&lt;/p&gt;
+&lt;p&gt;I started by reading some of the source code, trying to compile the header-only library and get some test code working.
+After spending hours getting the library to compile, I was ready to try it out with some sample assets from
+&lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/first-post.html#audio-defence"&gt;Audio Defence&lt;/a&gt;. Compiler errors began to arise upon simply instantiating the ssr::BinauralRenderer so I had to dig a little deeper.
+I had a read of the source code and I came across some examples that were included in the repository.
+I also emailed one of the author&amp;#8217;s of the library to ask for some help with integrating the &lt;span class="caps"&gt;SSR&lt;/span&gt; as a library into my existing framework in order to handle the binaural&amp;nbsp;rendering.&lt;/p&gt;
+&lt;p&gt;After a week of bashing my head against the wall, I&amp;#8217;ve now managed to pump out some spatial sound from the renderer, sending it out to the speakers and dumping it to a stereo file.
+I&amp;#8217;ve decided to jot down some notes here to help me remember how the thing&amp;nbsp;works!!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The ssr::BinauralRenderer is a subclass of the apf::MimoProcessor, which is an abstract multiple input/multiple
+output processor that enables the programmer to implement the processing callback while handling the threading
+and access control of the samples held in the processor&amp;#8217;s buffer.
+The renderer is instantiated by passing a apf::paramter_map instance which is a key-value dictionary of configuration settings for the renderer. The main settings required are the sample rate, block size and the location (full path) to the &lt;span class="caps"&gt;HRIR&lt;/span&gt; file that contains the impulse responses for&amp;nbsp;convoluion.&lt;/li&gt;
+&lt;li&gt;The processor functions through use of the
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Policy-based_design"&gt;Policy Design Pattern&lt;/a&gt;. This design pattern dictates that
+a can have a number of different policies for
+responding to similar situations (ie. a class may have a number of different policies regarding the printing of
+data to a file or to a &lt;span class="caps"&gt;TCP&lt;/span&gt; stream).
+In my case, the policies that the renderer is concerned with are its interface (how to process it&amp;#8217;s data
+buffers at each audio cycle or rather how to &amp;#8216;use&amp;#8217; and interface with it) and how to act in a threaded manner.
+To specify which policies to use, you simply include the header file of the policy and define a macro called APF_MIMOPROCESSOR_INTERFACE_POLICY for the interface policy and APF_MIMOPROCESSOR_THREAD_POLICY for the thread policy. The library comes with a default thread header which just uses a single threaded policy (ie. not implemented) on windows and the &lt;span class="caps"&gt;POSIX&lt;/span&gt; library for *nix and &lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;nbsp;systems.&lt;/li&gt;
+&lt;li&gt;In order to use the binaural rendererer, you need to specify the policies you want to use. The renderer relies
+on two policies in it&amp;#8217;s implementation; an interface policy and a threading policy. To use the renderer as a standalone module, the pointer policy must be used. This then opens up the audioCallback function to be called manually by the application programmer when they want to process some data. The function accepts 3 arguments, the block size of the frame to be processed, a pointer to a series of inputs and a pointer to a pair of outputs (as the binaural renderer is an instance of an N-input, 2-output processor for stereo binaural&amp;nbsp;output).&lt;/li&gt;
+&lt;li&gt;The processor requires it&amp;#8217;s input to be a pointer to a list of channels. These channels can be implemented as a
+series of vectors. The renderer&amp;#8217;s output is also expected to be a series of vectors representing the audio channels. The inputs should be a N * BLOCK_SIZE matrix where BLOCK_SIZE is the number of frames to be processed as a block during each run of the audio cycle. The N is the number of channels in the input. The outputs should be a 2 * BLOCK_SIZE matrix, indicating stereo output.
+The renderer expects a 1-1 mapping of input channels to sources, and the sources are ordered with the channels (ie Channels[0] is the first source, Channels[1] the second&amp;nbsp;etc&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;Finally, for dumping to a file, you need to transpose the channels as libsndfile reads in row-wise order,
+intereleaving the channels as it dumps to the file. This was the major source of confusion for me and it took some fiddling and multiple reads of the source repo to understand how that&amp;nbsp;worked.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So to recap; the binaural renderer can be instantiated after specifying the policies required to do it&amp;#8217;s thing.
+Next you need to generate a parameter map, a key-value dictionary containing the configuration (block size, &lt;span class="caps"&gt;HRIR&lt;/span&gt; file path etc.) for the renderer. In order to use the renderer, you pass a pointer to a list of arrays representing the channels of the audio (best to use the apf::fixed_matrix container that comes with the &lt;span class="caps"&gt;APF&lt;/span&gt;&amp;nbsp;framework).&lt;/p&gt;
+&lt;p&gt;A blunder was in dumping the output to a file; this wasn&amp;#8217;t the &lt;span class="caps"&gt;SSR&lt;/span&gt;&amp;#8217;s fault as &lt;a class="reference external" href="http://www.mega-nerd.com/libsndfile/api.html"&gt;libsndfile&lt;/a&gt; expects reads and writes in row wise order for (de)interleaving. All I had to do here is have a second output buffer which is the transposed matrix of the output list of channels. You can then call the writef() function of the SndFileHandle object in the libsndfile C++ &lt;span class="caps"&gt;API&lt;/span&gt; for writing stereo output to the&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;Having figured all of this out I can finally move onto the image processing aspect of my project. More on this to come&amp;nbsp;later.&lt;/p&gt;
+</content><category term="binaural"></category><category term="C++"></category><category term="development"></category><category term="research"></category></entry><entry><title>Auditory saliency and its role in accessible gaming</title><link href="http://users.cs.cf.ac.uk/FinneganD/saliency.html" rel="alternate"></link><published>2014-12-03T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2014-12-03:/FinneganD/saliency.html</id><summary type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
+While nearing completion, my supervisors gave some valuable feedback for the tone and message of my report; especially the necessity of a coherent narrative.
+I&amp;#8217;ve tried to be as …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
+While nearing completion, my supervisors gave some valuable feedback for the tone and message of my report; especially the necessity of a coherent narrative.
+I&amp;#8217;ve tried to be as thorough as possible in my report writing but I need to make sure that the reason for reading it is conveyed clearly to the&amp;nbsp;reader.&lt;/p&gt;
+&lt;p&gt;After discussing the report we moved on to the interesting stuff; what to start working on next.
+The overarching theme of my thesis is inclusive gaming.
+By this, I am interested in design techniques and technologies that can enable games to reach a wider audience by becoming artefacts of an accessible&amp;nbsp;design.&lt;/p&gt;
+&lt;p&gt;How can an interface surpass the status quo and becoming &amp;#8220;accessible&amp;#8221; whilst maintaining the same level of efficiency as one for sighted players?
+Given that our aural senses have a much smaller capacity for interpreting information when compared to our visual sense, this sounds like it is unachievable.
+However, a lot of the information our visual sense perceives in the occipital lobe and propogates through the visual cortex is redundant, irrelevant.
+Most of the time, there is a subset of the data perceived that is of interest or rather necessary to understand the scene which we are observing.
+In other words, what we want is&amp;nbsp;salience.&lt;/p&gt;
+&lt;p&gt;Whilst current accessible tools focus on mapping visual elements 1-1 to an equal yet slower modality (temporality issues exist in screen readers and text-to-speech systems), might there be a way to extract the information in a visual scene, remove non-salient information and then compress it into a form that enables a ~1:1 mapping of the objects in the scene and the sounds used to represent&amp;nbsp;them?&lt;/p&gt;
+&lt;p&gt;Back to the books for me. Below are references shared with me by my supervisor. Passing them on&amp;nbsp;here.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S0960982205011103#"&gt;Auditory Salience&lt;/a&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;a class="reference external" href="http://link.springer.com/article/10.3758%2Fs13414-010-0073-7#page-1"&gt;Crossmodal Correspondences&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="saliency"></category><category term="research"></category></entry><entry><title>First Post</title><link href="http://users.cs.cf.ac.uk/FinneganD/first-post.html" rel="alternate"></link><published>2014-11-09T00:00:00+01:00</published><updated>2019-05-10T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2014-11-09:/FinneganD/first-post.html</id><summary type="html">&lt;!-- Hyper links --&gt;
+&lt;p&gt;So, I set up this site almost a year ago now and never actually published anything to it.
+I&amp;#8217;ve decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-)&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve …&lt;/p&gt;</summary><content type="html">&lt;!-- Hyper links --&gt;
+&lt;p&gt;So, I set up this site almost a year ago now and never actually published anything to it.
+I&amp;#8217;ve decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-)&amp;nbsp;).&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve often tried blogging in the past but could never quite do it.
+I&amp;#8217;ve found it uncomfortable, difficult or frustrating in the past to write things down in a public format as I&amp;#8217;ve always kept notes in the past.
+I&amp;#8217;ve been thinking however that this maintaining a blog might be a good idea for my EngD as it will certainly help build up a corpus of writing which may prove useful in two years time when it comes to the&amp;nbsp;viva.&lt;/p&gt;
+&lt;p&gt;This past year has seen a lot happen in my academic life.
+Highlights&amp;nbsp;include:&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;span class="caps"&gt;UBISS&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Taking part in the 5th &lt;span class="caps"&gt;UBI&lt;/span&gt; Summer School in Oulu (link &lt;a class="reference external" href="http://www.ubioulu.fi/en/UBI-summer-school-2014"&gt;&lt;span class="caps"&gt;UBISS&lt;/span&gt;&lt;/a&gt;), where my team took home the best project award from Workshop D.
+The workshop was given by Dr. Floyd Mueller from &lt;span class="caps"&gt;RMIT&lt;/span&gt; in Melbourne, Australia.
+The workshop involved exploring the design of physical based games that incorporate digital technology in some form.
+Dr. Mueller has a nicer terminology; &amp;#8216;Bodily Play&amp;#8217;.
+The school proved an indispensable week full of activities from learning interesting research in physical gaming as well as meeting many students from around the world studying &lt;span class="caps"&gt;STEM&lt;/span&gt; disciplines.
+The best part was that the game I created with my team, Reindeer &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Wolves, was &lt;a class="reference external" href="http://dx.doi.org/10.1145/2658537.2661309"&gt;published as a short paper&lt;/a&gt; at the &lt;span class="caps"&gt;CHI&lt;/span&gt; &lt;span class="caps"&gt;PLAY&lt;/span&gt; conference in Toronto.
+There is a &lt;span class="caps"&gt;QR&lt;/span&gt; code at the bottom of this page with a &lt;span class="caps"&gt;DOI&lt;/span&gt; embedded for the&amp;nbsp;article.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="audio-defence"&gt;
+&lt;h2&gt;Audio&amp;nbsp;Defence&lt;/h2&gt;
+&lt;p&gt;Winning the accessibility award at the &lt;span class="caps"&gt;TIGA&lt;/span&gt; Games Industry Awards in London.
+The ceremony took place in November and a game I have worked on the past year with my partner company, &lt;a class="reference external" href="http://www.somethinelse.com"&gt;Somethin&amp;#8217; Else&lt;/a&gt;, won the Accessibility award.
+We were delighted to have won the award in recognition of the work we&amp;#8217;ve been doing over the past year.
+The game is a first person shooter where the enemies (or shoot-ies) are rendered binaurally for a 3D spatial effect in real time.
+The game is available on the App Store &lt;a class="reference external" href="https://itunes.apple.com/gb/app/audio-defence-zombie-arena/id804041240?mt=8"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As I approach the end of the year, I am prepping for my transfer report and viva.
+This I hope will go smoothly as I want to demonstrate the work I&amp;#8217;ve done so far as well as pose a structured plan for the next 2&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll write my next post next week.
+So for now, I&amp;#8217;m signing&amp;nbsp;off.&lt;/p&gt;
+&lt;!-- This is the correct syntax for displaying an image Dan :-) --&gt;
+&lt;img alt="QR code for DOI: 10.1145/2658537.2661309" src="http://users.cs.cf.ac.uk/FinneganD/images/qrImage.png" /&gt;
+&lt;/div&gt;
+</content><category term="ubiss"></category><category term="CHIPlay"></category><category term="acm"></category><category term="games"></category></entry></feed>
