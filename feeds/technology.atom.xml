@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Technology</title><link href="http://users.cs.cf.ac.uk/FinneganD/" rel="alternate"></link><link href="http://users.cs.cf.ac.uk/FinneganD/feeds/technology.atom.xml" rel="self"></link><id>http://users.cs.cf.ac.uk/FinneganD/</id><updated>2019-07-23T00:00:00+02:00</updated><entry><title>Avalon board game companion application</title><link href="http://users.cs.cf.ac.uk/FinneganD/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2018-07-12T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-07-12:/FinneganD/avalon-callout.html</id><summary type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This past week during the evenings, I wrote a small android application just for fun.
+It consists of a 3 screen &lt;span class="caps"&gt;UI&lt;/span&gt; for selecting the characters in the game of &lt;a href="https://boardgamegeek.com/boardgame/128882/resistance-avalon"&gt;Avalon&lt;/a&gt;.
+Once selected, it generates …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This past week during the evenings, I wrote a small android application just for fun.
+It consists of a 3 screen &lt;span class="caps"&gt;UI&lt;/span&gt; for selecting the characters in the game of &lt;a href="https://boardgamegeek.com/boardgame/128882/resistance-avalon"&gt;Avalon&lt;/a&gt;.
+Once selected, it generates the &lt;a href="https://youtu.be/b5iJjQJkWEQ?t=4m30s"&gt;callout&lt;/a&gt; for the game, and then begins to speak it back to the players via&amp;nbsp;text-to-speech.&lt;/p&gt;
+&lt;p&gt;Its very rough around the edges (to be fair, I made in a total of about 2.5 working hours over a few days) and contains no accessibility features as of yet.
+However, some people may find it useful; I know I sure&amp;nbsp;will!&lt;/p&gt;
+&lt;p&gt;Its &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is available from my &lt;a href="https://github.com/Ps2Fino/Avalon-App/"&gt;Github&lt;/a&gt;.
+Its also &lt;a href="http://users.cs.cf.ac.uk/FinneganD/updater.html"&gt;Updater&lt;/a&gt;&amp;nbsp;compatible.&lt;/p&gt;</content><category term="C#"></category><category term="development"></category></entry><entry><title>Updater — A cmake template engine</title><link href="http://users.cs.cf.ac.uk/FinneganD/updater.html" rel="alternate"></link><published>2018-05-30T00:00:00+02:00</published><updated>2019-07-23T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-05-30:/FinneganD/updater.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
+Updater essentially creates a templated directory structure along with initial &lt;code&gt;CMakeLists.txt&lt;/code&gt; files.
+This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
+&lt;p&gt;Updater grew …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
+Updater essentially creates a templated directory structure along with initial &lt;code&gt;CMakeLists.txt&lt;/code&gt; files.
+This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
+&lt;p&gt;Updater grew from an observation I made working with students.
+As they&amp;#8217;re still learning how to program, it can be overwhelming for them to ensure their code is well maintained and structured.
+Using Updater enables them to focus on the implementation task, while giving me some assurance that I will always be able to build the&amp;nbsp;project.&lt;/p&gt;
+&lt;p&gt;Updater is &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.
+It is available from my &lt;a href="https://github.com/Ps2Fino/Updater/releases/tag/v1.5.1"&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="python"></category><category term="development"></category><category term="research"></category></entry><entry><title>Rendering spatial audio on a desktop: The SSR and APF libraries</title><link href="http://users.cs.cf.ac.uk/FinneganD/ssr.html" rel="alternate"></link><published>2015-02-01T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2015-02-01:/FinneganD/ssr.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
+a binaural soundscape for a project I&amp;#8217;m working on.
+Whilst a great library, I struggled to get to grips with it for a few days.
+The library makes heavy use of templates (a powerful paradigm of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
+a binaural soundscape for a project I&amp;#8217;m working on.
+Whilst a great library, I struggled to get to grips with it for a few days.
+The library makes heavy use of templates (a powerful paradigm of C++ but can be awkward to read) and is written
+using some design patterns I had never encountered&amp;nbsp;before.&lt;/p&gt;
+&lt;p&gt;I started by reading some of the source code, trying to compile the header-only library and get some test code working.
+After spending hours getting the library to compile, I was ready to try it out with some sample assets from
+&lt;a class="reference external" href="http://users.cs.cf.ac.uk/FinneganD/first-post.html#audio-defence"&gt;Audio Defence&lt;/a&gt;. Compiler errors began to arise upon simply instantiating the ssr::BinauralRenderer so I had to dig a little deeper.
+I had a read of the source code and I came across some examples that were included in the repository.
+I also emailed one of the author&amp;#8217;s of the library to ask for some help with integrating the &lt;span class="caps"&gt;SSR&lt;/span&gt; as a library into my existing framework in order to handle the binaural&amp;nbsp;rendering.&lt;/p&gt;
+&lt;p&gt;After a week of bashing my head against the wall, I&amp;#8217;ve now managed to pump out some spatial sound from the renderer, sending it out to the speakers and dumping it to a stereo file.
+I&amp;#8217;ve decided to jot down some notes here to help me remember how the thing&amp;nbsp;works!!&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The ssr::BinauralRenderer is a subclass of the apf::MimoProcessor, which is an abstract multiple input/multiple
+output processor that enables the programmer to implement the processing callback while handling the threading
+and access control of the samples held in the processor&amp;#8217;s buffer.
+The renderer is instantiated by passing a apf::paramter_map instance which is a key-value dictionary of configuration settings for the renderer. The main settings required are the sample rate, block size and the location (full path) to the &lt;span class="caps"&gt;HRIR&lt;/span&gt; file that contains the impulse responses for&amp;nbsp;convoluion.&lt;/li&gt;
+&lt;li&gt;The processor functions through use of the
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Policy-based_design"&gt;Policy Design Pattern&lt;/a&gt;. This design pattern dictates that
+a can have a number of different policies for
+responding to similar situations (ie. a class may have a number of different policies regarding the printing of
+data to a file or to a &lt;span class="caps"&gt;TCP&lt;/span&gt; stream).
+In my case, the policies that the renderer is concerned with are its interface (how to process it&amp;#8217;s data
+buffers at each audio cycle or rather how to &amp;#8216;use&amp;#8217; and interface with it) and how to act in a threaded manner.
+To specify which policies to use, you simply include the header file of the policy and define a macro called APF_MIMOPROCESSOR_INTERFACE_POLICY for the interface policy and APF_MIMOPROCESSOR_THREAD_POLICY for the thread policy. The library comes with a default thread header which just uses a single threaded policy (ie. not implemented) on windows and the &lt;span class="caps"&gt;POSIX&lt;/span&gt; library for *nix and &lt;span class="caps"&gt;OSX&lt;/span&gt;&amp;nbsp;systems.&lt;/li&gt;
+&lt;li&gt;In order to use the binaural rendererer, you need to specify the policies you want to use. The renderer relies
+on two policies in it&amp;#8217;s implementation; an interface policy and a threading policy. To use the renderer as a standalone module, the pointer policy must be used. This then opens up the audioCallback function to be called manually by the application programmer when they want to process some data. The function accepts 3 arguments, the block size of the frame to be processed, a pointer to a series of inputs and a pointer to a pair of outputs (as the binaural renderer is an instance of an N-input, 2-output processor for stereo binaural&amp;nbsp;output).&lt;/li&gt;
+&lt;li&gt;The processor requires it&amp;#8217;s input to be a pointer to a list of channels. These channels can be implemented as a
+series of vectors. The renderer&amp;#8217;s output is also expected to be a series of vectors representing the audio channels. The inputs should be a N * BLOCK_SIZE matrix where BLOCK_SIZE is the number of frames to be processed as a block during each run of the audio cycle. The N is the number of channels in the input. The outputs should be a 2 * BLOCK_SIZE matrix, indicating stereo output.
+The renderer expects a 1-1 mapping of input channels to sources, and the sources are ordered with the channels (ie Channels[0] is the first source, Channels[1] the second&amp;nbsp;etc&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;Finally, for dumping to a file, you need to transpose the channels as libsndfile reads in row-wise order,
+intereleaving the channels as it dumps to the file. This was the major source of confusion for me and it took some fiddling and multiple reads of the source repo to understand how that&amp;nbsp;worked.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So to recap; the binaural renderer can be instantiated after specifying the policies required to do it&amp;#8217;s thing.
+Next you need to generate a parameter map, a key-value dictionary containing the configuration (block size, &lt;span class="caps"&gt;HRIR&lt;/span&gt; file path etc.) for the renderer. In order to use the renderer, you pass a pointer to a list of arrays representing the channels of the audio (best to use the apf::fixed_matrix container that comes with the &lt;span class="caps"&gt;APF&lt;/span&gt;&amp;nbsp;framework).&lt;/p&gt;
+&lt;p&gt;A blunder was in dumping the output to a file; this wasn&amp;#8217;t the &lt;span class="caps"&gt;SSR&lt;/span&gt;&amp;#8217;s fault as &lt;a class="reference external" href="http://www.mega-nerd.com/libsndfile/api.html"&gt;libsndfile&lt;/a&gt; expects reads and writes in row wise order for (de)interleaving. All I had to do here is have a second output buffer which is the transposed matrix of the output list of channels. You can then call the writef() function of the SndFileHandle object in the libsndfile C++ &lt;span class="caps"&gt;API&lt;/span&gt; for writing stereo output to the&amp;nbsp;file.&lt;/p&gt;
+&lt;p&gt;Having figured all of this out I can finally move onto the image processing aspect of my project. More on this to come&amp;nbsp;later.&lt;/p&gt;
+</content><category term="binaural"></category><category term="C++"></category><category term="development"></category><category term="research"></category></entry></feed>

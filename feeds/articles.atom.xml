@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Articles</title><link href="http://users.cs.cf.ac.uk/FinneganD/" rel="alternate"></link><link href="http://users.cs.cf.ac.uk/FinneganD/feeds/articles.atom.xml" rel="self"></link><id>http://users.cs.cf.ac.uk/FinneganD/</id><updated>2018-03-05T00:00:00+01:00</updated><entry><title>How to solve virtual reality’s human perception problem</title><link href="http://users.cs.cf.ac.uk/FinneganD/the_conversation_march_2018.html" rel="alternate"></link><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:users.cs.cf.ac.uk,2018-03-05:/FinneganD/the_conversation_march_2018.html</id><summary type="html">&lt;p&gt;I wrote a piece for The Conversation on my work in psychophysics.
+You can read the &lt;a class="reference external" href="https://theconversation.com/how-to-solve-virtual-realitys-human-perception-problem-92128"&gt;published article here&lt;/a&gt;.
+Below is the original unedited draft I wrote for those&amp;nbsp;interested.&lt;/p&gt;
+&lt;div class="section" id="unedited-article"&gt;
+&lt;h2&gt;Unedited&amp;nbsp;Article&lt;/h2&gt;
+&lt;p&gt;Outside of entertainment, virtual reality (&lt;span class="caps"&gt;VR&lt;/span&gt;) has seen significant uptake in more practical domains.
+For example, using &lt;span class="caps"&gt;VR …&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;I wrote a piece for The Conversation on my work in psychophysics.
+You can read the &lt;a class="reference external" href="https://theconversation.com/how-to-solve-virtual-realitys-human-perception-problem-92128"&gt;published article here&lt;/a&gt;.
+Below is the original unedited draft I wrote for those&amp;nbsp;interested.&lt;/p&gt;
+&lt;div class="section" id="unedited-article"&gt;
+&lt;h2&gt;Unedited&amp;nbsp;Article&lt;/h2&gt;
+&lt;p&gt;Outside of entertainment, virtual reality (&lt;span class="caps"&gt;VR&lt;/span&gt;) has seen significant uptake in more practical domains.
+For example, using &lt;span class="caps"&gt;VR&lt;/span&gt; to piece together parts of a car engine to test out a look and feel before the manufacturing process. Or to try on the latest fashion accessory before you buy.
+&lt;a class="reference external" href="https://www.youtube.com/watch?v=7T4bdlRDOdk"&gt;Our own recent work&lt;/a&gt; at Bath has applied &lt;span class="caps"&gt;VR&lt;/span&gt; to exercise; imagine going to the gym to take part in the Tour de France and race against the world’s top&amp;nbsp;cyclists.&lt;/p&gt;
+&lt;p&gt;While &lt;span class="caps"&gt;VR&lt;/span&gt; has been successful, it is not without its kinks.
+Designing an interactive system does not stop at the hardware and software; the human must be factored in too.
+Perception is the term for how we take information from the world and build understanding from it.
+Our perception of reality is what we base our decisions on, and &lt;a class="reference external" href="http://dx.doi.org/10.1109/TVCG.2017.2657138"&gt;mostly determines our sense of presence in an environment&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So how to tackle the problem of designing &lt;span class="caps"&gt;VR&lt;/span&gt; systems that really transport us to new worlds with an acceptable sense of presence?
+As the scale of the problem grows, it becomes difficult to quantify the contribution each element of the experience makes to the person&amp;#8217;s sense of presence.
+For example, when watching a 360 film in &lt;span class="caps"&gt;VR&lt;/span&gt;, it is difficult to determine if the on screen animations contribute more or less than the 360 audio technology deployed in the experience.
+What we need is a method for studying &lt;span class="caps"&gt;VR&lt;/span&gt; in a reductionist manner; removing the clutter then adding piece by piece to observe the effect each has in&amp;nbsp;turn.&lt;/p&gt;
+&lt;p&gt;One theory blends together computer science and psychology: maximum likelihood estimation explains how we combine the information we receive across all our senses, integrating it together to inform our understanding of the environment.
+In its simplest form, it states that we combine sensory information in an optimal fashion; each sense contributes an estimate of the environment but it is&amp;nbsp;noisy.&lt;/p&gt;
+&lt;p&gt;This scenario is depicted in the figure below which shows how the estimates from our eyes and ears combine to give an optimal estimate somewhere in the middle.
+Note how the blue curve is slimmer than the other two showing decreased variance; the combined estimate takes the best of both worlds.
+It is also positioned between the two sensory estimates, showing a compromise of the two.
+Finally, note it is taller: this corresponds to a higher likelihood in its&amp;nbsp;estimate.&lt;/p&gt;
+&lt;img alt="Pictorial description of maximum likelihood estimation. 2 sensory signals are combined, with result being a signal of less variance, with a mean value in between the sensory signals" src="http://users.cs.cf.ac.uk/FinneganD/images/march-2018/mle.png" /&gt;
+&lt;p&gt;This has many applications in &lt;span class="caps"&gt;VR&lt;/span&gt;. &lt;a class="reference external" href="http://dx.doi.org/10.1109/SIVE.2017.7901607"&gt;Our recent work&lt;/a&gt; has applied this to solving a problem in &lt;span class="caps"&gt;VR&lt;/span&gt; with how people estimate distances.
+Imagine using a driving simulator for teaching people how to drive.
+If people compress distances in &lt;span class="caps"&gt;VR&lt;/span&gt;, then using it as a learning environment would be&amp;nbsp;inappropriate.&lt;/p&gt;
+&lt;p&gt;Understanding how people integrate information from their senses is crucial to &lt;span class="caps"&gt;VR&lt;/span&gt; because it is not solely visual. Maximum Likelihood Estimation is a tool to model how effectively a &lt;span class="caps"&gt;VR&lt;/span&gt; system &lt;em&gt;needs&lt;/em&gt; to render its multisensory environment in order to deliver the desired experience. Understanding perception will lead to more immersive &lt;span class="caps"&gt;VR&lt;/span&gt; experiences.
+It&amp;#8217;s not a matter of separating each signal from the noise; it&amp;#8217;s a matter of taking all signals with the noise to give the most likely&amp;nbsp;result.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="article"></category><category term="vr"></category></entry></feed>
