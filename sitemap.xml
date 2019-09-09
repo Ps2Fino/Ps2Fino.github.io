@@ -4,203 +4,203 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://ps2fino.github.io/</loc>
-<lastmod>2019-08-19T11:33:42-00:00</lastmod>
+<loc>http://users.cs.cf.ac.uk/FinneganD/</loc>
+<lastmod>2019-09-09T14:39:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2019-08-19T11:33:42-00:00</lastmod>
+<loc>http://users.cs.cf.ac.uk/FinneganD/archives.html</loc>
+<lastmod>2019-09-09T14:39:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2019-08-19T11:33:42-00:00</lastmod>
+<loc>http://users.cs.cf.ac.uk/FinneganD/tags.html</loc>
+<lastmod>2019-09-09T14:39:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2019-08-19T11:33:42-00:00</lastmod>
+<loc>http://users.cs.cf.ac.uk/FinneganD/categories.html</loc>
+<lastmod>2019-09-09T14:39:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pages/cv.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pages/cv.html</loc>
 <lastmod>2019-07-17T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pages/doctoral-supervision.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pages/doctoral-supervision.html</loc>
 <lastmod>2019-06-20T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pages/publications.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pages/publications.html</loc>
 <lastmod>2019-06-20T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pages/supervision.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pages/supervision.html</loc>
 <lastmod>2019-07-31T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pages/teaching.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pages/teaching.html</loc>
 <lastmod>2019-06-20T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/cadiff-may-2019.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/cadiff-may-2019.html</loc>
 <lastmod>2019-05-06T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/chiplay-2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/chiplay-2018.html</loc>
 <lastmod>2019-05-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/eccv-2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/eccv-2018.html</loc>
 <lastmod>2019-07-23T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/sherborne-science-cafe-2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/sherborne-science-cafe-2018.html</loc>
 <lastmod>2019-07-30T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/avalon-callout.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/avalon-callout.html</loc>
 <lastmod>2018-07-12T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/updater.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/updater.html</loc>
 <lastmod>2019-07-23T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/pint-of-science-may-2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/pint-of-science-may-2018.html</loc>
 <lastmod>2018-05-15T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/cubric_may_2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/cubric_may_2018.html</loc>
 <lastmod>2018-05-25T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/rejections.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/rejections.html</loc>
 <lastmod>2018-05-21T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/techspark_march_2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/techspark_march_2018.html</loc>
 <lastmod>2018-03-15T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/the_conversation_march_2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/the_conversation_march_2018.html</loc>
 <lastmod>2018-03-05T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/chi-2018.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/chi-2018.html</loc>
 <lastmod>2019-07-18T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/bath_science_cafe.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/bath_science_cafe.html</loc>
 <lastmod>2018-03-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/engd_complete.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/engd_complete.html</loc>
 <lastmod>2017-06-13T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/sive-ieeevr-2017.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/sive-ieeevr-2017.html</loc>
 <lastmod>2019-07-18T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/next-steps.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/next-steps.html</loc>
 <lastmod>2018-05-09T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/simpsons-maths.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/simpsons-maths.html</loc>
 <lastmod>2018-03-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/ssr.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/ssr.html</loc>
 <lastmod>2018-03-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/saliency.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/saliency.html</loc>
 <lastmod>2018-03-29T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://ps2fino.github.io/first-post.html</loc>
+<loc>http://users.cs.cf.ac.uk/FinneganD/first-post.html</loc>
 <lastmod>2019-05-10T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
