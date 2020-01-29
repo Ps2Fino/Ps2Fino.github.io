@@ -10,18 +10,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="cardiff, lecturer, teaching, moving, pelican, python, General Entry, " />
+<meta name="keywords" content="python, development, teaching, Technology, " />
 
-<meta property="og:title" content="Joining Cardiff University "/>
-<meta property="og:url" content="https://ps2fino.github.io/cadiff-may-2019.html" />
-<meta property="og:description" content="This week I joined the School of Computer Science &amp; Informatics at Cardiff University/Prifysgol Caerdydd. The past week has been a gentle introduction to the School, having completed induction training, I’m looking forward to taking part in the probationary training courses over the coming weeks. I’ve picked up …" />
+<meta property="og:title" content="Lancometer — Interactive quizzes in the classroom "/>
+<meta property="og:url" content="https://ps2fino.github.io/lancometer.html" />
+<meta property="og:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …" />
 <meta property="og:site_name" content="&#34;There&#39;s always money in the banana stand!&#34;" />
 <meta property="og:article:author" content="Daniel J. Finnegan" />
-<meta property="og:article:published_time" content="2019-05-06T00:00:00+02:00" />
-<meta name="twitter:title" content="Joining Cardiff University ">
-<meta name="twitter:description" content="This week I joined the School of Computer Science &amp; Informatics at Cardiff University/Prifysgol Caerdydd. The past week has been a gentle introduction to the School, having completed induction training, I’m looking forward to taking part in the probationary training courses over the coming weeks. I’ve picked up …">
+<meta property="og:article:published_time" content="2020-01-29T00:00:00+01:00" />
+<meta name="twitter:title" content="Lancometer — Interactive quizzes in the classroom ">
+<meta name="twitter:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …">
 
-        <title>Joining Cardiff University  · &#34;There&#39;s always money in the banana stand!&#34;
+        <title>Lancometer — Interactive quizzes in the classroom  · &#34;There&#39;s always money in the banana stand!&#34;
 </title>
         <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -67,7 +67,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://ps2fino.github.io/cadiff-may-2019.html"> Joining Cardiff&nbsp;University  </a></h1>
+    <h1><a href="https://ps2fino.github.io/lancometer.html"> Lancometer &#8212; Interactive quizzes in the&nbsp;classroom  </a></h1>
     </header>
 </div>
 
@@ -75,12 +75,22 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>This week I joined the <a href="https://www.cardiff.ac.uk/computer-science">School of Computer Science <span class="amp">&amp;</span> Informatics</a> at Cardiff University/Prifysgol Caerdydd.
-The past week has been a gentle introduction to the School, having completed induction training, I&#8217;m looking forward to taking part in the probationary training courses over the coming weeks.
-I&#8217;ve picked up my staff access card, shifted over my website from Bath, which was painless thanks to <a href="https://blog.getpelican.com/">pelican</a> and my own custom batch and python scripts, and set up my <span class="caps">HR</span> account here at the university.
-I&#8217;ve also spent the past few days browsing the university&#8217;s intranet soaking up all the information I&nbsp;can.</p>
-<p>I&#8217;m slowly getting to know the city, and am looking forward to meeting all my new colleagues at the University.
-Setting my goals for the summer, I&#8217;m excited about everything I&#8217;m going to learn and teach in my new post and meeting the new 2019/20 cohort of students at&nbsp;Cardiff.</p>
+            <p>Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like <a href="https://www.mentimeter.com/">MentiMeter</a> and <a href="https://socrative.com/">Socrative</a>.
+Whilst I was intrigued (I&#8217;m always looking for ways to engage my students) to the advantages they may offer towards the student experience and learning, I wasn&#8217;t prepared to change my workflow to fit in to any specific format such technologies may prescribe: I generate <span class="caps">HTML</span> presentations using <a href="https://bookdown.org/">bookdown</a> and don&#8217;t use PowerPoint for example.
+I also didn&#8217;t want to have to download any mobile application or worse, force my students to download anything (A <span class="caps">UX</span> nightmare for the&nbsp;classroom!)</p>
+<p>So over the 2019/20 christmas period, I developed a small web application to facilitate interactive sessions during my lectures.
+Hosted on the school&#8217;s <a href="https://www.openstack.org/">OpenStack</a> platform, its simple for me to simply embed the page in an <code>iframe</code> using <a href="https://yihui.org/knitr/">knitr</a> and go from there.
+My web development skills were rusty (haven&#8217;t really done anything web based since late 2015) so it seemed like a good exercise and christmas was the only time I&#8217;d get to do it before the new teaching semester&nbsp;began.</p>
+<p>Having trialled it in the classroom, here are my initial observations (which I&#8217;ll add to as I see&nbsp;fit):</p>
+<ul>
+<li>Students <em>really</em> liked it. Like <strong>a lot</strong>!</li>
+<li>I was skeptical as I&#8217;ve heard the argument where its really just a digital &#8216;show of hands&#8217;. However, it really is more than that. For example, its easier to visualize in a bar chart a show of hands for a set of options rather than go through each in turn. Also, and here&#8217;s where I think the magic lies and is worth further study, I can see how the show of hands changes <em>over time</em>. I have some ideas for how to study this in an experiment which I&#8217;ll do at some&nbsp;point.</li>
+<li>Having my own system means I can discuss the internals of the system: this is useful when teaching a module like <a href="https://data.cardiff.ac.uk/legacy/grails/module/CM1202/19A.html"><span class="caps">CM1202</span></a>. Students are also <em>really interested</em> in seeing how things work (especially first years) and I could create a welcoming environment for feedback where they can voice their opinions and suggest new features. Suggestions are one thing but when I can then go and <em>implement</em> their suggestions, and they see this in a future lecture (for example, the &#8216;Show Answer&#8217; utility was something I was unsure about at first but implemented it after an initial pilot at which point a student also thought it would be a good&nbsp;idea).</li>
+</ul>
+<p>Here&#8217;s a video of Lancometer in action.
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KwnxS3B43Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p></p>
             
             
             <hr/>
@@ -88,22 +98,13 @@ Setting my goals for the summer, I&#8217;m excited about everything I&#8217;m go
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2019-05-06T00:00:00+02:00">May 6, 2019</time>
+            <time pubdate="pubdate" datetime="2020-01-29T00:00:00+01:00">Jan 29, 2020</time>
             <h4>Category</h4>
-            <a class="category-link" href="https://ps2fino.github.io/categories.html#general-entry-ref">General Entry</a>
+            <a class="category-link" href="https://ps2fino.github.io/categories.html#technology-ref">Technology</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://ps2fino.github.io/tags.html#cardiff-ref">cardiff
-                    <span>1</span>
-</a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#lecturer-ref">lecturer
-                    <span>1</span>
-</a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#moving-ref">moving
-                    <span>1</span>
-</a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#pelican-ref">pelican
-                    <span>1</span>
+                <li><a href="https://ps2fino.github.io/tags.html#development-ref">development
+                    <span>4</span>
 </a></li>
                 <li><a href="https://ps2fino.github.io/tags.html#python-ref">python
                     <span>3</span>
