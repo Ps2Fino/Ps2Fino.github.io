@@ -10,18 +10,12 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="python, development, teaching, Technology, " />
-
-<meta property="og:title" content="Lancometer — Interactive quizzes in the classroom "/>
-<meta property="og:url" content="https://ps2fino.github.io/lancometer.html" />
-<meta property="og:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …" />
+<meta property="og:title" content="Dr Daniel J. Finnegan&#39;s homepage"/>
+<meta name="twitter:title" content="Dr Daniel J. Finnegan&#39;s homepage">
+<meta property="og:url" content="https://ps2fino.github.io" />
 <meta property="og:site_name" content="&#34;There&#39;s always money in the banana stand!&#34;" />
 <meta property="og:article:author" content="Daniel J. Finnegan" />
-<meta property="og:article:published_time" content="2020-01-29T00:00:00+01:00" />
-<meta name="twitter:title" content="Lancometer — Interactive quizzes in the classroom ">
-<meta name="twitter:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …">
-
-        <title>Lancometer — Interactive quizzes in the classroom  · &#34;There&#39;s always money in the banana stand!&#34;
+        <title>&#34;There&#39;s always money in the banana stand!&#34;
 </title>
         <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -44,7 +38,7 @@
                     <a class="brand" href="https://ps2fino.github.io/"><span class=site-name>"There's always money in the banana stand!"</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
-                            <li ><a href="https://ps2fino.github.io">Home</a></li>
+                            <li  class="active"><a href="https://ps2fino.github.io">Home</a></li>
 <!--                             <li ><a href="https://ps2fino.github.io/pages/publications.html">Publications</a></li> -->
                             <li ><a href="https://ps2fino.github.io/pages/cv.html">Curriculum&nbsp;Vitae</a></li>
                             <li ><a href="https://ps2fino.github.io/pages/doctoral-supervision.html">Postgraduate&nbsp;Opportunities</a></li>
@@ -64,56 +58,56 @@
             <div class="row-fluid">
                 <div class="span1"></div>
                 <div class="span10">
-<article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://ps2fino.github.io/lancometer.html"> Lancometer &#8212; Interactive quizzes in the&nbsp;classroom  </a></h1>
+    <h1><a href="https://ps2fino.github.io">Dr Daniel J. Finnegan's homepage</a></h1>
     </header>
-</div>
 
-<div class="row-fluid">
-        <div class="span8 offset2 article-content">
+    <div class="row-fluid">
+        <div class="span8 offset2">
+            <header>
+            <h1 id="about-me">About me</h1>
+            </header>
 
-            
-            <p>Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like <a href="https://www.mentimeter.com/">MentiMeter</a> and <a href="https://socrative.com/">Socrative</a>.
-Whilst I was intrigued (I&#8217;m always looking for ways to engage my students) to the advantages they may offer towards the student experience and learning, I wasn&#8217;t prepared to change my workflow to fit in to any specific format such technologies may prescribe: I generate <span class="caps">HTML</span> presentations using <a href="https://bookdown.org/">bookdown</a> and don&#8217;t use PowerPoint for example.
-I also didn&#8217;t want to have to download any mobile application or worse, force my students to download anything (A <span class="caps">UX</span> nightmare for the&nbsp;classroom!)</p>
-<p>So over the 2019/20 christmas period, I developed a small web application to facilitate interactive sessions during my lectures.
-Hosted on the school&#8217;s <a href="https://www.openstack.org/">OpenStack</a> platform, all I do is simply embed the page in an <code>iframe</code> using <a href="https://yihui.org/knitr/">knitr</a> and go from there.
-The students just point their device (phone, laptop, whatever) to a <span class="caps">URL</span> or use the generated <span class="caps">QR</span> code and they can instantly join (no login/codes required).
-My web development skills were rusty (haven&#8217;t really done anything web based since late 2015) so it seemed like a good exercise and christmas was the only time I&#8217;d get to do it before the new teaching semester&nbsp;began.</p>
-<p>Having trialled it in the classroom, here are my initial observations (which I&#8217;ll add to as I see&nbsp;fit):</p>
-<ul>
-<li>Students <em>really</em> liked it. Like <strong>a lot</strong>!</li>
-<li>I was skeptical as I&#8217;ve heard the argument where its really just a digital &#8216;show of hands&#8217;. However, it really is more than that. For example, its easier to visualize in a bar chart a show of hands for a set of options rather than go through each in turn. Also, and here&#8217;s where I think the magic lies and is worth further study, I can see how the show of hands changes <em>over time</em>. I have some ideas for how to study this in an experiment which I&#8217;ll do at some&nbsp;point.</li>
-<li>Having my own system means I can discuss the internals of the system: this is useful when teaching a module like <a href="https://data.cardiff.ac.uk/legacy/grails/module/CM1202/19A.html"><span class="caps">CM1202</span></a>. Students are also <em>really interested</em> in seeing how things work (especially first years) and I could create a welcoming environment for feedback where they can voice their opinions and suggest new features. Suggestions are one thing but when I can then go and <em>implement</em> their suggestions, and they see this in a future lecture (for example, the &#8216;Show Answer&#8217; utility was something I was unsure about at first but implemented it after an initial pilot at which point a student also thought it would be a good idea), students <em>really</em> appreciate&nbsp;it.</li>
-</ul>
-<p>Here&#8217;s a video of Lancometer in action.
+
+
+            <div class="article-content">
+                <p>
+I'm an Assistant Professor (Lecturer) in the <a target="_blank" href="https://www.cardiff.ac.uk/computer-science">School of Computer Science & Infomatics</a> at <a href="https://www.cardiff.ac.uk/">Cardiff University</a> working on human perception in Virtual Reality with the <a target="_blank" href="https://www.cardiff.ac.uk/computer-science/research/groups/complex-systems">Complex Systems</a> group.
+If you are interested in doing a PhD, MRes, or other postgraduate research degree with me, <a href="https://ps2fino.github.io/pages/doctoral-supervision.html">please read this page</a>.
+
+<p>
+I work on many different projects, and you can see my <a href="https://ps2fino.github.io/pages/publications.html">published work here</a>.
+I earned my <a target="_blank" href="http://www.digital-entertainment.org/">EngD in Digital Media</a> from <a href="https://www.bath.ac.uk/departments/department-of-computer-science/">Bath</a>, and before this I received my BSc in Computer Science from <a target="_blank" href="https://www.cs.ucd.ie/">UCD</a>.
+I'm always happy to meet new people, and am open to collaboration opportunities on projects involving perception, cognition, virtual reality, machine learning, software engineering, game design &amp; development, and more generally the cultural impact of games.
+
+I'm co-director of <a href="https://www.echogames.co.uk/">Echo Games</a>, a community interest company (not-for-profit) developing games and experiences with an emphasis on social change I founded with <a target="_blank" href="https://www.danieladeangeli.com/">Daniela De Angeli</a> and <a target="_blank" href="https://www.bathspa.ac.uk/our-people/lee-scott/">Lee Scott</a>.
+We're always looking for new clients keen on exploring how games can be used to engage audiences beyond entertainment.
+You can contact me by sending me a message on most social media channels by using the links to the right.
+We can chat science over on <a href="https://twitter.com/Lancophone">Twitter</a>.
+
+<p>
+Here's a video reel of recent projects I've supervised/led which you may find interesting/useful to learn more about the kinds of things I do.
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KwnxS3B43Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p></p>
-            
-            
-            <hr/>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xdRDv9zrgqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+            </div>
+
+
         </div>
+
+
         <section>
-        <div class="span2" style="float:right;font-size:0.9em;">
-            <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2020-01-29T00:00:00+01:00">Jan 29, 2020</time>
-            <h4>Category</h4>
-            <a class="category-link" href="https://ps2fino.github.io/categories.html#technology-ref">Technology</a>
-            <h4>Tags</h4>
-            <ul class="list-of-tags tags-in-article">
-                <li><a href="https://ps2fino.github.io/tags.html#development-ref">development
-                    <span>4</span>
-</a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#python-ref">python
-                    <span>3</span>
-</a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#teaching-ref">teaching
-                    <span>3</span>
-</a></li>
-            </ul>
+            <div class="span2" style="float:right;font-size:0.9em;">
+<img src="https://ps2fino.github.io/images/profile-pic.jpg" alt="My profile picture" title="My profile picture" />
+<div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
+<h4>
+	Office Address: </br>
+	S/2.08 </br>
+	Queen's Buildings - South Building, 5 The Parade, Newport Road </br>
+	CF24 3AA
+</h4>
+</div>
 <div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
 <h4>Look me up on orcid</h4>
 
@@ -132,10 +126,73 @@ My web development skills were rusty (haven&#8217;t really done anything web bas
     <a href="https://www.cardiff.ac.uk/people/view/1496260-finnegan-daniel" title="My Cardiff Homepage" class="sidebar-social-links" target="_blank">
     <i class="fa fa-inst-link sidebar-social-links"><img src="https://ps2fino.github.io/images/cardiff-logo-icon.jpg" /></i></a>
 </div>
-        </div>
+            </div>
         </section>
+
+    </div>
+
+    <div class="row-fluid">
+        <div class="span8 offset2">
+            <header>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="https://ps2fino.github.io/archives.html">all posts</a></h1>
+            </header>
+        <div class="recent-posts">
+            <article>
+                <a href="https://ps2fino.github.io/lancometer.html">Lancometer &#8212; Interactive quizzes in the&nbsp;classroom  </a>
+                <section>
+                    posted in
+                <a href="https://ps2fino.github.io/categories.html#technology-ref">Technology</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2020-01-29T00:00:00+01:00">Wed, 29 Jan 2020</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="https://ps2fino.github.io/cadiff-may-2019.html">Joining Cardiff&nbsp;University  </a>
+                <section>
+                    posted in
+                <a href="https://ps2fino.github.io/categories.html#general-entry-ref">General Entry</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2019-05-06T00:00:00+02:00">Mon, 06 May 2019</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="https://ps2fino.github.io/chiplay-2018.html">New Publication @ <span class="caps">CHI</span> <span class="caps">PLAY</span>&nbsp;2018!  </a>
+                <section>
+                    posted in
+                <a href="https://ps2fino.github.io/categories.html#papers-ref">Papers</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-09-03T00:00:00+02:00">Mon, 03 Sep 2018</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="https://ps2fino.github.io/eccv-2018.html">New Publication @ <span class="caps">ECCV</span>&nbsp;2018!  </a>
+                <section>
+                    posted in
+                <a href="https://ps2fino.github.io/categories.html#papers-ref">Papers</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-07-26T00:00:00+02:00">Thu, 26 Jul 2018</time>
+                </div>
+                </section>
+            </article>
+            <article>
+                <a href="https://ps2fino.github.io/sherborne-science-cafe-2018.html">Invited talk at the Sherborne Science&nbsp;Cafe  </a>
+                <section>
+                    posted in
+                <a href="https://ps2fino.github.io/categories.html#talks-ref">Talks</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2018-07-26T00:00:00+02:00">Thu, 26 Jul 2018</time>
+                </div>
+                </section>
+            </article>
+
+        </div>
+        </div>
+    </div>
+
 </div>
-</article>
                 </div>
                 <div class="span1"></div>
             </div>
@@ -149,7 +206,7 @@ My web development skills were rusty (haven&#8217;t really done anything web bas
         <li class="elegant-power">Powered by <a href="https://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="https://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>
-</footer>            <script src="https://code.jquery.com/jquery.min.js"></script>
+</footer>        <script src="https://code.jquery.com/jquery.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script>
             function validateForm(query)
@@ -157,8 +214,6 @@ My web development skills were rusty (haven&#8217;t really done anything web bas
                 return (query.length > 0);
             }
         </script>
-
-    
     </body>
     <!-- Theme: Elegant built for Pelican
     License : https://oncrashreboot.com/pelican-elegant -->
