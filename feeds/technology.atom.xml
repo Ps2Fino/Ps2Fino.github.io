@@ -7,7 +7,7 @@ I also didn&amp;#8217;t want to have to download any mobile application or worse
 Hosted on the school&amp;#8217;s &lt;a href="https://www.openstack.org/"&gt;OpenStack&lt;/a&gt; platform, all I do is simply embed the page in an &lt;code&gt;iframe&lt;/code&gt; using &lt;a href="https://yihui.org/knitr/"&gt;knitr&lt;/a&gt; and go from there.
 The students just point their device (phone, laptop, whatever) to a &lt;span class="caps"&gt;URL&lt;/span&gt; or use the generated &lt;span class="caps"&gt;QR&lt;/span&gt; code and they can instantly join (no login/codes required).
 My web development skills were rusty (haven&amp;#8217;t really done anything web based since late 2015) so it seemed like a good exercise and christmas was the only time I&amp;#8217;d get to do it before the new teaching semester&amp;nbsp;began.&lt;/p&gt;
-&lt;p&gt;Having trialled it in the classroom, here are my initial observations (which I&amp;#8217;ll add to as I see&amp;nbsp;fit):&lt;/p&gt;
+&lt;p&gt;Having trialled it in the classroom, here are my initial&amp;nbsp;observations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Students &lt;em&gt;really&lt;/em&gt; liked it. Like &lt;strong&gt;a lot&lt;/strong&gt;!&lt;/li&gt;
 &lt;li&gt;I was skeptical as I&amp;#8217;ve heard the argument where its really just a digital &amp;#8216;show of hands&amp;#8217;. However, it really is more than that. For example, its easier to visualize in a bar chart a show of hands for a set of options rather than go through each in turn. Also, and here&amp;#8217;s where I think the magic lies and is worth further study, I can see how the show of hands changes &lt;em&gt;over time&lt;/em&gt;. I have some ideas for how to study this in an experiment which I&amp;#8217;ll do at some&amp;nbsp;point.&lt;/li&gt;
