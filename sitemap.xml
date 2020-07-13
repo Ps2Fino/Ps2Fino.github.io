@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://ps2fino.github.io/</loc>
-<lastmod>2020-07-13T14:03:57-00:00</lastmod>
+<lastmod>2020-07-13T14:08:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2020-07-13T14:03:57-00:00</lastmod>
+<lastmod>2020-07-13T14:08:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2020-07-13T14:03:57-00:00</lastmod>
+<lastmod>2020-07-13T14:08:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2020-07-13T14:03:57-00:00</lastmod>
+<lastmod>2020-07-13T14:08:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -62,6 +62,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/pages/teaching.html</loc>
 <lastmod>2019-06-20T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://ps2fino.github.io/wales-tech-week-2020.html</loc>
+<lastmod>2020-07-13T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -104,13 +111,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/sherborne-science-cafe-2018.html</loc>
 <lastmod>2019-07-30T00:00:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://ps2fino.github.io/wales-tech-week-2020.html</loc>
-<lastmod>2018-07-13T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
