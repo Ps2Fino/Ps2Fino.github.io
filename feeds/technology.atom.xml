@@ -1,5 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Technology</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/technology.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2020-01-29T00:00:00+01:00</updated><entry><title>Lancometer — Interactive quizzes in the classroom</title><link href="https://ps2fino.github.io/lancometer.html" rel="alternate"></link><published>2020-01-29T00:00:00+01:00</published><updated>2020-01-29T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2020-01-29:/lancometer.html</id><summary type="html">&lt;p&gt;Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like &lt;a href="https://www.mentimeter.com/"&gt;MentiMeter&lt;/a&gt; and &lt;a href="https://socrative.com/"&gt;Socrative&lt;/a&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Technology</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/technology.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2022-10-24T12:51:17+02:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2022-10-24T12:51:17+02:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
+I dread it.
+Not regarding the content: I believe students&amp;#8212;when giving the right conditions to express themselves and learn&amp;#8212;can produce fantastic scholarship.
+I&amp;#8217;m always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Marking.
+I dread it.
+Not regarding the content: I believe students&amp;#8212;when giving the right conditions to express themselves and learn&amp;#8212;can produce fantastic scholarship.
+I&amp;#8217;m always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning.
+However: the burden around the &lt;em&gt;procedure&lt;/em&gt; of marking is something that is most unwelcome.
+Every year I waste time having to manage hundreds of files, not counting appendices and miscellaneous image files students may include with their coursework submission.
+So I built&amp;nbsp;this.&lt;/p&gt;
+&lt;h2&gt;What is&amp;nbsp;Lancomarker?&lt;/h2&gt;
+&lt;p&gt;Lancomarker is a suite of web applications for automating much of the student coursework marking process.
+It consists of 3 main tools: &lt;a target="_blank" href="https://lancomarker-lancomarker.apps.openshift.cs.cf.ac.uk/"&gt;&lt;i&gt;Lancomarker&lt;/i&gt;&lt;/a&gt;, &lt;a target="_blank" href="https://lancomarker-processing-lancomarker.apps.openshift.cs.cf.ac.uk/"&gt;&lt;i&gt;Lancomarker Processing&lt;/i&gt;&lt;/a&gt;, and &lt;a target="_blank" href="https://users.cs.cf.ac.uk/FinneganD"&gt;&lt;i&gt;Lancomarker &lt;span class="caps"&gt;SIA&lt;/span&gt;&lt;/i&gt;&lt;/a&gt;.
+Together, these tools form a pipeline for information flow; students write their coursework, submit via the familar channels, and then the instructor can mark submissions and generate feedback with less administrative&amp;nbsp;effort.&lt;/p&gt;
+&lt;h2&gt;Why did I build&amp;nbsp;Lancomarker?&lt;/h2&gt;
+&lt;p&gt;In 2021, I spent 6 weeks marking student coursework.
+This was intense, and meant I had no capacity for engaging in any other academic commitment during this time.
+Reflecting on the workload, I realized there were severe bottlenecks throughout the marking process.&amp;nbsp;Namely, &lt;/p&gt;
+&lt;p&gt;1) Student submissions: My coursework consists of essay/prose, which although may appear unusual for a computing course, is essential to assessing students&amp;#8217; engagement with the course material as it encourages critical thinking and communication. Both of these skills are necessary for software engineers to work in teams of people with broad skillsets.
+To facilitate this, students submit their coursework in &lt;span class="caps"&gt;PDF&lt;/span&gt; formats, however &lt;span class="caps"&gt;PDF&lt;/span&gt; is a terrible format for several reasons. First, it is immutable (for the most part): one may annotate a &lt;span class="caps"&gt;PDF&lt;/span&gt; file, but these annotations are not easily updated/modified. Secondly, it is not machine readable: it is non-trivial to parse &lt;span class="caps"&gt;PDF&lt;/span&gt; annotations and/or convert them to alternative formats. This is useful for transcribing comments for visually impaired students and/or collating comments into a report for feeding back to the school.
+To combat this, some may suggest a &lt;span class="caps"&gt;WYSIWYG&lt;/span&gt; editor for example Microsoft Word. However, these all come with their own file format problems, for example incompatability across operating systems and/or how images and text are rendered. In the past, I have tried giving students Word templates to use but this has never been a satisfactory solution to the&amp;nbsp;problem.&lt;/p&gt;
+&lt;p&gt;All of these factors contributed to unnecessary administrative burden when marking as I would open and close several different applications simply to read a student&amp;#8217;s submission. This is related to the next&amp;nbsp;point.&lt;/p&gt;
+&lt;p&gt;2) Indexing student coursework: With relaxed criteria re: naming and file type, finding student submissions can be a nightmare. I have devised the following (very rough) model for marking a coursework&amp;nbsp;submission:&lt;/p&gt;
+&lt;div class="math"&gt;$$ 
+T_M = T_f + T_o + T_v + T_m
+$$&lt;/div&gt;
+&lt;p&gt;where &lt;span class="math"&gt;\(T_f\)&lt;/span&gt; is the time it takes to &lt;em&gt;find&lt;/em&gt; a student&amp;#8217;s submission in the &lt;span class="caps"&gt;VLE&lt;/span&gt;/my local file system, &lt;span class="math"&gt;\(T_o\)&lt;/span&gt; is the time to &lt;em&gt;open&lt;/em&gt; the file on my computerm which itself is a product of processor speed, number of concurrent processes, memory etc), &lt;span class="math"&gt;\(T_v\)&lt;/span&gt; is the time to &lt;em&gt;verify&lt;/em&gt; a submission, which can involve starting the whole process again to find and open a different file, and/or confirming the submission is valid (e.g., follows the rules/assessment criteria).
+&lt;span class="math"&gt;\(T_m\)&lt;/span&gt; is the time taken to &lt;em&gt;mark&lt;/em&gt; a piece of coursework.
+Let&amp;#8217;s assume this is kept constant as per &lt;span class="caps"&gt;WAM&lt;/span&gt; (spoiler: it&amp;#8217;s often&amp;nbsp;not).&lt;/p&gt;
+&lt;p&gt;Below is a simulation I wrote of this model.
+I&amp;#8217;ve removed the constant &lt;span class="math"&gt;\(T_m\)&lt;/span&gt; term for visualization.
+Bear in mind this is a &lt;em&gt;very optimistic&lt;/em&gt; model, so times could be a lot&amp;nbsp;worse!&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/simulated_marking_sessions.jpg" max-width=100% height=auto&gt;&lt;/p&gt;
+&lt;p&gt;At best, this is 1.8 hours of my life wasted because file management is time intensive.
+Lancomarker aims to eliminate this time wasting&amp;nbsp;completely.&lt;/p&gt;
+&lt;p&gt;3) Preparing student marks for submission to school boards: In parallel to marking, I had to manually update a spreadsheet with each students&amp;#8217; marks. This is not just another time sink, but is also an opportunity for human error as I transcribe the mark manually by hand from the &lt;span class="caps"&gt;PDF&lt;/span&gt; comments/rubric.
+Having done this several times and realized it was silly, I&amp;#8217;d had&amp;nbsp;enough.&lt;/p&gt;
+&lt;p&gt;So I built&amp;nbsp;Lancomarker.&lt;/p&gt;
+&lt;h2&gt;How does it&amp;nbsp;work?&lt;/h2&gt;
+&lt;p&gt;Below is a system diagram of Lancomarker.
+The pipeline is as&amp;nbsp;follows:&lt;/p&gt;
+&lt;p&gt;1) Students complete their coursework via the &lt;span class="caps"&gt;SIA&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; simply writing the text file.
+This is the first time gain: I teach computer science students, which means having a basic text editor is a prerequisite.
+They can use any text editor they want (even create their own), and complete their coursework.
+Factor over form: what matters is the content, not the presentation here.
+The &lt;span class="caps"&gt;SIA&lt;/span&gt; gives several other benefits; I can dictate filenames (something that comes useful later on) as students more often than not will incorrectly name a file through accident or malice.
+I can also enforce coursework constraints such as appendices (e.g., &lt;span class="caps"&gt;PNG&lt;/span&gt;/&lt;span class="caps"&gt;JPG&lt;/span&gt; only for images) and character limits for written&amp;nbsp;work.&lt;/p&gt;
+&lt;p&gt;2) Students submit their work using standard channels.
+This makes the system very flexible, as there is no need for them to learn a new platform if they don&amp;#8217;t want to, and there is no effort on &lt;span class="caps"&gt;IT&lt;/span&gt; and/or admin to accommodate lancomarker format submissions.
+From outside Lancomarker, the existing submission procedure is as it&amp;nbsp;was.&lt;/p&gt;
+&lt;p&gt;3) Submissions are batch downloaded, zipped up, then pre-processed using Lancomarker Processing.
+This step creates an intermediary representation of submissions.
+At this point, the instructor may generate unmarked PDFs of all submissions to mark the old way should they choose to.
+This might sound odd, but it is critical to team work: my modules are (fortunately) supported by some TAs who may assist with marking, and who may not wish to use Lancomarker, instead preferring to read PDFs.
+The point is this: as all submissions have been processed, they are now &lt;em&gt;readily indexable&lt;/em&gt; meaning they can be found based on a known &lt;span class="caps"&gt;ID&lt;/span&gt; (e.g., student number) rather than whatever file name was provided by the student.
+Should the instructor wish to continue with lancomarker, they can then process submissions further into the lancomarker&amp;nbsp;format.&lt;/p&gt;
+&lt;p&gt;4) Submissions are then uploaded to Lancomarker.
+Using Lancomarker, I can now pull submissions directly from a database, giving me direct access to a submission with a single click.
+Lancomarker presents the submission as rendered &lt;span class="caps"&gt;HTML&lt;/span&gt;, and provides a &lt;span class="caps"&gt;UI&lt;/span&gt; for associating a mark value to each section of the written report.
+This also facilitates error checking: as Lancomarker knows the maximum marks for a section, the instructor can&amp;#8217;t accidentally assign a mark greater than the limit as may happen when simply marking a &lt;span class="caps"&gt;PDF&lt;/span&gt;.
+The &lt;span class="caps"&gt;UI&lt;/span&gt; also facilitates freetext comments for&amp;nbsp;sections.&lt;/p&gt;
+&lt;p&gt;5) Marked submissions are downloaded from Lancomarker, then processed further using Lancomarker Processing.
+Here marked PDFs are generated, along with any &lt;span class="caps"&gt;CSV&lt;/span&gt; spreadsheets required.
+As everything is machine readable, it is trivial to import marked submissions into whatever statistics software tickles your fancy for generating summary reports&amp;nbsp;etc.&lt;/p&gt;
+&lt;p&gt;All in all, software should &lt;em&gt;help&lt;/em&gt;, not &lt;em&gt;hinder&lt;/em&gt; work.
+Marking coursework is a widely mandated activity for academics, so I was surprised that few were looking to improve the processes around marking, at least within my immediate network.
+Lancomarker is deployed in the 2022/23 academic year.
+Let&amp;#8217;s see if my theoretical time gain holds up in&amp;nbsp;practice.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Technology"></category><category term="javascript"></category><category term="learning and teaching"></category><category term="innovation"></category><category term="development"></category></entry><entry><title>Lancometer — Interactive quizzes in the classroom</title><link href="https://ps2fino.github.io/lancometer.html" rel="alternate"></link><published>2020-01-29T00:00:00+01:00</published><updated>2020-02-21T14:25:38+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2020-01-29:/lancometer.html</id><summary type="html">&lt;p&gt;Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like &lt;a href="https://www.mentimeter.com/"&gt;MentiMeter&lt;/a&gt; and &lt;a href="https://socrative.com/"&gt;Socrative&lt;/a&gt;.
 Whilst I was intrigued (I&amp;#8217;m always looking for ways to engage my students) to the advantages …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like &lt;a href="https://www.mentimeter.com/"&gt;MentiMeter&lt;/a&gt; and &lt;a href="https://socrative.com/"&gt;Socrative&lt;/a&gt;.
 Whilst I was intrigued (I&amp;#8217;m always looking for ways to engage my students) to the advantages they may offer towards the student experience and learning, I wasn&amp;#8217;t prepared to change my workflow to fit in to any specific format such technologies may prescribe: I generate &lt;span class="caps"&gt;HTML&lt;/span&gt; presentations using &lt;a href="https://bookdown.org/"&gt;bookdown&lt;/a&gt; and don&amp;#8217;t use PowerPoint for example.
 I also didn&amp;#8217;t want to have to download any mobile application or worse, force my students to download anything (A &lt;span class="caps"&gt;UX&lt;/span&gt; nightmare for the&amp;nbsp;classroom!)&lt;/p&gt;
@@ -13,11 +142,12 @@ My web development skills were rusty (haven&amp;#8217;t really done anything web
 &lt;li&gt;I was skeptical as I&amp;#8217;ve heard the argument where its really just a digital &amp;#8216;show of hands&amp;#8217;. However, it really is more than that. For example, its easier to visualize in a bar chart a show of hands for a set of options rather than go through each in turn. Also, and here&amp;#8217;s where I think the magic lies and is worth further study, I can see how the show of hands changes &lt;em&gt;over time&lt;/em&gt;. I have some ideas for how to study this in an experiment which I&amp;#8217;ll do at some&amp;nbsp;point.&lt;/li&gt;
 &lt;li&gt;Having my own system means I can discuss the internals of the system: this is useful when teaching a module like &lt;a href="https://data.cardiff.ac.uk/legacy/grails/module/CM1202/19A.html"&gt;&lt;span class="caps"&gt;CM1202&lt;/span&gt;&lt;/a&gt;. Students are also &lt;em&gt;really interested&lt;/em&gt; in seeing how things work (especially first years) and I could create a welcoming environment for feedback where they can voice their opinions and suggest new features. Suggestions are one thing but when I can then go and &lt;em&gt;implement&lt;/em&gt; their suggestions, and they see this in a future lecture (for example, the &amp;#8216;Show Answer&amp;#8217; utility was something I was unsure about at first but implemented it after an initial pilot at which point a student also thought it would be a good idea), students &lt;em&gt;really&lt;/em&gt; appreciate&amp;nbsp;it.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Here&amp;#8217;s a video of Lancometer* in action.
+&lt;p&gt;Here&amp;#8217;s a video of Lancometer* in&amp;nbsp;action.&lt;/p&gt;
 &lt;p align="center"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KwnxS3B43Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;* Or perhaps you were looking for &lt;a href="https://thelincolnite.co.uk/2019/01/limited-prints-a-fitting-tribute-to-dambusters/"&gt;this&lt;/a&gt;&amp;nbsp;lancometer&amp;#8230;&lt;/p&gt;</content><category term="python"></category><category term="development"></category><category term="teaching"></category><category term="lancometer"></category></entry><entry><title>Avalon board game companion application</title><link href="https://ps2fino.github.io/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2018-07-12T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-07-12:/avalon-callout.html</id><summary type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;* Or perhaps you were looking for &lt;a href="https://thelincolnite.co.uk/2019/01/limited-prints-a-fitting-tribute-to-dambusters/"&gt;this&lt;/a&gt;&amp;nbsp;lancometer&amp;#8230;&lt;/p&gt;</content><category term="Technology"></category><category term="python"></category><category term="development"></category><category term="teaching"></category><category term="lancometer"></category></entry><entry><title>Avalon board game companion application</title><link href="https://ps2fino.github.io/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2019-06-21T17:00:16+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-07-12:/avalon-callout.html</id><summary type="html">&lt;p&gt;The latest version is now available as a &lt;a href="https://play.google.com/store/apps/details?id=com.Lancophone.AvalonCallout"&gt;&lt;em&gt;free download&lt;/em&gt;&lt;/a&gt; on the Google Play&amp;nbsp;Store.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;This past week during the evenings, I wrote a small android application just for fun.
 It consists of a 3 screen &lt;span class="caps"&gt;UI&lt;/span&gt; for selecting the characters in the game of &lt;a href="https://boardgamegeek.com/boardgame/128882/resistance-avalon"&gt;Avalon&lt;/a&gt;.
@@ -30,7 +160,7 @@ Once selected, it generates the &lt;a href="https://youtu.be/b5iJjQJkWEQ?t=4m30s
 However, some people may find it useful; I know I sure&amp;nbsp;will!&lt;/p&gt;
 &lt;p&gt;Its &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It is available from my &lt;a href="https://github.com/Ps2Fino/Avalon-App/"&gt;Github&lt;/a&gt;.
-Its also &lt;a href="https://ps2fino.github.io/updater.html"&gt;Updater&lt;/a&gt;&amp;nbsp;compatible.&lt;/p&gt;</content><category term="C#"></category><category term="development"></category></entry><entry><title>Updater — A cmake template engine</title><link href="https://ps2fino.github.io/updater.html" rel="alternate"></link><published>2018-05-30T00:00:00+02:00</published><updated>2019-07-23T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-05-30:/updater.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
+Its also &lt;a href="https://ps2fino.github.io/updater.html"&gt;Updater&lt;/a&gt;&amp;nbsp;compatible.&lt;/p&gt;</content><category term="Technology"></category><category term="C#"></category><category term="development"></category></entry><entry><title>Updater — A cmake template engine</title><link href="https://ps2fino.github.io/updater.html" rel="alternate"></link><published>2018-05-30T00:00:00+02:00</published><updated>2019-07-23T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-05-30:/updater.html</id><summary type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
 Updater essentially creates a templated directory structure along with initial &lt;code&gt;CMakeLists.txt&lt;/code&gt; files.
 This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
 &lt;p&gt;Updater grew …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I&amp;#8217;m delighted to finally release Updater, a handy little template engine written in python for creating boilerplate project scaffolding code with one click.
@@ -40,7 +170,7 @@ This helps ensure that the project will always be&amp;nbsp;compilable.&lt;/p&gt;
 As they&amp;#8217;re still learning how to program, it can be overwhelming for them to ensure their code is well maintained and structured.
 Using Updater enables them to focus on the implementation task, while giving me some assurance that I will always be able to build the&amp;nbsp;project.&lt;/p&gt;
 &lt;p&gt;Updater is &lt;a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"&gt;&lt;span class="caps"&gt;FOSS&lt;/span&gt;&lt;/a&gt; using the &lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;&lt;span class="caps"&gt;BSD&lt;/span&gt;-3 license&lt;/a&gt;.
-It is available from my &lt;a href="https://github.com/Ps2Fino/Updater/releases/tag/v1.5.1"&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="python"></category><category term="development"></category><category term="research"></category></entry><entry><title>Rendering spatial audio on a desktop: The SSR and APF libraries</title><link href="https://ps2fino.github.io/ssr.html" rel="alternate"></link><published>2015-02-01T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2015-02-01:/ssr.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
+It is available from my &lt;a href="https://github.com/Ps2Fino/Updater/releases/tag/v1.5.1"&gt;Github&lt;/a&gt;.&lt;/p&gt;</content><category term="Technology"></category><category term="python"></category><category term="development"></category><category term="research"></category></entry><entry><title>Rendering spatial audio on a desktop: The SSR and APF libraries</title><link href="https://ps2fino.github.io/ssr.html" rel="alternate"></link><published>2015-02-01T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2015-02-01:/ssr.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
 a binaural soundscape for a project I&amp;#8217;m working on.
 Whilst a great library, I struggled to get to grips with it for a few days.
 The library makes heavy use of templates (a powerful paradigm of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve been playing around with the &lt;a class="reference external" href="http://www.spatialaudio.net/ssr"&gt;&lt;span class="caps"&gt;SSR&lt;/span&gt;&lt;/a&gt; library in order to render
@@ -80,4 +210,4 @@ intereleaving the channels as it dumps to the file. This was the major source of
 Next you need to generate a parameter map, a key-value dictionary containing the configuration (block size, &lt;span class="caps"&gt;HRIR&lt;/span&gt; file path etc.) for the renderer. In order to use the renderer, you pass a pointer to a list of arrays representing the channels of the audio (best to use the apf::fixed_matrix container that comes with the &lt;span class="caps"&gt;APF&lt;/span&gt;&amp;nbsp;framework).&lt;/p&gt;
 &lt;p&gt;A blunder was in dumping the output to a file; this wasn&amp;#8217;t the &lt;span class="caps"&gt;SSR&lt;/span&gt;&amp;#8217;s fault as &lt;a class="reference external" href="http://www.mega-nerd.com/libsndfile/api.html"&gt;libsndfile&lt;/a&gt; expects reads and writes in row wise order for (de)interleaving. All I had to do here is have a second output buffer which is the transposed matrix of the output list of channels. You can then call the writef() function of the SndFileHandle object in the libsndfile C++ &lt;span class="caps"&gt;API&lt;/span&gt; for writing stereo output to the&amp;nbsp;file.&lt;/p&gt;
 &lt;p&gt;Having figured all of this out I can finally move onto the image processing aspect of my project. More on this to come&amp;nbsp;later.&lt;/p&gt;
-</content><category term="binaural"></category><category term="C++"></category><category term="development"></category><category term="research"></category></entry></feed>
+</content><category term="Technology"></category><category term="binaural"></category><category term="C++"></category><category term="development"></category><category term="research"></category></entry></feed>
