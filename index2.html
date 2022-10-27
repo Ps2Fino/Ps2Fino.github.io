@@ -133,10 +133,10 @@ Here's a video reel of recent projects I've supervised/led which you may find in
     <i class="fa fa-inst-link sidebar-social-links"><img src="https://ps2fino.github.io/images/soundcloud-logo.png" alt="Soundcloud logo" title="Soundcloud logo" /></i></a>
 </div>
 <div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
-<h4>Current Favorite Quote</h4>
+<h4>Some inspiration</h4>
 <blockquote>
-	<i>The good thing about computer programs is they're never ambiguous. The bad thing about computer programs is they're never ambiguous.</i>
-	<br><br><i>Hillel Wayne</i>
+	<i id="current_quote"></i>
+	<br><br><i id="current_quote_author"></i>
 </blockquote>
 </div>
             </div>
@@ -206,6 +206,13 @@ Here's a video reel of recent projects I've supervised/led which you may find in
     </div>
 
 </div>
+<script type="text/javascript">
+    let quotes_map = [{'author': 'Ole Peters', 'quote': 'Melody: something that sounds good in sequence. Harmony: something that sounds good in parallel. Ergodicity problem: confusing melody with harmony.'}, {'author': '@ShitAcademicsSay', 'quote': "I can work with the means, but I'd rather party with the outliers."}, {'author': 'Anonymous', 'quote': "I'm happily in a state of confusion and wonder."}, {'author': 'Chuck Swindoll', 'quote': 'Age has little to do with achievement, and nothing to do with commitment.'}, {'author': 'Prof Jenny Bryan', 'quote': "Of course, someone has to write loops. But it doesn't have to be you."}, {'author': 'Hillel Wayne', 'quote': "The good thing about computer programs is they're never ambiguous. The bad thing about computer programs is they're never ambiguous."}]
+    let current_quote = quotes_map[Math.floor(Math.random() * (quotes_map.length - 1))]
+
+    document.getElementById ('current_quote').innerHTML = current_quote['quote']
+    document.getElementById ('current_quote_author').innerHTML = current_quote['author']
+</script>
                 </div>
                 <div class="span1"></div>
             </div>
