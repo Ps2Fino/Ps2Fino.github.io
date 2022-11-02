@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2022-10-25T11:07:15+02:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2022-10-25T11:07:15+02:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2022-11-02T10:38:10+01:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2022-11-02T10:38:10+01:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
 I dread it.
 Not regarding the content: I believe students&amp;#8212;when giving the right conditions to express themselves and learn&amp;#8212;can produce fantastic scholarship.
 I&amp;#8217;m always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Marking.
@@ -44,8 +44,7 @@ Lancomarker aims to eliminate this time wasting&amp;nbsp;completely.&lt;/p&gt;
 Having done this several times and realized it was silly, I&amp;#8217;d had&amp;nbsp;enough.&lt;/p&gt;
 &lt;p&gt;So I built&amp;nbsp;Lancomarker.&lt;/p&gt;
 &lt;h2&gt;How does it&amp;nbsp;work?&lt;/h2&gt;
-&lt;p&gt;Below is a system diagram of Lancomarker.
-The pipeline is as&amp;nbsp;follows:&lt;/p&gt;
+&lt;p&gt;The pipeline is as&amp;nbsp;follows:&lt;/p&gt;
 &lt;p&gt;1) Students complete their coursework via the &lt;span class="caps"&gt;SIA&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; simply writing the text file.
 This is the first time gain: I teach computer science students, which means having a basic text editor is a prerequisite.
 They can use any text editor they want (even create their own), and complete their coursework.
