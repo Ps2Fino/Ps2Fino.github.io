@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2022-11-02T10:46:01+01:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2022-11-02T10:46:01+01:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2022-11-17T12:00:47+01:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2022-11-17T12:00:47+01:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
 I dread it.
 Not regarding the content: I believe students&amp;#8212;when giving the right conditions to express themselves and learn&amp;#8212;can produce fantastic scholarship.
 I&amp;#8217;m always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Marking.
@@ -8,7 +8,8 @@ Not regarding the content: I believe students&amp;#8212;when giving the right co
 I&amp;#8217;m always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning.
 However: the burden around the &lt;em&gt;procedure&lt;/em&gt; of marking is something that is most unwelcome.
 Every year I waste time having to manage hundreds of files, not counting appendices and miscellaneous image files students may include with their coursework submission.
-So I built&amp;nbsp;this.&lt;/p&gt;
+So I built this.
+You can jump straight to the video demo below by clicking &lt;a href="#video-demo"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;What is&amp;nbsp;Lancomarker?&lt;/h2&gt;
 &lt;p&gt;Lancomarker is a suite of web applications for automating much of the student coursework marking process.
 It consists of 3 main tools: Lancomarker, Lancomarker Processing, and &lt;a target="_blank" href="https://users.cs.cf.ac.uk/FinneganD"&gt;&lt;i&gt;Lancomarker Student Interface Application (&lt;span class="caps"&gt;SIA&lt;/span&gt;)&lt;/i&gt;&lt;/a&gt;.
@@ -72,6 +73,11 @@ As everything is machine readable, it is trivial to import marked submissions in
 Marking coursework is a widely mandated activity for academics, so I was surprised that few were looking to improve the processes around marking, at least within my immediate network.
 Lancomarker is deployed in the 2022/23 academic year.
 Let&amp;#8217;s see if my theoretical time gain holds up in&amp;nbsp;practice.&lt;/p&gt;
+&lt;h2&gt;&lt;a id="video-demo"&gt;&lt;/a&gt; Video&amp;nbsp;Demo&lt;/h2&gt;
+&lt;p align="center"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/K-xx8vfYA0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
 &lt;h3&gt;Appendix&lt;/h3&gt;
 &lt;p&gt;R code for those who&amp;nbsp;care:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;## consider a normal distribution for opening a file&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
