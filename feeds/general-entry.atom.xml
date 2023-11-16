@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - General Entry</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/general-entry.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2020-10-28T12:38:17+01:00</updated><entry><title>Joining Cardiff University</title><link href="https://ps2fino.github.io/cadiff-may-2019.html" rel="alternate"></link><published>2019-05-06T00:00:00+02:00</published><updated>2019-06-21T17:00:16+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2019-05-06:/cadiff-may-2019.html</id><summary type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
-The past week has been a gentle introduction to the School, having completed induction training, I&amp;#8217;m looking forward to taking part in the probationary training courses over the coming weeks.
-I&amp;#8217;ve picked up …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
-The past week has been a gentle introduction to the School, having completed induction training, I&amp;#8217;m looking forward to taking part in the probationary training courses over the coming weeks.
-I&amp;#8217;ve picked up my staff access card, shifted over my website from Bath, which was painless thanks to &lt;a href="https://blog.getpelican.com/"&gt;pelican&lt;/a&gt; and my own custom batch and python scripts, and set up my &lt;span class="caps"&gt;HR&lt;/span&gt; account here at the university.
-I&amp;#8217;ve also spent the past few days browsing the university&amp;#8217;s intranet soaking up all the information I&amp;nbsp;can.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m slowly getting to know the city, and am looking forward to meeting all my new colleagues at the University.
-Setting my goals for the summer, I&amp;#8217;m excited about everything I&amp;#8217;m going to learn and teach in my new post and meeting the new 2019/20 cohort of students at&amp;nbsp;Cardiff.&lt;/p&gt;</content><category term="General Entry"></category><category term="cardiff"></category><category term="lecturer"></category><category term="teaching"></category><category term="moving"></category><category term="pelican"></category><category term="python"></category></entry><entry><title>EngD = Done!</title><link href="https://ps2fino.github.io/engd_complete.html" rel="alternate"></link><published>2017-06-13T00:00:00+02:00</published><updated>2020-10-28T12:38:17+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2017-06-13:/engd_complete.html</id><summary type="html">&lt;div class="section" id="update"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - General Entry</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/general-entry.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2023-11-16T12:28:53+01:00</updated><entry><title>Joining Cardiff University</title><link href="https://ps2fino.github.io/cadiff-may-2019.html" rel="alternate"></link><published>2019-05-06T00:00:00+02:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2019-05-06:/cadiff-may-2019.html</id><summary type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &amp;amp; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
+The past week has been a gentle introduction to the School, having completed induction training, I'm looking forward to taking part in the probationary training courses over the coming weeks.
+I've picked up my staff …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &amp;amp; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
+The past week has been a gentle introduction to the School, having completed induction training, I'm looking forward to taking part in the probationary training courses over the coming weeks.
+I've picked up my staff access card, shifted over my website from Bath, which was painless thanks to &lt;a href="https://blog.getpelican.com/"&gt;pelican&lt;/a&gt; and my own custom batch and python scripts, and set up my HR account here at the university.
+I've also spent the past few days browsing the university's intranet soaking up all the information I can.&lt;/p&gt;
+&lt;p&gt;I'm slowly getting to know the city, and am looking forward to meeting all my new colleagues at the University.
+Setting my goals for the summer, I'm excited about everything I'm going to learn and teach in my new post and meeting the new 2019/20 cohort of students at Cardiff.&lt;/p&gt;</content><category term="General Entry"></category><category term="cardiff"></category><category term="lecturer"></category><category term="teaching"></category><category term="moving"></category><category term="pelican"></category><category term="python"></category></entry><entry><title>EngD = Done!</title><link href="https://ps2fino.github.io/engd_complete.html" rel="alternate"></link><published>2017-06-13T00:00:00+02:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2017-06-13:/engd_complete.html</id><summary type="html">&lt;div class="section" id="update"&gt;
 &lt;h2&gt;Update&lt;/h2&gt;
 &lt;p&gt;A copy of my thesis is now available from my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;cv page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Today I successfully defended my thesis Compensating for Distance Compression in Virtual Audiovisual Environments, passing my viva voce with minor corrections!
-Once my corrections have been completed and submitted, I&amp;#8217;ll stick a &lt;span class="caps"&gt;PDF&lt;/span&gt; up here for …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="update"&gt;
+Once my corrections have been completed and submitted, I'll stick a PDF up here for anyone …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="update"&gt;
 &lt;h2&gt;Update&lt;/h2&gt;
 &lt;p&gt;A copy of my thesis is now available from my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;cv page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Today I successfully defended my thesis Compensating for Distance Compression in Virtual Audiovisual Environments, passing my viva voce with minor corrections!
-Once my corrections have been completed and submitted, I&amp;#8217;ll stick a &lt;span class="caps"&gt;PDF&lt;/span&gt; up here for anyone who might be interested.
-The past 4 years have been a whirlwind, as I&amp;#8217;ve written about &lt;a class="reference external" href="https://ps2fino.github.io/first-post.html"&gt;previously&lt;/a&gt; and I have learned so much.
-Thanks go to my academic advisors, Prof. Eamonn O&amp;#8217;Neill &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Dr. Michael Proulx who have mentored me through the years, teaching me lessons I can&amp;#8217;t even describe in words.
-Thanks also to Rob McHardy, my industrial advisor, who helped hone my software skills further from my BSc days into my&amp;nbsp;EngD.&lt;/p&gt;
+Once my corrections have been completed and submitted, I'll stick a PDF up here for anyone who might be interested.
+The past 4 years have been a whirlwind, as I've written about &lt;a class="reference external" href="https://ps2fino.github.io/first-post.html"&gt;previously&lt;/a&gt; and I have learned so much.
+Thanks go to my academic advisors, Prof. Eamonn O'Neill &amp;amp; Dr. Michael Proulx who have mentored me through the years, teaching me lessons I can't even describe in words.
+Thanks also to Rob McHardy, my industrial advisor, who helped hone my software skills further from my BSc days into my EngD.&lt;/p&gt;
 &lt;p&gt;Thanks also to the myriad of people I have interacted with over the years; each of you has influenced my thinking in a variety of different ways.
 Its been one hell of a journey.
 Celebrating the end of my EngD over the coming days, I look forward to my career.
-Now that I have my license, I&amp;#8217;m excied over future prospects and the projects I will get my teeth stuck&amp;nbsp;into!&lt;/p&gt;
+Now that I have my license, I'm excied over future prospects and the projects I will get my teeth stuck into!&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="General Entry"></category><category term="engd"></category><category term="viva"></category><category term="phd"></category></entry><entry><title>Research, Anxiety, and Overcoming it all through Applied Psychology</title><link href="https://ps2fino.github.io/next-steps.html" rel="alternate"></link><published>2016-09-16T00:00:00+02:00</published><updated>2020-02-10T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2016-09-16:/next-steps.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I&amp;#8217;ve interacted with over the past 4 years.
-I&amp;#8217;ve experienced the ups and downs, the observed PhD curve and I&amp;#8217;ve grown a&amp;nbsp;lot.&lt;/p&gt;
-&lt;p&gt;The biggest thing I&amp;#8217;ve …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I&amp;#8217;ve interacted with over the past 4 years.
-I&amp;#8217;ve experienced the ups and downs, the observed PhD curve and I&amp;#8217;ve grown a&amp;nbsp;lot.&lt;/p&gt;
-&lt;p&gt;The biggest thing I&amp;#8217;ve learned though, over the past 4 years, is about research attitudes.
+</content><category term="General Entry"></category><category term="engd"></category><category term="viva"></category><category term="phd"></category></entry><entry><title>Research, Anxiety, and Overcoming it all through Applied Psychology</title><link href="https://ps2fino.github.io/next-steps.html" rel="alternate"></link><published>2016-09-16T00:00:00+02:00</published><updated>2020-02-10T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2016-09-16:/next-steps.html</id><summary type="html">&lt;p&gt;I've started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I've interacted with over the past 4 years.
+I've experienced the ups and downs, the observed PhD curve and I've grown a lot.&lt;/p&gt;
+&lt;p&gt;The biggest thing I've learned though, over the past …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've started to reflect on my EngD, thinking about the &lt;a class="reference external" href="http://matt.might.net/articles/phd-school-in-pictures/"&gt;PhD Journey&lt;/a&gt; as a whole, and the people I've interacted with over the past 4 years.
+I've experienced the ups and downs, the observed PhD curve and I've grown a lot.&lt;/p&gt;
+&lt;p&gt;The biggest thing I've learned though, over the past 4 years, is about research attitudes.
 Knowing that there are &lt;a class="reference external" href="https://en.wikipedia.org/wiki/There_are_known_knowns"&gt;unknown unknowns&lt;/a&gt; and having the humility to accept that.
-When I began my research, I felt overwhelmed: I tried and tried to review fields and areas where &amp;#8216;more research was needed&amp;#8217; to no avail.
-I became frustrated, anxious, and felt hopelessly lost in a sea of &amp;#8216;potential areas of interest&amp;#8217; and began questioning my own ability.
-Not from the healthy perspective; questions like &amp;#8220;Am I right?&amp;#8221;
-Or &amp;#8220;What if there is another way?&amp;#8221;
-These are good questions, and fall under my &amp;#8220;humility&amp;#8221; heading.
-Instead, I was asking &amp;#8220;Can I do this?&amp;#8221; and &amp;#8220;How do I know where to&amp;nbsp;begin?&amp;#8221;&lt;/p&gt;
-&lt;p&gt;I recently completed an application for an &lt;span class="caps"&gt;RA&lt;/span&gt; position at &lt;a class="reference external" href="http://www.bath.ac.uk"&gt;Bath&lt;/a&gt;, and when I was writing my personal statement, I thought about my own approach to my research and realised that an interesting theory&amp;nbsp;applied&amp;#8230;.&lt;/p&gt;
+When I began my research, I felt overwhelmed: I tried and tried to review fields and areas where 'more research was needed' to no avail.
+I became frustrated, anxious, and felt hopelessly lost in a sea of 'potential areas of interest' and began questioning my own ability.
+Not from the healthy perspective; questions like &amp;quot;Am I right?&amp;quot;
+Or &amp;quot;What if there is another way?&amp;quot;
+These are good questions, and fall under my &amp;quot;humility&amp;quot; heading.
+Instead, I was asking &amp;quot;Can I do this?&amp;quot; and &amp;quot;How do I know where to begin?&amp;quot;&lt;/p&gt;
+&lt;p&gt;I recently completed an application for an RA position at &lt;a class="reference external" href="http://www.bath.ac.uk"&gt;Bath&lt;/a&gt;, and when I was writing my personal statement, I thought about my own approach to my research and realised that an interesting theory applied....&lt;/p&gt;
 &lt;div class="section" id="the-big-five"&gt;
-&lt;h2&gt;The Big&amp;nbsp;Five&lt;/h2&gt;
+&lt;h2&gt;The Big Five&lt;/h2&gt;
 &lt;p&gt;How would you describe personality?
 Sure, you can to great lengths, with use of colorful adjectives and poetic prose to describe personality.
-This is great if you&amp;#8217;re writing a book, or a reference for someone, but scientifically its way too much.
+This is great if you're writing a book, or a reference for someone, but scientifically its way too much.
 Its difficult to compare and discuss personalities from a scientific point of view with such a high dimensionality or &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)"&gt;degrees of freedom&lt;/a&gt;.
 Rather, some clever psychologists attempted to reduce this dimensionality to a set of 5 core traits, and claimed that personality can be described by plotting across these five dimensions.
-Sometimes called the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Big_Five_personality_traits"&gt;&lt;span class="caps"&gt;OCEAN&lt;/span&gt;&lt;/a&gt; model (scientists love acronyms, especially when those acronyms equate to actual words with ambigiously related semantics to what the acronym itself represents), it is widely applicable to many domains, and is useful as a measurement tool of personality.
-Once you can measure something, you can cluster data into categories, and then develop around these&amp;nbsp;clusters.&lt;/p&gt;
-&lt;p&gt;From a &lt;span class="caps"&gt;HCI&lt;/span&gt; perspective, one of the most novel applications I&amp;#8217;ve come across of the &lt;span class="caps"&gt;OCEAN&lt;/span&gt; theory is the thory applied to gamers (i.e people who play games often).
+Sometimes called the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Big_Five_personality_traits"&gt;OCEAN&lt;/a&gt; model (scientists love acronyms, especially when those acronyms equate to actual words with ambigiously related semantics to what the acronym itself represents), it is widely applicable to many domains, and is useful as a measurement tool of personality.
+Once you can measure something, you can cluster data into categories, and then develop around these clusters.&lt;/p&gt;
+&lt;p&gt;From a HCI perspective, one of the most novel applications I've come across of the OCEAN theory is the thory applied to gamers (i.e people who play games often).
 &lt;a class="reference external" href="https://twitter.com/the_darklorde"&gt;Jason Vandenburghe&lt;/a&gt; gave a talk at the 2014 &lt;a class="reference external" href="http://dl.acm.org/citation.cfm?id=2658537&amp;amp;CFID=668436578&amp;amp;CFTOKEN=99793062"&gt;CHIPlay&lt;/a&gt; conference in Toronto.
-Sadly I wasn&amp;#8217;t at the talk, but I&amp;#8217;d seen Vandenburghe&amp;#8217;s earlier &lt;a class="reference external" href="http://gdcvault.com/play/1015364/The-5-Domains-of-Play"&gt;&lt;span class="caps"&gt;GDC&lt;/span&gt; talk&lt;/a&gt; in 2012.
-Vandenburghe applies &lt;span class="caps"&gt;OCEAN&lt;/span&gt; as a way of modelling player behaviour and their expectations from a game.
+Sadly I wasn't at the talk, but I'd seen Vandenburghe's earlier &lt;a class="reference external" href="http://gdcvault.com/play/1015364/The-5-Domains-of-Play"&gt;GDC talk&lt;/a&gt; in 2012.
+Vandenburghe applies OCEAN as a way of modelling player behaviour and their expectations from a game.
 The gist is that, if you can identify personality traits of players, for example those who are more open to exploration versus those who are more introverted, perhaps less keen on direct competition, you can adjust the game mechanics and dynamics to suit that player.
 Obviously, this is of direct interest to the games industry, and is useful for game designers to take into consideration.
-In my personal statement, I applied &lt;span class="caps"&gt;OCEAN&lt;/span&gt; to a PhD candidate, explaining the sides of the spectrum I feel a good candidate would lie.
-You can read my statement &lt;a class="reference external" href="https://ps2fino.github.io/documents/teaching-research-statement.pdf"&gt;here&lt;/a&gt;, but I&amp;#8217;ll elaborate on my choices here.
-I&amp;#8217;ve also kept them discipline agnostic; while I&amp;#8217;m sure this can be further refined to fit specific disciplines (a model is a model though; always be weary of &lt;a class="reference external" href="http://blog.minitab.com/blog/adventures-in-statistics/the-danger-of-overfitting-regression-models"&gt;overfitting&lt;/a&gt;), I&amp;#8217;ve opted to keep things general.
-These are qualities of traits I feel any PhD student should&amp;nbsp;possess.&lt;/p&gt;
+In my personal statement, I applied OCEAN to a PhD candidate, explaining the sides of the spectrum I feel a good candidate would lie.
+You can read my statement &lt;a class="reference external" href="https://ps2fino.github.io/documents/teaching-research-statement.pdf"&gt;here&lt;/a&gt;, but I'll elaborate on my choices here.
+I've also kept them discipline agnostic; while I'm sure this can be further refined to fit specific disciplines (a model is a model though; always be weary of &lt;a class="reference external" href="http://blog.minitab.com/blog/adventures-in-statistics/the-danger-of-overfitting-regression-models"&gt;overfitting&lt;/a&gt;), I've opted to keep things general.
+These are qualities of traits I feel any PhD student should possess.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="an-ocean-phd"&gt;
-&lt;h2&gt;An &lt;span class="caps"&gt;OCEAN&lt;/span&gt;&amp;nbsp;PhD&lt;/h2&gt;
-&lt;p&gt;I guess at this point, I should probably elaborate a bit on the &lt;span class="caps"&gt;OCEAN&lt;/span&gt; dimensions.
-The first, Openness relates to a person&amp;#8217;s apetite for new experiences.
+&lt;h2&gt;An OCEAN PhD&lt;/h2&gt;
+&lt;p&gt;I guess at this point, I should probably elaborate a bit on the OCEAN dimensions.
+The first, Openness relates to a person's apetite for new experiences.
 Rather than sticking to what works, a good PhD candidate is someone who embraces new opportunities and experiences, open to failure and a tenacity to take risks.
 A PhD is ultimately about learning how to deal with failure.
 All the paper rejections, deadlines missed for various reasons, and feelings of complete inability to complete anything is part of the learning process.
-My advisor said to me &amp;#8220;There&amp;#8217;ll always be another deadline&amp;#8221;.
+My advisor said to me &amp;quot;There'll always be another deadline&amp;quot;.
 It took me a while to fully appreciate the gravity of that sentence.
-It wasn&amp;#8217;t just to pick me up, but to really drill home the notion of research as an endless cycle.
-There will always be unknown unknowns, therefore there&amp;#8217;ll always be more research to do.
-If theres always more research to do, there&amp;#8217;ll always be another conference venue or journal&amp;nbsp;deadline.&lt;/p&gt;
+It wasn't just to pick me up, but to really drill home the notion of research as an endless cycle.
+There will always be unknown unknowns, therefore there'll always be more research to do.
+If theres always more research to do, there'll always be another conference venue or journal deadline.&lt;/p&gt;
 &lt;p&gt;The second trait is Conscientousness.
 This relates to ones ability to be resourceful and self sustainable.
-&lt;a class="reference external" href="http://www.cs.bath.ac.uk/~pjw/"&gt;Professor Philip Willis&lt;/a&gt; once sent a departmental email around about how in the &lt;span class="caps"&gt;US&lt;/span&gt; they use the term PhD &amp;#8216;advisor&amp;#8217; rather than the term used in the &lt;span class="caps"&gt;UK&lt;/span&gt; and Ireland, &amp;#8216;supervisor&amp;#8217;.
+&lt;a class="reference external" href="http://www.cs.bath.ac.uk/~pjw/"&gt;Professor Philip Willis&lt;/a&gt; once sent a departmental email around about how in the US they use the term PhD 'advisor' rather than the term used in the UK and Ireland, 'supervisor'.
 This stuck with me as I really saw it as a more appropriate term.
 A PhD should not require supervision; when you apply for a PhD in computer graphics, I would assume you have working knowledge of vector math and some experience with practical rendering techniques in theory and code.
 The same applies for any discipline be it music, geography, history, politics.
 The point is that this is already assumed: I would expect you to be capable of studying and working without supervision.
 However, at time what you will need is guidance.
 You may strike a mental wall in your research.
-Advice in the form of guidance is more effective here, perhaps suggesting related avenues that you may have overlooked, or indirect research areas that, with a bit of creative thinking, may lead to breakthrough methods just waiting to be applied to your&amp;nbsp;research.&lt;/p&gt;
+Advice in the form of guidance is more effective here, perhaps suggesting related avenues that you may have overlooked, or indirect research areas that, with a bit of creative thinking, may lead to breakthrough methods just waiting to be applied to your research.&lt;/p&gt;
 &lt;p&gt;Up next is Extraversion.
 A PhD student needs to be extraverted.
 Gone are the days of solo PhD theses; massive texts stuffed full of secluded work done in a lab or an office over the course of 3 years.
@@ -87,7 +87,7 @@ Yes, I understand that a PhD is &lt;em&gt;your&lt;/em&gt; work, but that work is
 Some people even consider doing a PhD is &lt;a class="reference external" href="https://www.reddit.com/r/Futurology/comments/42boek/university_degrees_irrelevant_to_big_employers_is/"&gt;irrelevant&lt;/a&gt;.
 My point here is that, tying in with Openness, a good PhD is someone who embraces methods and approaches from related research fields, and adopts an extraverted mind in approaching skill development.
 Complex problems in your field may only be complex because the right tools either do not exist, or do exist, but are applied in other disciplines where they also are approriate.
-Be&amp;nbsp;adventurous!&lt;/p&gt;
+Be adventurous!&lt;/p&gt;
 &lt;p&gt;Agreeablenss is an interesting one, as a good PhD is somewhere in the middle.
 You should agree with data that opposes your initial hypotheses and beliefs, as painful as it may be to swallow.
 However, this does not mean you do so blindly.
@@ -97,69 +97,69 @@ Is it wrong, or just misguided?
 How can you learn from it?
 What if your hypothesis was originally based upon previous studies, a la &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Bayes%27_theorem"&gt;Bayes Theorem&lt;/a&gt;?
 Following Bayes logic, new information should not alter your view so much if you already have a substantial background in the opposing direction.
-The point here is to take in this new information, reflect on it, and then feed it back in to your new&amp;nbsp;thinking.&lt;/p&gt;
+The point here is to take in this new information, reflect on it, and then feed it back in to your new thinking.&lt;/p&gt;
 &lt;p&gt;Finally, we have Neuroticism.
-I&amp;#8217;m not saying a good PhD is a never neurotic; you&amp;#8217;d have to be a sociopath to not feel upset at times during the course of your PhD.
+I'm not saying a good PhD is a never neurotic; you'd have to be a sociopath to not feel upset at times during the course of your PhD.
 However, it is important to constantly reflect on your situation and understand that it is a bump in the road, not a road block.
 Remain calm in the face of opposition.
 Rather than a fit of hysteria, react to oppposition in a way that is productive.
 Process it, then fire some questions back at it.
-Don&amp;#8217;t take it at face value, but rather assimilate it and refine it.
+Don't take it at face value, but rather assimilate it and refine it.
 You may find that what was initially the polar opposite may actually only have issue with certain aspects of your standpoint.
 Be dynamic and invite opposition.
-It&amp;#8217;ll make your PhD richer in the&amp;nbsp;end.&lt;/p&gt;
+It'll make your PhD richer in the end.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="General Entry"></category><category term="research"></category><category term="teaching"></category></entry><entry><title>Auditory saliency and its role in accessible gaming</title><link href="https://ps2fino.github.io/saliency.html" rel="alternate"></link><published>2014-12-03T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2014-12-03:/saliency.html</id><summary type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
+</content><category term="General Entry"></category><category term="research"></category><category term="teaching"></category></entry><entry><title>Auditory saliency and its role in accessible gaming</title><link href="https://ps2fino.github.io/saliency.html" rel="alternate"></link><published>2014-12-03T00:00:00+01:00</published><updated>2018-03-29T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2014-12-03:/saliency.html</id><summary type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
 While nearing completion, my supervisors gave some valuable feedback for the tone and message of my report; especially the necessity of a coherent narrative.
-I&amp;#8217;ve tried to be as …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
+I've tried to be as thorough …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today I met with my supervisors to discuss my upcoming transfer viva and interesting topics for studies moving into 2015.
 While nearing completion, my supervisors gave some valuable feedback for the tone and message of my report; especially the necessity of a coherent narrative.
-I&amp;#8217;ve tried to be as thorough as possible in my report writing but I need to make sure that the reason for reading it is conveyed clearly to the&amp;nbsp;reader.&lt;/p&gt;
+I've tried to be as thorough as possible in my report writing but I need to make sure that the reason for reading it is conveyed clearly to the reader.&lt;/p&gt;
 &lt;p&gt;After discussing the report we moved on to the interesting stuff; what to start working on next.
 The overarching theme of my thesis is inclusive gaming.
-By this, I am interested in design techniques and technologies that can enable games to reach a wider audience by becoming artefacts of an accessible&amp;nbsp;design.&lt;/p&gt;
-&lt;p&gt;How can an interface surpass the status quo and becoming &amp;#8220;accessible&amp;#8221; whilst maintaining the same level of efficiency as one for sighted players?
+By this, I am interested in design techniques and technologies that can enable games to reach a wider audience by becoming artefacts of an accessible design.&lt;/p&gt;
+&lt;p&gt;How can an interface surpass the status quo and becoming &amp;quot;accessible&amp;quot; whilst maintaining the same level of efficiency as one for sighted players?
 Given that our aural senses have a much smaller capacity for interpreting information when compared to our visual sense, this sounds like it is unachievable.
 However, a lot of the information our visual sense perceives in the occipital lobe and propogates through the visual cortex is redundant, irrelevant.
 Most of the time, there is a subset of the data perceived that is of interest or rather necessary to understand the scene which we are observing.
-In other words, what we want is&amp;nbsp;salience.&lt;/p&gt;
-&lt;p&gt;Whilst current accessible tools focus on mapping visual elements 1-1 to an equal yet slower modality (temporality issues exist in screen readers and text-to-speech systems), might there be a way to extract the information in a visual scene, remove non-salient information and then compress it into a form that enables a ~1:1 mapping of the objects in the scene and the sounds used to represent&amp;nbsp;them?&lt;/p&gt;
-&lt;p&gt;Back to the books for me. Below are references shared with me by my supervisor. Passing them on&amp;nbsp;here.&lt;/p&gt;
+In other words, what we want is salience.&lt;/p&gt;
+&lt;p&gt;Whilst current accessible tools focus on mapping visual elements 1-1 to an equal yet slower modality (temporality issues exist in screen readers and text-to-speech systems), might there be a way to extract the information in a visual scene, remove non-salient information and then compress it into a form that enables a ~1:1 mapping of the objects in the scene and the sounds used to represent them?&lt;/p&gt;
+&lt;p&gt;Back to the books for me. Below are references shared with me by my supervisor. Passing them on here.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S0960982205011103#"&gt;Auditory Salience&lt;/a&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;a class="reference external" href="http://link.springer.com/article/10.3758%2Fs13414-010-0073-7#page-1"&gt;Crossmodal Correspondences&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
-</content><category term="General Entry"></category><category term="saliency"></category><category term="research"></category></entry><entry><title>First Post</title><link href="https://ps2fino.github.io/first-post.html" rel="alternate"></link><published>2014-11-09T00:00:00+01:00</published><updated>2019-05-10T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2014-11-09:/first-post.html</id><summary type="html">&lt;!-- Hyper links --&gt;
+</content><category term="General Entry"></category><category term="saliency"></category><category term="research"></category></entry><entry><title>First Post</title><link href="https://ps2fino.github.io/first-post.html" rel="alternate"></link><published>2014-11-09T00:00:00+01:00</published><updated>2019-05-10T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2014-11-09:/first-post.html</id><summary type="html">&lt;!-- Hyper links --&gt;
 &lt;p&gt;So, I set up this site almost a year ago now and never actually published anything to it.
-I&amp;#8217;ve decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-)&amp;nbsp;).&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve …&lt;/p&gt;</summary><content type="html">&lt;!-- Hyper links --&gt;
+I've decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-) ).&lt;/p&gt;
+&lt;p&gt;I've often tried …&lt;/p&gt;</summary><content type="html">&lt;!-- Hyper links --&gt;
 &lt;p&gt;So, I set up this site almost a year ago now and never actually published anything to it.
-I&amp;#8217;ve decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-)&amp;nbsp;).&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve often tried blogging in the past but could never quite do it.
-I&amp;#8217;ve found it uncomfortable, difficult or frustrating in the past to write things down in a public format as I&amp;#8217;ve always kept notes in the past.
-I&amp;#8217;ve been thinking however that this maintaining a blog might be a good idea for my EngD as it will certainly help build up a corpus of writing which may prove useful in two years time when it comes to the&amp;nbsp;viva.&lt;/p&gt;
+I've decided to have a bash at it and might try and publish to it at least once a week, probably on a Sunday afternoon ( much like this one :-) ).&lt;/p&gt;
+&lt;p&gt;I've often tried blogging in the past but could never quite do it.
+I've found it uncomfortable, difficult or frustrating in the past to write things down in a public format as I've always kept notes in the past.
+I've been thinking however that this maintaining a blog might be a good idea for my EngD as it will certainly help build up a corpus of writing which may prove useful in two years time when it comes to the viva.&lt;/p&gt;
 &lt;p&gt;This past year has seen a lot happen in my academic life.
-Highlights&amp;nbsp;include:&lt;/p&gt;
+Highlights include:&lt;/p&gt;
 &lt;div class="section" id="ubiss-1"&gt;
-&lt;h2&gt;&lt;span class="caps"&gt;UBISS&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;Taking part in the 5th &lt;span class="caps"&gt;UBI&lt;/span&gt; Summer School in Oulu (link &lt;a class="reference external" href="http://www.ubioulu.fi/en/UBI-summer-school-2014"&gt;&lt;span class="caps"&gt;UBISS&lt;/span&gt;&lt;/a&gt;), where my team took home the best project award from Workshop D.
-The workshop was given by Dr. Floyd Mueller from &lt;span class="caps"&gt;RMIT&lt;/span&gt; in Melbourne, Australia.
+&lt;h2&gt;UBISS&lt;/h2&gt;
+&lt;p&gt;Taking part in the 5th UBI Summer School in Oulu (link &lt;a class="reference external" href="http://www.ubioulu.fi/en/UBI-summer-school-2014"&gt;UBISS&lt;/a&gt;), where my team took home the best project award from Workshop D.
+The workshop was given by Dr. Floyd Mueller from RMIT in Melbourne, Australia.
 The workshop involved exploring the design of physical based games that incorporate digital technology in some form.
-Dr. Mueller has a nicer terminology; &amp;#8216;Bodily Play&amp;#8217;.
-The school proved an indispensable week full of activities from learning interesting research in physical gaming as well as meeting many students from around the world studying &lt;span class="caps"&gt;STEM&lt;/span&gt; disciplines.
-The best part was that the game I created with my team, Reindeer &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Wolves, was &lt;a class="reference external" href="http://dx.doi.org/10.1145/2658537.2661309"&gt;published as a short paper&lt;/a&gt; at the &lt;span class="caps"&gt;CHI&lt;/span&gt; &lt;span class="caps"&gt;PLAY&lt;/span&gt; conference in Toronto.
-There is a &lt;span class="caps"&gt;QR&lt;/span&gt; code at the bottom of this page with a &lt;span class="caps"&gt;DOI&lt;/span&gt; embedded for the&amp;nbsp;article.&lt;/p&gt;
+Dr. Mueller has a nicer terminology; 'Bodily Play'.
+The school proved an indispensable week full of activities from learning interesting research in physical gaming as well as meeting many students from around the world studying STEM disciplines.
+The best part was that the game I created with my team, Reindeer &amp;amp; Wolves, was &lt;a class="reference external" href="http://dx.doi.org/10.1145/2658537.2661309"&gt;published as a short paper&lt;/a&gt; at the CHI PLAY conference in Toronto.
+There is a QR code at the bottom of this page with a DOI embedded for the article.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="audio-defence"&gt;
-&lt;h2&gt;Audio&amp;nbsp;Defence&lt;/h2&gt;
-&lt;p&gt;Winning the accessibility award at the &lt;span class="caps"&gt;TIGA&lt;/span&gt; Games Industry Awards in London.
-The ceremony took place in November and a game I have worked on the past year with my partner company, &lt;a class="reference external" href="http://www.somethinelse.com"&gt;Somethin&amp;#8217; Else&lt;/a&gt;, won the Accessibility award.
-We were delighted to have won the award in recognition of the work we&amp;#8217;ve been doing over the past year.
+&lt;h2&gt;Audio Defence&lt;/h2&gt;
+&lt;p&gt;Winning the accessibility award at the TIGA Games Industry Awards in London.
+The ceremony took place in November and a game I have worked on the past year with my partner company, &lt;a class="reference external" href="http://www.somethinelse.com"&gt;Somethin' Else&lt;/a&gt;, won the Accessibility award.
+We were delighted to have won the award in recognition of the work we've been doing over the past year.
 The game is a first person shooter where the enemies (or shoot-ies) are rendered binaurally for a 3D spatial effect in real time.
 The game is available on the App Store &lt;a class="reference external" href="https://itunes.apple.com/gb/app/audio-defence-zombie-arena/id804041240?mt=8"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;As I approach the end of the year, I am prepping for my transfer report and viva.
-This I hope will go smoothly as I want to demonstrate the work I&amp;#8217;ve done so far as well as pose a structured plan for the next 2&amp;nbsp;years.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ll write my next post next week.
-So for now, I&amp;#8217;m signing&amp;nbsp;off.&lt;/p&gt;
+This I hope will go smoothly as I want to demonstrate the work I've done so far as well as pose a structured plan for the next 2 years.&lt;/p&gt;
+&lt;p&gt;I'll write my next post next week.
+So for now, I'm signing off.&lt;/p&gt;
 &lt;!-- This is the correct syntax for displaying an image Dan :-) --&gt;
 &lt;img alt="QR code for DOI: 10.1145/2658537.2661309" src="https://ps2fino.github.io/images/qrImage.png" /&gt;
 &lt;/div&gt;

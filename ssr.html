@@ -12,17 +12,17 @@
 
 <meta name="keywords" content="binaural, C++, development, research, Technology, " />
 
-<meta property="og:title" content="Rendering spatial audio on a desktop: The SSR and APF libraries "/>
+<meta property="og:title" content="Rendering spatial audio on a desktop: The SSR and APF libraries "/>
 <meta property="og:url" content="https://ps2fino.github.io/ssr.html" />
-<meta property="og:description" content="I’ve been playing around with the SSR library in order to render a binaural soundscape for a project I’m working on. Whilst a great library, I struggled to get to grips with it for a few days. The library makes heavy use of templates (a powerful paradigm of …" />
+<meta property="og:description" content="I&#39;ve been playing around with the SSR library in order to render a binaural soundscape for a project I&#39;m working on. Whilst a great library, I struggled to get to grips with it for a few days. The library makes heavy use of templates (a powerful paradigm of C++ but …" />
 <meta property="og:site_name" content="&#34;There&#39;s always money in the banana stand!&#34;" />
 <meta property="og:article:author" content="Daniel J. Finnegan" />
 <meta property="og:article:published_time" content="2015-02-01T00:00:00+01:00" />
 <meta property="" content="2018-03-29T00:00:00+02:00" />
-<meta name="twitter:title" content="Rendering spatial audio on a desktop: The SSR and APF libraries ">
-<meta name="twitter:description" content="I’ve been playing around with the SSR library in order to render a binaural soundscape for a project I’m working on. Whilst a great library, I struggled to get to grips with it for a few days. The library makes heavy use of templates (a powerful paradigm of …">
+<meta name="twitter:title" content="Rendering spatial audio on a desktop: The SSR and APF libraries ">
+<meta name="twitter:description" content="I&#39;ve been playing around with the SSR library in order to render a binaural soundscape for a project I&#39;m working on. Whilst a great library, I struggled to get to grips with it for a few days. The library makes heavy use of templates (a powerful paradigm of C++ but …">
 
-        <title>Rendering spatial audio on a desktop: The SSR and APF libraries  · &#34;There&#39;s always money in the banana stand!&#34;
+        <title>Rendering spatial audio on a desktop: The SSR and APF libraries  · &#34;There&#39;s always money in the banana stand!&#34;
 </title>
         <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -48,11 +48,11 @@
                         <ul class="nav pull-right top-menu">
                             <li ><a href="https://ps2fino.github.io">Home</a></li>
 <!--                             <li ><a href="https://ps2fino.github.io/pages/publications.html">Publications</a></li> -->
-                            <li ><a href="https://ps2fino.github.io/pages/resume.html">Curriculum&nbsp;Vitae</a></li>
-                            <li ><a href="https://ps2fino.github.io/pages/doctoral-supervision.html">Postgraduate&nbsp;Opportunities</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/resume.html">Curriculum Vitae</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/doctoral-supervision.html">Postgraduate Opportunities</a></li>
                             <li ><a href="https://ps2fino.github.io/pages/publications.html">Publications</a></li>
                             <li ><a href="https://ps2fino.github.io/pages/resources.html">Resources</a></li>
-                            <li ><a href="https://ps2fino.github.io/pages/supervision.html">Student&nbsp;Supervision</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/supervision.html">Student Supervision</a></li>
                             <li ><a href="https://ps2fino.github.io/pages/teaching.html">Teaching</a></li>
                             <!-- <li ><a href="https://ps2fino.github.io/categories.html">Categories</a></li> -->
                             <li ><a href="https://ps2fino.github.io/tags.html">Tags</a></li>
@@ -70,7 +70,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://ps2fino.github.io/ssr.html"> Rendering spatial audio on a desktop: The <span class="caps">SSR</span> and <span class="caps">APF</span>&nbsp;libraries  </a></h1>
+    <h1><a href="https://ps2fino.github.io/ssr.html"> Rendering spatial audio on a desktop: The SSR and APF libraries  </a></h1>
     </header>
 </div>
 
@@ -78,43 +78,43 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>I&#8217;ve been playing around with the <a class="reference external" href="http://www.spatialaudio.net/ssr"><span class="caps">SSR</span></a> library in order to render
-a binaural soundscape for a project I&#8217;m working on.
+            <p>I've been playing around with the <a class="reference external" href="http://www.spatialaudio.net/ssr">SSR</a> library in order to render
+a binaural soundscape for a project I'm working on.
 Whilst a great library, I struggled to get to grips with it for a few days.
 The library makes heavy use of templates (a powerful paradigm of C++ but can be awkward to read) and is written
-using some design patterns I had never encountered&nbsp;before.</p>
+using some design patterns I had never encountered before.</p>
 <p>I started by reading some of the source code, trying to compile the header-only library and get some test code working.
 After spending hours getting the library to compile, I was ready to try it out with some sample assets from
 <a class="reference external" href="https://ps2fino.github.io/first-post.html#audio-defence">Audio Defence</a>. Compiler errors began to arise upon simply instantiating the ssr::BinauralRenderer so I had to dig a little deeper.
 I had a read of the source code and I came across some examples that were included in the repository.
-I also emailed one of the author&#8217;s of the library to ask for some help with integrating the <span class="caps">SSR</span> as a library into my existing framework in order to handle the binaural&nbsp;rendering.</p>
-<p>After a week of bashing my head against the wall, I&#8217;ve now managed to pump out some spatial sound from the renderer, sending it out to the speakers and dumping it to a stereo file.
-I&#8217;ve decided to jot down some notes here to help me remember how the thing&nbsp;works!!</p>
+I also emailed one of the author's of the library to ask for some help with integrating the SSR as a library into my existing framework in order to handle the binaural rendering.</p>
+<p>After a week of bashing my head against the wall, I've now managed to pump out some spatial sound from the renderer, sending it out to the speakers and dumping it to a stereo file.
+I've decided to jot down some notes here to help me remember how the thing works!!</p>
 <ul class="simple">
 <li>The ssr::BinauralRenderer is a subclass of the apf::MimoProcessor, which is an abstract multiple input/multiple
 output processor that enables the programmer to implement the processing callback while handling the threading
-and access control of the samples held in the processor&#8217;s buffer.
-The renderer is instantiated by passing a apf::paramter_map instance which is a key-value dictionary of configuration settings for the renderer. The main settings required are the sample rate, block size and the location (full path) to the <span class="caps">HRIR</span> file that contains the impulse responses for&nbsp;convoluion.</li>
+and access control of the samples held in the processor's buffer.
+The renderer is instantiated by passing a apf::paramter_map instance which is a key-value dictionary of configuration settings for the renderer. The main settings required are the sample rate, block size and the location (full path) to the HRIR file that contains the impulse responses for convoluion.</li>
 <li>The processor functions through use of the
 <a class="reference external" href="http://en.wikipedia.org/wiki/Policy-based_design">Policy Design Pattern</a>. This design pattern dictates that
 a can have a number of different policies for
 responding to similar situations (ie. a class may have a number of different policies regarding the printing of
-data to a file or to a <span class="caps">TCP</span> stream).
-In my case, the policies that the renderer is concerned with are its interface (how to process it&#8217;s data
-buffers at each audio cycle or rather how to &#8216;use&#8217; and interface with it) and how to act in a threaded manner.
-To specify which policies to use, you simply include the header file of the policy and define a macro called APF_MIMOPROCESSOR_INTERFACE_POLICY for the interface policy and APF_MIMOPROCESSOR_THREAD_POLICY for the thread policy. The library comes with a default thread header which just uses a single threaded policy (ie. not implemented) on windows and the <span class="caps">POSIX</span> library for *nix and <span class="caps">OSX</span>&nbsp;systems.</li>
+data to a file or to a TCP stream).
+In my case, the policies that the renderer is concerned with are its interface (how to process it's data
+buffers at each audio cycle or rather how to 'use' and interface with it) and how to act in a threaded manner.
+To specify which policies to use, you simply include the header file of the policy and define a macro called APF_MIMOPROCESSOR_INTERFACE_POLICY for the interface policy and APF_MIMOPROCESSOR_THREAD_POLICY for the thread policy. The library comes with a default thread header which just uses a single threaded policy (ie. not implemented) on windows and the POSIX library for *nix and OSX systems.</li>
 <li>In order to use the binaural rendererer, you need to specify the policies you want to use. The renderer relies
-on two policies in it&#8217;s implementation; an interface policy and a threading policy. To use the renderer as a standalone module, the pointer policy must be used. This then opens up the audioCallback function to be called manually by the application programmer when they want to process some data. The function accepts 3 arguments, the block size of the frame to be processed, a pointer to a series of inputs and a pointer to a pair of outputs (as the binaural renderer is an instance of an N-input, 2-output processor for stereo binaural&nbsp;output).</li>
-<li>The processor requires it&#8217;s input to be a pointer to a list of channels. These channels can be implemented as a
-series of vectors. The renderer&#8217;s output is also expected to be a series of vectors representing the audio channels. The inputs should be a N * BLOCK_SIZE matrix where BLOCK_SIZE is the number of frames to be processed as a block during each run of the audio cycle. The N is the number of channels in the input. The outputs should be a 2 * BLOCK_SIZE matrix, indicating stereo output.
-The renderer expects a 1-1 mapping of input channels to sources, and the sources are ordered with the channels (ie Channels[0] is the first source, Channels[1] the second&nbsp;etc&#8230;)</li>
+on two policies in it's implementation; an interface policy and a threading policy. To use the renderer as a standalone module, the pointer policy must be used. This then opens up the audioCallback function to be called manually by the application programmer when they want to process some data. The function accepts 3 arguments, the block size of the frame to be processed, a pointer to a series of inputs and a pointer to a pair of outputs (as the binaural renderer is an instance of an N-input, 2-output processor for stereo binaural output).</li>
+<li>The processor requires it's input to be a pointer to a list of channels. These channels can be implemented as a
+series of vectors. The renderer's output is also expected to be a series of vectors representing the audio channels. The inputs should be a N * BLOCK_SIZE matrix where BLOCK_SIZE is the number of frames to be processed as a block during each run of the audio cycle. The N is the number of channels in the input. The outputs should be a 2 * BLOCK_SIZE matrix, indicating stereo output.
+The renderer expects a 1-1 mapping of input channels to sources, and the sources are ordered with the channels (ie Channels[0] is the first source, Channels[1] the second etc...)</li>
 <li>Finally, for dumping to a file, you need to transpose the channels as libsndfile reads in row-wise order,
-intereleaving the channels as it dumps to the file. This was the major source of confusion for me and it took some fiddling and multiple reads of the source repo to understand how that&nbsp;worked.</li>
+intereleaving the channels as it dumps to the file. This was the major source of confusion for me and it took some fiddling and multiple reads of the source repo to understand how that worked.</li>
 </ul>
-<p>So to recap; the binaural renderer can be instantiated after specifying the policies required to do it&#8217;s thing.
-Next you need to generate a parameter map, a key-value dictionary containing the configuration (block size, <span class="caps">HRIR</span> file path etc.) for the renderer. In order to use the renderer, you pass a pointer to a list of arrays representing the channels of the audio (best to use the apf::fixed_matrix container that comes with the <span class="caps">APF</span>&nbsp;framework).</p>
-<p>A blunder was in dumping the output to a file; this wasn&#8217;t the <span class="caps">SSR</span>&#8217;s fault as <a class="reference external" href="http://www.mega-nerd.com/libsndfile/api.html">libsndfile</a> expects reads and writes in row wise order for (de)interleaving. All I had to do here is have a second output buffer which is the transposed matrix of the output list of channels. You can then call the writef() function of the SndFileHandle object in the libsndfile C++ <span class="caps">API</span> for writing stereo output to the&nbsp;file.</p>
-<p>Having figured all of this out I can finally move onto the image processing aspect of my project. More on this to come&nbsp;later.</p>
+<p>So to recap; the binaural renderer can be instantiated after specifying the policies required to do it's thing.
+Next you need to generate a parameter map, a key-value dictionary containing the configuration (block size, HRIR file path etc.) for the renderer. In order to use the renderer, you pass a pointer to a list of arrays representing the channels of the audio (best to use the apf::fixed_matrix container that comes with the APF framework).</p>
+<p>A blunder was in dumping the output to a file; this wasn't the SSR's fault as <a class="reference external" href="http://www.mega-nerd.com/libsndfile/api.html">libsndfile</a> expects reads and writes in row wise order for (de)interleaving. All I had to do here is have a second output buffer which is the transposed matrix of the output list of channels. You can then call the writef() function of the SndFileHandle object in the libsndfile C++ API for writing stereo output to the file.</p>
+<p>Having figured all of this out I can finally move onto the image processing aspect of my project. More on this to come later.</p>
 
             
             
