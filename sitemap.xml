@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://ps2fino.github.io/</loc>
-<lastmod>2024-06-12T12:35:55-00:00</lastmod>
+<lastmod>2024-06-13T17:27:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2024-06-12T12:35:55-00:00</lastmod>
+<lastmod>2024-06-13T17:27:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2024-06-12T12:35:55-00:00</lastmod>
+<lastmod>2024-06-13T17:27:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2024-06-12T12:35:55-00:00</lastmod>
+<lastmod>2024-06-13T17:27:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -62,13 +62,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/pages/resources.html</loc>
 <lastmod>2024-03-25T17:55:36+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://ps2fino.github.io/pages/supervision.html</loc>
-<lastmod>2019-07-31T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
