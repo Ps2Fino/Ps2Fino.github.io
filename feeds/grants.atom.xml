@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Grants</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/grants.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2020-01-08T00:00:00+01:00</updated><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2020-01-08T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Grants</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/grants.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2024-05-07T00:00:00+02:00</updated><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2024-05-07T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
 I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
 I don't want to add to that, so I've decided to collate this list of grant/project proposals and applications that have been rejected.
-Here are my rejections as an anti-CV.&lt;/p&gt;
+Here are my rejections as an anti-CV since 2018.&lt;/p&gt;
+&lt;p&gt;Total grant income applied for: approx &lt;strong&gt;£2,352,028.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;div class="first line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Application unsuccessful&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: September 2023&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Amount requested: £647,185&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;div class="first line-block"&gt;
+&lt;div class="line"&gt;&lt;strong&gt;Innovation Project Translation Fund (Co-I)&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Application unsuccessful&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: February 2022&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Amount requested: £6,790&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;div class="first line-block"&gt;
 &lt;div class="line"&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;em&gt;Application not shortlisted&lt;/em&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: June 2020&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Amount requested: £1,698,053&lt;/em&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -17,7 +33,7 @@ Here are my rejections as an anti-CV.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;div class="first line-block"&gt;
 &lt;div class="line"&gt;&lt;strong&gt;Mini doctoral training hub (PI)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Equivalent of 4 PhD students (~ £80k)&lt;/em&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;em&gt;Equivalent of 4 PhD students&lt;/em&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;em&gt;Application not shortlisted&lt;/em&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: December 2019&lt;/em&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -42,13 +58,4 @@ Here are my rejections as an anti-CV.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- | *Journal site:* `https://www.press-start.gla.ac.uk/index.php/press-start &lt;https://www.press-start.gla.ac.uk/index.php/press-start&gt;`_ --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Gamified Employability and Transferable Skills Development&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Internal TDF bid; rejected after EoI submission&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: February 2018&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: £15,000&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 </content><category term="Grants"></category><category term="proposals"></category><category term="projects"></category><category term="rejections"></category><category term="rejection"></category></entry></feed>
