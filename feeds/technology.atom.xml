@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Technology</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/technology.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2024-05-07T15:59:20+02:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2023-11-16T14:57:44+01:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!" - Technology</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/technology.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2024-07-24T10:08:16+02:00</updated><entry><title>Lancomarker: Computer Assisted Marking Administration</title><link href="https://ps2fino.github.io/lancomarker.html" rel="alternate"></link><published>2022-10-24T00:00:00+02:00</published><updated>2024-07-24T10:08:16+02:00</updated><author><name>"Daniel J. Finnegan"</name></author><id>tag:ps2fino.github.io,2022-10-24:/lancomarker.html</id><summary type="html">&lt;p&gt;Marking.
 I dread it.
 Not regarding the content: I believe students--when giving the right conditions to express themselves and learn--can produce fantastic scholarship.
 I'm always interested in ways to improve my coursework to ensure it is making use of the current best practice in teaching and learning.
@@ -13,7 +13,7 @@ So I built this.
 You can jump straight to the video demo below by clicking &lt;a href="#video-demo"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;What is Lancomarker?&lt;/h2&gt;
 &lt;p&gt;Lancomarker is a suite of web applications for automating much of the student coursework marking process.
-It consists of 3 main tools: Lancomarker, Lancomarker Processing, and &lt;a target="_blank" href="https://users.cs.cf.ac.uk/FinneganD"&gt;&lt;i&gt;Lancomarker Student Interface Application (SIA)&lt;/i&gt;&lt;/a&gt;.
+It consists of 3 main tools: Lancomarker, Lancomarker Processing, and &lt;a href="https://ps2fino.github.io/pages/resources.html"&gt;Lancomarker Student Interface Application (SIA)&lt;/a&gt;.
 Together, these tools form a pipeline for information flow; students write their coursework, submit via the familar channels, and then the instructor can mark submissions and generate feedback with less administrative effort.&lt;/p&gt;
 &lt;h2&gt;Why did I build Lancomarker?&lt;/h2&gt;
 &lt;p&gt;In 2021, I spent 6 weeks marking student coursework.
