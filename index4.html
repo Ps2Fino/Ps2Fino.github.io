@@ -131,11 +131,16 @@ Here's a video reel of recent projects I've supervised/led which you may find in
     <i class="fa fa-inst-link sidebar-social-links"><img src="https://ps2fino.github.io/images/soundcloud-logo.png" alt="Soundcloud logo" title="Soundcloud logo" /></i></a>
 </div>
 <div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
-<h4>Some inspiration</h4>
-<blockquote>
-	<i id="current_quote"></i>
-	<br><br><i id="current_quote_author"></i>
-</blockquote>
+	<h4>Some inspiration</h4>
+	<div style="margin-top: 10px; margin-bottom: 10px;">
+		<button class="button-74" role="button" onclick="newQuote ()">Pour me another!</button>
+	</div>
+	<div>
+		<blockquote>
+			<i id="current_quote"></i>
+			<br><br><i id="current_quote_author"></i>
+		</blockquote>
+	</div>
 </div>
             </div>
         </section>
@@ -210,6 +215,12 @@ Here's a video reel of recent projects I've supervised/led which you may find in
 
     document.getElementById ('current_quote').innerHTML = current_quote['quote']
     document.getElementById ('current_quote_author').innerHTML = current_quote['author']
+
+    function newQuote() {
+        current_quote = quotes_map[Math.floor(Math.random() * (quotes_map.length))]
+        document.getElementById ('current_quote').innerHTML = current_quote['quote']
+        document.getElementById ('current_quote_author').innerHTML = current_quote['author']
+    }
 </script>
                 </div>
                 <div class="span1"></div>
