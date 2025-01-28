@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-01-13T15:58:25+01:00</updated><entry><title>New article in JCMS!</title><link href="https://ps2fino.github.io/jcms-2025.html" rel="alternate"></link><published>2025-01-13T00:00:00+01:00</published><updated>2025-01-13T15:58:25+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2025-01-13:/jcms-2025.html</id><summary type="html">&lt;p&gt;This is my first peer reviewed publication in a venue outside science, and captures the heritage work I've been doing with &lt;a href="https://profiles.cardiff.ac.uk/staff/wrighte11"&gt;Dr Esther Wright&lt;/a&gt; for some time now.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-01-28T00:00:00+01:00</updated><entry><title>New article in JCMS!</title><link href="https://ps2fino.github.io/jcms-2025.html" rel="alternate"></link><published>2025-01-13T00:00:00+01:00</published><updated>2025-01-13T15:58:25+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2025-01-13:/jcms-2025.html</id><summary type="html">&lt;p&gt;This is my first peer reviewed publication in a venue outside science, and captures the heritage work I've been doing with &lt;a href="https://profiles.cardiff.ac.uk/staff/wrighte11"&gt;Dr Esther Wright&lt;/a&gt; for some time now.
 There's no abstract, so instead I've pasted the opening paragraph below.&lt;/p&gt;
 &lt;p&gt;In this essay, we describe our approach to teaching historical video …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is my first peer reviewed publication in a venue outside science, and captures the heritage work I've been doing with &lt;a href="https://profiles.cardiff.ac.uk/staff/wrighte11"&gt;Dr Esther Wright&lt;/a&gt; for some time now.
 There's no abstract, so instead I've pasted the opening paragraph below.&lt;/p&gt;
@@ -510,85 +510,48 @@ I had a great time; awesome to see so much enthusiasm for open science communica
 I hope I encouraged a few more folks to take the LaTeX plunge and start using it for their research papers.&lt;/p&gt;
 &lt;p&gt;Slides are &lt;a class="reference external" href="https://ps2fino.github.io/documents/cubric-2018.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2024-10-25T00:00:00+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
+</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2025-01-28T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
-I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a class="reference external" href="https://en.wiktionary.org/wiki/file-drawer_problem"&gt;file drawer problem&lt;/a&gt; in academia.
+I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
 I don't want to add to that, so I've decided to collate this list of grant/project proposals and applications that have been rejected.
 Here are my rejections as an anti-CV since 2018.
 All amounts are approximate: I've done my best to be as accurate as possible.&lt;/p&gt;
-&lt;p&gt;Total grant income applied for: approx &lt;strong&gt;£2,772,028.00.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Total income applied for unsuccessfully (ignoring pending applications): &lt;em&gt;£2,772,028.00&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Research Council Docotral Training Partnership (Money to fund a PhD)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: November 2024&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: PhD stipend (approx £120,000)&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Reviewer scores: 4.9/6 (individual scores not provided)&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected at panel&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (PI)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: January 2025 - May 2026&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £300,000.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Reviewer scores: 4/6, 4/6, and 5/6&lt;/em&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Research Council Grant (PI)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: April 2024&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: £300,000&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Reviewer scores: 4/6, 4/6, and 5/6&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected at panel&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Docotral Training Partnership (Lead supervisor)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: September 2025 - August 2028&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £120,000.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Reviewer scores: 4.9/6 (individual scores not provided)&lt;/em&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: September 2023&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: £647,185&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected prior to peer review&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: September 2024 - August 2027&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £647,185.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Innovation Project Translation Fund (Co-I)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: February 2022&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: £6,790&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected at panel&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: April 2022 - December 2022&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £6,790.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: June 2020&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: £1,698,053&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Not shortlisted for stage 2 invited submission&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: March 2021 - March 2024&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £1,698,053.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- | Topic: *Exploring technology in helping people with arthritis keep active* --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Mini doctoral training hub (PI)&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Equivalent of 4 PhD students&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Amount requested: approx £480,000&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: December 2019&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Not shortlisted for stage 2 invited submission&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;XXX mock panel&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: December 2019&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Not shortlisted for invitation to participate&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Lectureship at XXX University&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: November 2018&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected before interview stage&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;div class="first line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;XXX Journal Editorial Board&lt;/strong&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Bid for editor roles&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Approx. time of submission: May 2018&lt;/em&gt;&lt;/div&gt;
-&lt;div class="line"&gt;&lt;em&gt;Rejected after EoI submission&lt;/em&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- | *Journal site:* `https://www.press-start.gla.ac.uk/index.php/press-start &lt;https://www.press-start.gla.ac.uk/index.php/press-start&gt;`_ --&gt;
-</content><category term="Grants"></category><category term="proposals"></category><category term="projects"></category><category term="rejection"></category></entry><entry><title>Techspark Feature</title><link href="https://ps2fino.github.io/techspark_march_2018.html" rel="alternate"></link><published>2018-03-15T00:00:00+01:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-15:/techspark_march_2018.html</id><summary type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
+&lt;/ul&gt;</content><category term="bids"></category><category term="proposals"></category><category term="projects"></category><category term="rejection"></category></entry><entry><title>Techspark Feature</title><link href="https://ps2fino.github.io/techspark_march_2018.html" rel="alternate"></link><published>2018-03-15T00:00:00+01:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-15:/techspark_march_2018.html</id><summary type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
 The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;CV page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
 You can &lt;a class="reference external" href="https://techspark.co/the-bath-research-centre-discovering-what-it-takes-to-create-a-believable-virtual-environment/"&gt;read the …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
 The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;CV page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
