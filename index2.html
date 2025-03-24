@@ -218,8 +218,10 @@ Here's a video reel of recent projects I've supervised/led which you may find in
     document.getElementById ('current_quote_author').innerHTML = current_quote['author']
 
     function newQuote() {
-        newId = Math.floor(Math.random() * (quotes_map.length))
-        current_quote_id = newId == current_quote_id ? (newId + 1) % quotes_map.length : newId
+        // newId = Math.floor(Math.random() * (quotes_map.length))
+        // current_quote_id = newId == current_quote_id ? (newId + 1) % quotes_map.length : newId
+        current_quote_id = (current_quote_id + 1) % quotes_map.length
+
         current_quote = quotes_map[current_quote_id]
         document.getElementById ('current_quote').innerHTML = current_quote['quote']
         document.getElementById ('current_quote_author').innerHTML = current_quote['author']
