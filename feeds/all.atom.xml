@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-01-28T00:00:00+01:00</updated><entry><title>New paper accepted in ACM CHI PLAY 2024!</title><link href="https://ps2fino.github.io/chiplay-2024.html" rel="alternate"></link><published>2024-09-12T00:00:00+02:00</published><updated>2024-10-16T15:07:12+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2024-09-12:/chiplay-2024.html</id><summary type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-03-26T00:00:00+01:00</updated><entry><title>New paper accepted in ACM CHI PLAY 2024!</title><link href="https://ps2fino.github.io/chiplay-2024.html" rel="alternate"></link><published>2024-09-12T00:00:00+02:00</published><updated>2024-10-16T15:07:12+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2024-09-12:/chiplay-2024.html</id><summary type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
 &lt;p&gt;VR exergaming is a promising motivational tool to incentivise exercise. 
 We present a novel VR exergaming method called social interactive feedforward. 
 The player competes with an 'enhanced model' of one of their friends in a real-time VR …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
@@ -500,15 +500,20 @@ I had a great time; awesome to see so much enthusiasm for open science communica
 I hope I encouraged a few more folks to take the LaTeX plunge and start using it for their research papers.&lt;/p&gt;
 &lt;p&gt;Slides are &lt;a class="reference external" href="https://ps2fino.github.io/documents/cubric-2018.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2025-01-28T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
+</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2025-03-26T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
 I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
 A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
-I don't want to add to that, so I've decided to collate this list of grant/project proposals and applications that have been rejected.
-Here are my rejections as an anti-CV since 2018.
+I don't want to add to that, so I've decided to collate this list of grant/project applications that have been rejected.
 All amounts are approximate: I've done my best to be as accurate as possible.&lt;/p&gt;
-&lt;p&gt;Total income applied for unsuccessfully (ignoring pending applications): &lt;em&gt;£2,772,028.00&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Total income applied for unsuccessfully (ignoring pending applications): &lt;em&gt;£2,787,025.30&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: May 2025 - December 2025&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £14,997.30&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Research Council Grant (PI)&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;Anticipated duration: January 2025 - May 2026&lt;/em&gt;&lt;br&gt;
