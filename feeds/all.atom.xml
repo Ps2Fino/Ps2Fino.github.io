@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-03-28T10:25:18+01:00</updated><entry><title>New paper accepted in ACM CHI PLAY 2024!</title><link href="https://ps2fino.github.io/chiplay-2024.html" rel="alternate"></link><published>2024-09-12T00:00:00+02:00</published><updated>2024-10-16T15:07:12+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2024-09-12:/chiplay-2024.html</id><summary type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>"There's always money in the banana stand!"</title><link href="https://ps2fino.github.io/" rel="alternate"></link><link href="https://ps2fino.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ps2fino.github.io/</id><updated>2025-03-28T10:27:50+01:00</updated><entry><title>New paper accepted in ACM CHI PLAY 2024!</title><link href="https://ps2fino.github.io/chiplay-2024.html" rel="alternate"></link><published>2024-09-12T00:00:00+02:00</published><updated>2024-10-16T15:07:12+02:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2024-09-12:/chiplay-2024.html</id><summary type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
 &lt;p&gt;VR exergaming is a promising motivational tool to incentivise exercise. 
 We present a novel VR exergaming method called social interactive feedforward. 
 The player competes with an 'enhanced model' of one of their friends in a real-time VR …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We've had a paper accepted in &lt;i&gt;ACM CHI PLAY 2024&lt;/i&gt;! Here's the abstract:&lt;/p&gt;
@@ -382,7 +382,53 @@ My web development skills were rusty (haven't really done anything web based sin
 &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KwnxS3B43Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
-&lt;p&gt;* Or perhaps you were looking for &lt;a href="https://thelincolnite.co.uk/2019/01/limited-prints-a-fitting-tribute-to-dambusters/"&gt;this&lt;/a&gt; lancometer...&lt;/p&gt;</content><category term="Technology"></category><category term="python"></category><category term="development"></category><category term="teaching"></category><category term="lancometer"></category></entry><entry><title>Joining Cardiff University</title><link href="https://ps2fino.github.io/cadiff-may-2019.html" rel="alternate"></link><published>2019-05-06T00:00:00+02:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2019-05-06:/cadiff-may-2019.html</id><summary type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &amp;amp; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
+&lt;p&gt;* Or perhaps you were looking for &lt;a href="https://thelincolnite.co.uk/2019/01/limited-prints-a-fitting-tribute-to-dambusters/"&gt;this&lt;/a&gt; lancometer...&lt;/p&gt;</content><category term="Technology"></category><category term="python"></category><category term="development"></category><category term="teaching"></category><category term="lancometer"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2020-01-11T00:00:00+01:00</published><updated>2025-03-26T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2020-01-11:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
+A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
+I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
+A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
+I don't want to add to that, so I've decided to collate this list of grant/project applications that have been rejected.
+All amounts are approximate: I've done my best to be as accurate as possible.&lt;/p&gt;
+&lt;p&gt;Total income applied for unsuccessfully (ignoring pending applications): &lt;em&gt;£2,787,025.30&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: May 2025 - December 2025&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £14,997.30&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (PI)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: January 2025 - May 2026&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £300,000.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Reviewer scores: 4/6, 4/6, and 5/6&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Docotral Training Partnership (Lead supervisor)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: September 2025 - August 2028&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £120,000.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Reviewer scores: 4.9/6 (individual scores not provided)&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: September 2024 - August 2027&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £647,185.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: April 2022 - December 2022&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £6,790.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Anticipated duration: March 2021 - March 2024&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Amount requested: £1,698,053.00&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="bids"></category><category term="proposals"></category><category term="projects"></category><category term="rejection"></category></entry><entry><title>Joining Cardiff University</title><link href="https://ps2fino.github.io/cadiff-may-2019.html" rel="alternate"></link><published>2019-05-06T00:00:00+02:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2019-05-06:/cadiff-may-2019.html</id><summary type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &amp;amp; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
 The past week has been a gentle introduction to the School, having completed induction training, I'm looking forward to taking part in the probationary training courses over the coming weeks.
 I've picked up my staff …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This week I joined the &lt;a href="https://www.cardiff.ac.uk/computer-science"&gt;School of Computer Science &amp;amp; Informatics&lt;/a&gt; at Cardiff University/Prifysgol Caerdydd.
 The past week has been a gentle introduction to the School, having completed induction training, I'm looking forward to taking part in the probationary training courses over the coming weeks.
@@ -442,7 +488,7 @@ The talk was the same talk I gave at this years &lt;a href="https://ps2fino.gith
 There were many great questions from the audience ranging from the purpose of VR, the &lt;a href="https://www.oxfordscholarship.com/view/10.1093/oso/9780199674923.001.0001/oso-9780199674923-chapter-62"&gt;ethics of VR&lt;/a&gt; and machine intelligence more generally, and of course, 'When will we have the holodeck!?*'.&lt;/p&gt;
 &lt;p&gt;The science cafe have written a report of the night and put it up on &lt;a href="https://drive.google.com/file/d/1WXt0zayox9fwx4lq-7tmgBG7p-5L4F52/view"&gt;their site&lt;/a&gt; which you can check out.
 For video links, check out my post on the &lt;a href="https://ps2fino.github.io/bath_science_cafe.html"&gt;Raven Science Cafe&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;*&lt;a href="https://www.youtube.com/watch?v=QGUhFcRjgus"&gt;We already do&lt;/a&gt;&lt;/p&gt;</content><category term="Talks"></category><category term="cafe"></category><category term="science"></category><category term="public engagement"></category></entry><entry><title>Avalon board game companion application</title><link href="https://ps2fino.github.io/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2025-03-28T10:25:18+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-07-12:/avalon-callout.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;April 2024&lt;/strong&gt;: I reimplemented this as a &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app"&gt;PWA&lt;/a&gt;. It's now freely available via &lt;a href="https://sandbox.echogames.co.uk/avalon-narrator/"&gt;Echo Games CIC&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;*&lt;a href="https://www.youtube.com/watch?v=QGUhFcRjgus"&gt;We already do&lt;/a&gt;&lt;/p&gt;</content><category term="Talks"></category><category term="cafe"></category><category term="science"></category><category term="public engagement"></category></entry><entry><title>Avalon board game companion application</title><link href="https://ps2fino.github.io/avalon-callout.html" rel="alternate"></link><published>2018-07-12T00:00:00+02:00</published><updated>2025-03-28T10:27:50+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-07-12:/avalon-callout.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;April 2024&lt;/strong&gt;: I reimplemented this as a &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app"&gt;PWA&lt;/a&gt;. It's now freely available via &lt;a href="https://sandbox.echogames.co.uk/avalon-narrator/"&gt;Echo Games CIC&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;August 2023&lt;/strong&gt;: Unfortunately big G have now removed this from the store because I never got around to doing a 64 bit build. Goodbye old friend, I'll miss you dearly.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;September 2018&lt;/strong&gt;: The latest …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;April 2024&lt;/strong&gt;: I reimplemented this as a &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app"&gt;PWA&lt;/a&gt;. It's now freely available via &lt;a href="https://sandbox.echogames.co.uk/avalon-narrator/"&gt;Echo Games CIC&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;August 2023&lt;/strong&gt;: Unfortunately big G have now removed this from the store because I never got around to doing a 64 bit build. Goodbye old friend, I'll miss you dearly.&lt;/p&gt;
@@ -500,53 +546,7 @@ I had a great time; awesome to see so much enthusiasm for open science communica
 I hope I encouraged a few more folks to take the LaTeX plunge and start using it for their research papers.&lt;/p&gt;
 &lt;p&gt;Slides are &lt;a class="reference external" href="https://ps2fino.github.io/documents/cubric-2018.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Rejected Proposals</title><link href="https://ps2fino.github.io/rejections.html" rel="alternate"></link><published>2018-03-26T00:00:00+02:00</published><updated>2025-03-26T00:00:00+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-26:/rejections.html</id><summary type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
-A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
-I don't want to add to that, so I've decided to collate this list of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are enough instances of the &lt;a href="https://en.wiktionary.org/wiki/file-drawer_problem&amp;gt;"&gt;file drawer problem&lt;/a&gt; in academia.
-A similar notion applies to applications, where we only hear of the successes, perpetuating a hero narrative and brazenly skipping over the missed targets.
-I don't want to add to that, so I've decided to collate this list of grant/project applications that have been rejected.
-All amounts are approximate: I've done my best to be as accurate as possible.&lt;/p&gt;
-&lt;p&gt;Total income applied for unsuccessfully (ignoring pending applications): &lt;em&gt;£2,787,025.30&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: May 2025 - December 2025&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £14,997.30&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Research Council Grant (PI)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: January 2025 - May 2026&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £300,000.00&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Reviewer scores: 4/6, 4/6, and 5/6&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Research Council Docotral Training Partnership (Lead supervisor)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: September 2025 - August 2028&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £120,000.00&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Reviewer scores: 4.9/6 (individual scores not provided)&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: September 2024 - August 2027&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £647,185.00&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Internal Grant Opportunity (Co-I)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: April 2022 - December 2022&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £6,790.00&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Panel&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Research Council Grant (Co-I)&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Anticipated duration: March 2021 - March 2024&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Amount requested: £1,698,053.00&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;Point of rejection: Prior to peer review&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="bids"></category><category term="proposals"></category><category term="projects"></category><category term="rejection"></category></entry><entry><title>Techspark Feature</title><link href="https://ps2fino.github.io/techspark_march_2018.html" rel="alternate"></link><published>2018-03-15T00:00:00+01:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-15:/techspark_march_2018.html</id><summary type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
+</content><category term="Talks"></category><category term="latex"></category><category term="science"></category></entry><entry><title>Techspark Feature</title><link href="https://ps2fino.github.io/techspark_march_2018.html" rel="alternate"></link><published>2018-03-15T00:00:00+01:00</published><updated>2023-11-16T12:28:53+01:00</updated><author><name>Daniel J. Finnegan</name></author><id>tag:ps2fino.github.io,2018-03-15:/techspark_march_2018.html</id><summary type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
 The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;CV page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
 You can &lt;a class="reference external" href="https://techspark.co/the-bath-research-centre-discovering-what-it-takes-to-create-a-believable-virtual-environment/"&gt;read the …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was interviewed for Techspark based on a &lt;a class="reference external" href="https://ps2fino.github.io/bath_science_cafe.html"&gt;talk I gave in January&lt;/a&gt;.
 The piece is light and while containing no references to published work (check out my &lt;a class="reference external" href="https://ps2fino.github.io/pages/resume.html"&gt;CV page&lt;/a&gt; if interested), it does give a fairly accurate portrayal of the kind of work I do.
