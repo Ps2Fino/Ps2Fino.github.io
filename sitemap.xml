@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://ps2fino.github.io/</loc>
-<lastmod>2025-03-28T17:28:44-00:00</lastmod>
+<lastmod>2025-04-08T17:40:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2025-03-28T17:28:44-00:00</lastmod>
+<lastmod>2025-04-08T17:40:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2025-03-28T17:28:44-00:00</lastmod>
+<lastmod>2025-04-08T17:40:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2025-03-28T17:28:44-00:00</lastmod>
+<lastmod>2025-04-08T17:40:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -137,6 +137,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://ps2fino.github.io/rejections.html</loc>
+<lastmod>2025-08-04T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://ps2fino.github.io/immersive-vles-2020.html</loc>
 <lastmod>2023-11-16T14:57:44+01:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -160,13 +167,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/lancometer.html</loc>
 <lastmod>2023-11-16T12:28:53+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://ps2fino.github.io/rejections.html</loc>
-<lastmod>2025-03-26T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
