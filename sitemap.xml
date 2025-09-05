@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://ps2fino.github.io/</loc>
-<lastmod>2025-09-01T13:45:03-00:00</lastmod>
+<lastmod>2025-09-05T17:10:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2025-09-01T13:45:03-00:00</lastmod>
+<lastmod>2025-09-05T17:10:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2025-09-01T13:45:03-00:00</lastmod>
+<lastmod>2025-09-05T17:10:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2025-09-01T13:45:03-00:00</lastmod>
+<lastmod>2025-09-05T17:10:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -62,6 +62,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/pages/resources.html</loc>
 <lastmod>2025-08-04T10:33:27+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://ps2fino.github.io/gala-2025.html</loc>
+<lastmod>2025-09-05T17:10:34+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
