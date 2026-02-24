@@ -10,19 +10,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="python, development, teaching, lancometer, Technology, " />
+<meta name="keywords" content="HRTF, photogrammetry, binaural, vr, General Entry, " />
 
-<meta property="og:title" content="Lancometer — Interactive quizzes in the classroom "/>
-<meta property="og:url" content="https://ps2fino.github.io/lancometer.html" />
-<meta property="og:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …" />
+<meta property="og:title" content="Personalized Spatial Audio Content for VR Applications "/>
+<meta property="og:url" content="https://ps2fino.github.io/drafts/first-camera-blog-post.html" />
+<meta property="og:description" content="When viewing any 3D experience, be it a movie, game, or interactive virtual reality (VR), objects don’t just jump out of the screen. They whirl around you and come to life through sound. Hear the crackle of the fire just outside of view. Hear the ice puck fire from …" />
 <meta property="og:site_name" content="&#34;There&#39;s always money in the banana stand!&#34;" />
 <meta property="og:article:author" content="Daniel J. Finnegan" />
-<meta property="og:article:published_time" content="2020-01-29T00:00:00+01:00" />
-<meta property="" content="2026-01-26T14:16:10.136426+01:00" />
-<meta name="twitter:title" content="Lancometer — Interactive quizzes in the classroom ">
-<meta name="twitter:description" content="Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like MentiMeter and Socrative. Whilst I was intrigued (I’m always looking for ways to engage my students) to the advantages …">
+<meta property="og:article:published_time" content="2017-02-17T00:00:00+01:00" />
+<meta property="" content="2018-03-29T00:00:00+02:00" />
+<meta name="twitter:title" content="Personalized Spatial Audio Content for VR Applications ">
+<meta name="twitter:description" content="When viewing any 3D experience, be it a movie, game, or interactive virtual reality (VR), objects don’t just jump out of the screen. They whirl around you and come to life through sound. Hear the crackle of the fire just outside of view. Hear the ice puck fire from …">
 
-        <title>Lancometer — Interactive quizzes in the classroom  · &#34;There&#39;s always money in the banana stand!&#34;
+        <title>Personalized Spatial Audio Content for VR Applications  · &#34;There&#39;s always money in the banana stand!&#34;
 </title>
         <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://ps2fino.github.io/lancometer.html"> Lancometer &#8212; Interactive quizzes in the&nbsp;classroom  </a></h1>
+    <h1><a href="https://ps2fino.github.io/drafts/first-camera-blog-post.html"> Personalized Spatial Audio Content for <span class="caps">VR</span>&nbsp;Applications  </a></h1>
     </header>
 </div>
 
@@ -78,25 +78,39 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>Recently, technology for real-time polling of information has become popular to do quick, interactive quizzes for presentations and also as an educational tool in the classroom, for example, tools like <a href="https://www.mentimeter.com/">MentiMeter</a> and <a href="https://socrative.com/">Socrative</a>.
-Whilst I was intrigued (I&#8217;m always looking for ways to engage my students) to the advantages they may offer towards the student experience and learning, I wasn&#8217;t prepared to change my workflow to fit in to any specific format such technologies may prescribe: I generate <span class="caps">HTML</span> presentations using <a href="https://bookdown.org/">bookdown</a> and don&#8217;t use PowerPoint for example.
-I also didn&#8217;t want to have to download any mobile application or worse, force my students to download anything (A <span class="caps">UX</span> nightmare for the&nbsp;classroom!)</p>
-<p>So over the 2019/20 christmas period, I developed a small web application to facilitate interactive sessions during my lectures.
-Hosted on the school&#8217;s <a href="https://www.openstack.org/">OpenStack</a> platform, all I do is simply embed the page in&nbsp;an <code>iframe</code> using <a href="https://yihui.org/knitr/">knitr</a> and go from there.
-The students just point their device (phone, laptop, whatever) to a <span class="caps">URL</span> or use the generated <span class="caps">QR</span> code and they can instantly join (no login/codes required).
-My web development skills were rusty (haven&#8217;t really done anything web based since late 2015) so it seemed like a good exercise and christmas was the only time I&#8217;d get to do it before the new teaching semester&nbsp;began.</p>
-<p>Having trialled it in the classroom, here are my initial&nbsp;observations:</p>
-<ul>
-<li>Students <em>really</em> liked it. Like <strong>a lot</strong>!</li>
-<li>I was skeptical as I&#8217;ve heard the argument where its really just a digital &#8216;show of hands&#8217;. However, it really is more than that. For example, its easier to visualize in a bar chart a show of hands for a set of options rather than go through each in turn. Also, and here&#8217;s where I think the magic lies and is worth further study, I can see how the show of hands changes <em>over time</em>. I have some ideas for how to study this in an experiment which I&#8217;ll do at some&nbsp;point.</li>
-<li>Having my own system means I can discuss the internals of the system: this is useful when teaching a module like <a href="https://data.cardiff.ac.uk/legacy/grails/module/CM1202/19A.html"><span class="caps">CM1202</span></a>. Students are also <em>really interested</em> in seeing how things work (especially first years) and I could create a welcoming environment for feedback where they can voice their opinions and suggest new features. Suggestions are one thing but when I can then go and <em>implement</em> their suggestions, and they see this in a future lecture (for example, the &#8216;Show Answer&#8217; utility was something I was unsure about at first but implemented it after an initial pilot at which point a student also thought it would be a good idea), students <em>really</em> appreciate&nbsp;it.</li>
-</ul>
-<p>Here&#8217;s a video of Lancometer* in&nbsp;action.</p>
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KwnxS3B43Rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+            <p>When viewing any 3D experience, be it a movie, game, or interactive virtual reality (<span class="caps">VR</span>), objects don&#8217;t just jump out of the screen.
+They whirl around you and come to life through sound.
+Hear the crackle of the fire just outside of view.
+Hear the ice puck fire from one end of the rink to the other, bounce off the wall, then slide under your feet.
+All of this is amplified through&nbsp;sound.</p>
+<p>Most people have heard of 5.1 or 7.1 surround sound setups.
+These add a third dimension to the sound of an experience by using multiple speakers configured in specific ways.
+This works fine for 3D movies, but most <span class="caps">VR</span> applications use headphones to get that immersive kick.
+What if we could deliver audio that moves around the <span class="caps">VR</span> world in 3D with just a pair of&nbsp;headphones?</p>
+<p>This is possible using a technique known as binaural rendering.
+The theory is simple: we have only two ears, which is just like having a two-channel stereo setup, yet we can hear sounds above, below, in front, and behind us.
+We can do this because our ears have evolved to listen for &#8216;spatial cues&#8217; in the sound that let us know where it is coming from.
+By understanding these cues, we can virtually render any sound we want over headphones and give it the spatial property of a real-world&nbsp;sound.</p>
+<p>This raises a question: how do we capture these spatial cues?
+Anechoic chambers are carefully designed rooms that absorb over 90% of the reverberation and acoustic reflections.
+This is so we can capture the sound in its purest form, without any interference from the environment.
+By analyzing sound in an anechoic chamber and how a person&#8217;s ears hear it, we can extract the cues.
+However, this is very time consuming: it can take hours and requires not just an anechoic chamber but also specialized&nbsp;equipment.</p>
+<p>We are solving this problem by studying how physical body shape (head size, outer ear shape, etc.) interacts with  spatial cues in sound.
+We study the spatial cues through advances in computer vision, acoustic simulation, and machine learning.
+By exploiting computer vision we can create 3D models of ourselves using merely a set of images.
+Taking pictures does not require specialized hardware.
+By creating 3D models from images, we can synthesize spatial cues for a given person from these models.
+Using these models, we can then render 3D audio without the laborious capture&nbsp;method.</p>
+<div class="section" id="references">
+<h2>References</h2>
+<div class="line-block">
+<div class="line">[1]: <a class="reference external" href="https://mitpress.mit.edu/books/spatial-hearing">Spatial Hearing: The Psychophysics of Human Sound Localization</a></div>
+<div class="line">[2]: <a class="reference external" href="http://www.aes.org/e-lib/browse.cfm?elib=14460">The SoundScape Renderer: A Unified Spatial Audio Reproduction Framework for Arbitrary Rendering Methods</a></div>
+<div class="line">[3]: <a class="reference external" href="http://dx.doi.org/10.1109/ICASSP.2014.6854447"><span class="caps">HRTF</span> Magnitude Synthesis via Sparse Representation of Anthropometric Features</a></div>
+</div>
+</div>
 
-<p>* Or perhaps you were looking for <a href="https://thelincolnite.co.uk/2019/01/limited-prints-a-fitting-tribute-to-dambusters/">this</a>&nbsp;lancometer&#8230;</p>
             
             
             <hr/>
@@ -104,26 +118,24 @@ My web development skills were rusty (haven&#8217;t really done anything web bas
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2020-01-29T00:00:00+01:00">Jan 29, 2020</time>
+            <time pubdate="pubdate" datetime="2017-02-17T00:00:00+01:00">Feb 17, 2017</time>
 
 <h4>Last Updated</h4>
-<time datetime="2026-01-26T14:16:10.136426+01:00">Jan 26, 2026</time>
+<time datetime="2018-03-29T00:00:00+02:00">Mar 29, 2018</time>
 
             <h4>Category</h4>
-            <a class="category-link" href="https://ps2fino.github.io/categories.html#technology-ref">Technology</a>
+            <a class="category-link" href="https://ps2fino.github.io/categories.html#general-entry-ref">General Entry</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://ps2fino.github.io/tags.html#development-ref">development
-                    <span>5</span>
+                <li><a href="https://ps2fino.github.io/tags.html#binaural-ref">binaural
+                    <span>2</span>
 </a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#lancometer-ref">lancometer
-                    <span>1</span>
+                <li><a href="https://ps2fino.github.io/tags.html#hrtf-ref">HRTF
 </a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#python-ref">python
-                    <span>3</span>
+                <li><a href="https://ps2fino.github.io/tags.html#photogrammetry-ref">photogrammetry
 </a></li>
-                <li><a href="https://ps2fino.github.io/tags.html#teaching-ref">teaching
-                    <span>4</span>
+                <li><a href="https://ps2fino.github.io/tags.html#vr-ref">vr
+                    <span>9</span>
 </a></li>
             </ul>
 <div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
