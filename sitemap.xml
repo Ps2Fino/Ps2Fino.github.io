@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://ps2fino.github.io/</loc>
-<lastmod>2026-08-01T11:58:56-00:00</lastmod>
+<lastmod>2026-09-07T11:37:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/archives.html</loc>
-<lastmod>2026-08-01T11:58:56-00:00</lastmod>
+<lastmod>2026-09-07T11:37:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/tags.html</loc>
-<lastmod>2026-08-01T11:58:56-00:00</lastmod>
+<lastmod>2026-09-07T11:37:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://ps2fino.github.io/categories.html</loc>
-<lastmod>2026-08-01T11:58:56-00:00</lastmod>
+<lastmod>2026-09-07T11:37:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,6 +69,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://ps2fino.github.io/pages/teaching.html</loc>
 <lastmod>2026-01-26T14:16:10+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://ps2fino.github.io/britchi_2026_poster.html</loc>
+<lastmod>2026-09-07T11:37:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://ps2fino.github.io/vr-exergaming-competitive-social.html</loc>
+<lastmod>2026-09-07T11:37:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
