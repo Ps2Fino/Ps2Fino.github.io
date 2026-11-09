@@ -40,3 +40,25 @@ i.fa-inst-link:hover, i.inst-link:hover {
     padding: 0 25px;
   }
 }
+
+/* The hits box in the right sidebar: GoatCounter counts, cached in the browser.
+   The box sits at the bottom of the sidebar, so it takes the sidebar's font size. */
+.hits-box {
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  padding: 0.4em;
+}
+
+.hits-box .hits-label {
+  font-weight: bold;
+  margin: 0;
+}
+
+.hits-box .hits-number {
+  margin: 0 0 0.4em;
+}
+
+.hits-box .hits-brand {
+  font-size: 0.85em;
+  margin: 0;
+}
