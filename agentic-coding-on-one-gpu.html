@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniel J. Finnegan" />
+        <meta name="copyright" content="Daniel J. Finnegan" />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="agentic coding, Strata, OpenCode, avalon, local LLM, Articles, " />
+
+<meta property="og:title" content="Agentic Coding on a Shoestring "/>
+<meta property="og:url" content="https://ps2fino.github.io/agentic-coding-on-one-gpu.html" />
+<meta property="og:description" content="tl;dr I vibed an app with ~ 7 year old hardware at 0.92% (not a typo) the cost of running the same work through a frontier API. Read on if you would like to know more, or skip to here if you don’t care for my (human written …" />
+<meta property="og:site_name" content="&#34;There&#39;s always money in the banana stand!&#34;" />
+<meta property="og:article:author" content="Daniel J. Finnegan" />
+<meta property="og:article:published_time" content="2026-11-24T00:00:00+01:00" />
+<meta property="" content="2026-11-25T00:00:00+01:00" />
+<meta name="twitter:title" content="Agentic Coding on a Shoestring ">
+<meta name="twitter:description" content="tl;dr I vibed an app with ~ 7 year old hardware at 0.92% (not a typo) the cost of running the same work through a frontier API. Read on if you would like to know more, or skip to here if you don’t care for my (human written …">
+
+        <title>Agentic Coding on a Shoestring  · &#34;There&#39;s always money in the banana stand!&#34;
+</title>
+        <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> <!-- Added for the footer in the side bar quote -->
+        <link rel="stylesheet" type="text/css" href="https://ps2fino.github.io/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://ps2fino.github.io/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://ps2fino.github.io/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://ps2fino.github.io/theme/css/custom.css" media="screen">
+        <link href="https://ps2fino.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="&#34;There&#39;s always money in the banana stand!&#34; - Full Atom Feed" />
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="https://ps2fino.github.io/"><span class=site-name>"There's always money in the banana stand!"</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="https://ps2fino.github.io">Home</a></li>
+<!--                             <li ><a href="https://ps2fino.github.io/pages/publications.html">Publications</a></li> -->
+                            <li ><a href="https://ps2fino.github.io/pages/resume.html">Curriculum&nbsp;Vitae</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/doctoral-supervision.html">Postgraduate&nbsp;Opportunities</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/grants.html">Funding</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/publications.html">Publications</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/resources.html">Resources</a></li>
+                            <li ><a href="https://ps2fino.github.io/pages/teaching.html">Teaching</a></li>
+                            <!-- <li ><a href="https://ps2fino.github.io/categories.html">Categories</a></li> -->
+                            <li ><a href="https://ps2fino.github.io/tags.html">Tags</a></li>
+                            <!-- <li ><a href="https://ps2fino.github.io/archives.html">Archives</a></li> -->
+                            <li><form class="navbar-search" action="https://ps2fino.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input aria-label="make a search query for this site" type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<article>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+    <h1><a href="https://ps2fino.github.io/agentic-coding-on-one-gpu.html"> Agentic Coding on a&nbsp;Shoestring  </a></h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+
+            
+            <h2>tl;dr</h2>
+<p>I <em>vibed</em> an app with ~ 7 year old hardware at <strong>0.92%</strong> (<strong>not</strong> a typo) the cost of running the same work through a frontier <span class="caps">API</span>.
+Read on if you would like to know more, or skip to <a href="#main">here</a> if you don&#8217;t care for my (human written!) preamble.
+I also do consulting: I welcome you to <a href="mailto:hello@echogames.co.uk">contact me</a> if you&#8217;d like to discuss setting this up in your own&nbsp;organization.</p>
+<h2>Preamble</h2>
+<p>I take great pride in my software.
+I&#8217;ve always enjoyed building software and strived to ensure it <em>worked</em>: that is to say, delivered on what it promises it will do.
+It&#8217;s something I&#8217;ve enjoyed doing ever since learning C back in my <a href="https://www.ucd.ie/cs/">undergraduate days</a>, and I sure as heck wrote a lot of software during my <a href="https://www.bath.ac.uk/departments/department-of-computer-science/">EngD</a> for conducing human centered experiments in the lab.
+I even continued to do<sup id="fnref:lancometer"><a class="footnote-ref" href="#fn:lancometer">1</a></sup> so well into my academic&nbsp;career.</p>
+<p>However, I admit that I am not in the crowd currently <a href="https://youtu.be/uuKOXGVIP8I?si=mZJj8Z3WsOt8lXxN">mourning</a> in the wake of agentic <span class="caps">AI</span> tooling and software developers becoming less and less responsible for production at the line-of-code level &#8212; there is legitimate and very real pain there.
+I&#8217;m an academic with a tight schedule, and any tool which promises a productivity gain in my view is&nbsp;acceptable.</p>
+<p>I first encountered agentic <span class="caps">AI</span> about 2 years ago, and first heard about it showing promise by <a href="https://www.linkedin.com/in/liam-betsworth/">Dr Liam Betsworth</a> during his excellent talk at <a href="https://www.britchi.uk/2025/programme/keynotes/">BritCHI 2025</a>.
+I was curious, but not sold as at the time this was really only an activity privileged to those who &#8216;drank the kool aid&#8217;: that is to say, paid for access to a frontier model.
+Not my jam; in addition to taking pride, I also have a principle of <em>never paying for software to do work</em>.
+I really mean that; the only software I&#8217;ve paid for since I was about 18 years old are video games<sup id="fnref:video-games-expensive"><a class="footnote-ref" href="#fn:video-games-expensive">2</a></sup>.
+I felt sick when I had to register a domain for the first time ever a couple of years ago.
+I accept that w.r.t generative <span class="caps">AI</span> this has put me at a disadvantage as I&#8217;ve not benefitted from real progress in recent years due to this self imposed&nbsp;restriction.</p>
+<p>That being said, I&#8217;m not ignorant, so I&#8217;ve kept my eye on something that did pique my interest: treating sophisticated deep learning models like, you know, normal software and <em>running them on my machine instead of subscribing to a service</em>.</p>
+<p>I first became interested in local <span class="caps">AI</span> &#8212; provisioning and running <span class="caps">AI</span> software on a self hosted stack &#8212; around early 2025, and took the plunge when big G released Gemma 3<sup id="fnref:gemma-3"><a class="footnote-ref" href="#fn:gemma-3">3</a></sup> as I&#8217;d taken a look and had a play; this was the first model that, in my view, was <em>useful</em> as it could reliably output sensible material from a few prompts.
+This made it effective in a classroom setting; &#8212; nobody wants &#8216;computer do dumb dumb&#8217; live in a lecture hall to &gt; 170 students &#8212; so I spent the following months taking it for a test drive to prepare for the 2025 / 26 academic year.
+That year I launched DanChat, a self-hosted instance of Librechat<sup id="fnref:danchat"><a class="footnote-ref" href="#fn:danchat">4</a></sup> and used it in class for live demonstrations of dialogue driven problem solving, showing my opinionated approach to learning-by-doing-<em>with</em>-<span class="caps">GPT</span> not just having <span class="caps">GPT</span> do the work for you.
+I did some experiments using it behind the scenes too e.g., getting it to help with automating conversion utilities<sup id="fnref:jsonify-please"><a class="footnote-ref" href="#fn:jsonify-please">5</a></sup>, which proved somewhat useful.
+However, in my tinkering I found that Gemma 3 was never up to the task of doing anything with a <em>long horizon</em> &#8212; a non-trivial task where the machine must first interpret the issue, identify dependent issues / problems, prepare a solution, and then implement said solution.
+Essentially the machine couldn&#8217;t go the distance towards the&nbsp;horizon.</p>
+<p>Then Gemma 4 arrived in&nbsp;2026.</p>
+<p>This proved very capable indeed for what I wanted to do.
+For my circumstances, particularly the 12B quantized aware training <sup id="fnref:gemma4"><a class="footnote-ref" href="#fn:gemma4">6</a></sup> checkpoint, it proved decent enough at <span class="caps">OCR</span>; an essential task for any office worker <span class="caps">IMO</span>.
+Gemma 4 really is cool beyond that: I found it was pretty good at generating Mermaid<sup id="fnref:mermaid"><a class="footnote-ref" href="#fn:mermaid">7</a></sup> syntax and some python scripts just from fairly simply prompts.
+This, I thought, was impressibe but still a toy.
+So I started looking into harnesses and across the board, the growing capabilities of <span class="caps">AI</span> had led to increased interest in and proliferation of models for software development, following a methodology called spec driven development (<span class="caps">SDD</span>)<sup id="fnref:sdd"><a class="footnote-ref" href="#fn:sdd">8</a></sup>.
+This methodology has a history with Agile<sup id="fnref:agile-paper"><a class="footnote-ref" href="#fn:agile-paper">9</a></sup> and recommends teams focus on defining what the outcomes should be up front, in addition to any parameters surrounding the problem e.g., resources, requirements, acceptance criteria, and only then embarking on an&nbsp;implementation.</p>
+<p>But now one can bring the &#8216;big guns&#8217;<sup id="fnref:big-guns"><a class="footnote-ref" href="#fn:big-guns">10</a></sup> in the form of&nbsp;agents.</p>
+<h2>Definitions</h2>
+<p>Before we get into it, I figured it might help to have some layman&#8217;s&nbsp;definitions.</p>
+<p>A Large Language Model (<span class="caps">LLM</span>) is the foundational building block that underpins <span class="caps">AI</span> assisted coding in the modern era.
+It facilitates computer software to &#8216;reason&#8217; about a problem and formulate solutions.<sup id="fnref:llms"><a class="footnote-ref" href="#fn:llms">11</a></sup></p>
+<p>Agentic <span class="caps">AI</span> / coding (<span class="caps">AC</span>) is a nice, marketable term meaning automatic code generation embedded into a developer workflow.
+It&#8217;s quite advanced beyond autocomplete in that it facilitates production of <em>working</em> &#8212; that bit&#8217;s important &#8212; software without one having to manually write lines of code.
+In my experience, one still must <em>understand software best practices</em> to get anything of value out of this endeavour, and certainly developers with some experience are at an acute advantage over beginners, but this is probably a rant for another&nbsp;day.</p>
+<p><span class="caps">AC</span> is operationalized through the marriage of an <span class="caps">LLM</span> and a <em>coding harness</em>: a software program which provides structured, automated context injection into an <span class="caps">LLM</span>, complete with the ability for the <span class="caps">LLM</span> to <em>talk back</em> to the harness facilitating tool invocation.
+Arguably the most popular one is Claude<sup id="fnref:claude"><a class="footnote-ref" href="#fn:claude">12</a></sup> but there are many.
+Writing software with a coding harness is sometimes referred to as <em>vibe coding</em> but in my opinion that is a misnomer; with <span class="caps">SDD</span> and a competent harness in place, I consider this more like taking a backseat: one is still steering the agent towards where one wants to go, its just the agent&#8217;s foot on the&nbsp;pedal.</p>
+<p><a id="main"></a></p>
+<h2>Backseat&nbsp;driver</h2>
+<p>With that out of the way, I&#8217;ll discuss my experience getting local LLMs to effectively produce working code for an application which solves a real &#8212; albeit personal &#8212; problem I had.
+Of course, our case study is games so here we&nbsp;go!</p>
+<p>If you&#8217;ve not played The Resistance: Avalon <sup id="fnref:avalon"><a class="footnote-ref" href="#fn:avalon">13</a></sup> I recommend it: its a social deduction game I first played circa 2014 and I&#8217;ve been loving it ever since.
+In the pre-agents era I hand wrote a small companion app<sup id="fnref:avalon-companion-app"><a class="footnote-ref" href="#fn:avalon-companion-app">14</a></sup> to automate the call-out at the beginning of the game.
+It worked fine, and I updated it to run on the web.
+However, adding features to it is just not something I have time or capacity to do: its a personal project and I don&#8217;t have time for them anymore (another potential rant for the future) so its been stagnant ever since.
+I recently started playing the game again with some friends who are a) new to the game and b) have Español as their primary tongue.
+I wanted them to enjoy the game as much as possible, and to be in a position to play the game themselves using my comapanion app when I&#8217;m not around, or pass it on to other friends who may be native / sole Spanish speakers.
+So there were some revisions to make.
+At the same time, I considered local LLMs powerful enough to reason over non-trivial coding tasks<sup id="fnref:benchmarks"><a class="footnote-ref" href="#fn:benchmarks">15</a></sup>.
+Thus I had a need and an&nbsp;opportunity.</p>
+<h2>Feature development with&nbsp;agents</h2>
+<p>The rest of this post gives a data based summary of my experience developing a set of features for the app using a local coding assistant.
+Put simply: agentic coding runs today on one consumer <span class="caps">GPU</span>, on a heavily quantized open model, with no <span class="caps">API</span> key and no token bill, and it shipped real features to a live&nbsp;app.</p>
+<blockquote>
+<p><strong>Dan in real life speaking:</strong> The following sections of this post were written by me in conjunction with my coding harness. 
+This makes sense: the post is about local <span class="caps">AI</span> shipping features for a product, so why would <em>I</em> write python scripts (features) to generate the post (product) when the machine should be doing the work?
+That being said, I appreciate that <span class="caps">AI</span> assisted writing at worst upsets and at best leaves a sour taste in some people&#8217;s mouths.
+That&#8217;s fair, but I see this as a 21<sup>st</sup> century form of symbiosis and honestly don&#8217;t see it going away as the genie is very much out of the bottle.
+I&#8217;ve therefore personally decided to embrace it at least in the context of this blog for now: going forward, many of my posts are likely to contain some <span class="caps">AI</span> assisted writing.
+If that&#8217;s not for you then know that I understand, and you&#8217;re free to log off now: no hard feelings!
+If you&#8217;re still reading but feel icky, then why not just jump straight to the <a href="#conclusion">conclusion</a> which I wrote myself without any&nbsp;assistance!</p>
+</blockquote>
+<p>As the application was already in place, the <span class="caps">AC</span> agent wasn&#8217;t starting from scratch.
+So the following analysis is based on session logs; everything following my introducing the agent to my git repository,&nbsp;named <code>avalon-pwa</code>.
+There are <strong>137</strong> recorded sessions on this machine.
+All 137 of them ran one&nbsp;model, <code>local/swift-1.5</code>; <strong>none</strong> ran a frontier&nbsp;model.</p>
+<p>The snapshot is 22 November 2026 with agentic work carried out over a 6 day period: 19,880,365 input tokens, 9,938,639 output tokens, 838,194,339 cache-read tokens, 29.74 measured session hours.
+Of&nbsp;course, <code>cost</code> is $0.00 on every one of the 137 sessions, because the local provider has no price entry given that, you know, its running on <em>my</em> machine.
+It&#8217;s worth noting&nbsp;that <code>reasoning</code> and <code>cache.write</code> report 0 on every session, so my output totals undercount the model&#8217;s thinking; if these tokens were counted and billed, the cost would be higher for a frontier model: it&#8217;d still be $0.00 for a local&nbsp;one.</p>
+<p>Cache-read tokens are not generated text: they are the prompt cache read on each request &#8212; the same context re-read every turn the harness sends, counted once per request. 
+Avalon&#8217;s 838,194,339 cache-read tokens are 84.3 times its 9,938,639 output tokens, and at $0.50/MTok they are $419.10 of the $766.96, so 54.6% of the frontier-equivalent price is the&nbsp;cache.</p>
+<p><img alt="19.88M input, 9.94M output and 838.19M cache-read tokens for avalon-pwa, log scale" src="https://ps2fino.github.io/images/agentic-post/tokens-by-project.png"></p>
+<p><em>Tokens in avalon-pwa: input 19.88M, output 9.94M, cache read 838.19M. Cache read is the same context re-read on every request in a session, counted per request, so it is 84 times the output: the cache is where the frontier price would&nbsp;sit.</em></p>
+<h2>The number you&#8217;ve been waiting&nbsp;for</h2>
+<p>Price the same tokens at Claude Opus 4.8 list rates (input $5/MTok, output $25/MTok, cache read $0.50/MTok, from the <a href="https://platform.claude.com/docs/en/about-claude/pricing">Anthropic pricing page</a>) and the arithmetic&nbsp;is:</p>
+<div class="highlight"><pre><span></span><code><span class="n">cost</span> <span class="o">=</span> <span class="mf">19.880365</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="mf">9.938639</span><span class="o">*</span><span class="mi">25</span> <span class="o">+</span> <span class="mf">838.194339</span><span class="o">*</span><span class="mf">0.5</span>  <span class="c1"># = $766.96, priced per MTok</span>
+<span class="n">kwh</span>  <span class="o">=</span> <span class="mi">9938639</span> <span class="o">/</span> <span class="mi">35</span> <span class="o">/</span> <span class="mi">3600</span> <span class="o">*</span> <span class="mi">250</span> <span class="o">/</span> <span class="mi">1000</span>            <span class="c1"># = 19.72 kWh, at 35 tok/sec and 250 W</span>
+<span class="n">gbp</span>  <span class="o">=</span> <span class="n">kwh</span> <span class="o">*</span> <span class="mf">0.28</span>                                   <span class="c1"># = £5.52, at my tariff</span>
+</code></pre></div>
+
+<p>So the money line: <strong>$766.96 of <span class="caps">API</span>-equivalent price against £5.52 of electricity</strong>, which is 0.72% of the bill as those two numbers are written, and <strong>0.92%</strong> once you convert the electricity into dollars <sup id="fnref:cost-caveat"><a class="footnote-ref" href="#fn:cost-caveat">16</a></sup>.</p>
+<p><img alt="Same work priced two ways: $766.96 of frontier list price against $7.06 of electricity, 0.92%" src="https://ps2fino.github.io/images/agentic-post/headline-cost.png"></p>
+<p><em>Same work, priced two ways: $766.96 of <span class="caps">API</span>-equivalent price against $7.06 of electricity (estimate, 19.72 kWh at 250&nbsp;W).</em></p>
+<p>Of course, the dollar figure is <em>what it would have cost</em>, not what I paid, and the pound figure is <span class="caps">GPU</span>-equivalent time at the card&#8217;s rated 250 W, not what my meter reads.
+Cache read counts the same context once per request, so the cache part is over-attributed and the dollar total runs high: 54.6% of this price is cache read. 
+<span class="caps">FWIW</span> I get around 35 tok/sec on my setup so not exactly speedy, but that&#8217;s not the point &#8212; the cost&nbsp;is.</p>
+<p>To be clear: this is about a workflow, not a model benchmark.
+Nothing about code quality is measured against a frontier model, so I make no capability claim: the model writes code inside a harness, under a discipline, with plans, tests and reviews, and I merge.
+The comparison is price, not&nbsp;ability.</p>
+<h2>How this&nbsp;happened</h2>
+<p>Swift 1.5 is an awesome derivation by UkisAI of Qwen3.8-Flash-Next<sup id="fnref:qwen"><a class="footnote-ref" href="#fn:qwen">17</a></sup> from Alibaba.
+Specifically I use the quantized model <sup id="fnref:swift"><a class="footnote-ref" href="#fn:swift">18</a></sup> &#8212; about 2 bits per weight.
+The model is almost at parity with its larger parent yet has been trained for agentic coding and long horizon tasks.
+As I configured it: 128,000 context, 20,000 max output, tool calling, image&nbsp;input.</p>
+<p>The hardware is an Nvidia <span class="caps">RTX</span> 2080 Ti with 11 <span class="caps">GB</span> <span class="caps">VRAM</span>, and one can expect about 35 tokens/sec <sup id="fnref:strata-inkling"><a class="footnote-ref" href="#fn:strata-inkling">19</a></sup> on a single stream.
+A seven-year-old games card doing software work.
+The engine is <strong>Strata</strong> (<span class="caps">MIT</span>) <sup id="fnref:strata"><a class="footnote-ref" href="#fn:strata">20</a></sup>, an inference engine exposing an OpenAI-compatible and Anthropic-compatible <span class="caps">API</span>&nbsp;on <code>localhost</code>,&nbsp;with <code>strata launch</code> and <code>strata connect</code> as the route in.
+The harness is OpenCode<sup id="fnref:opencode"><a class="footnote-ref" href="#fn:opencode">21</a></sup>, which connects to Strata and drives the agentic workflow.
+Kimaki<sup id="fnref:kimaki"><a class="footnote-ref" href="#fn:kimaki">22</a></sup> is the Discord &#8212; that&#8217;s right; I chat to this thing &#8212; bot that sits in front and drives OpenCode sessions from a thread, and the superpowers<sup id="fnref:superpowers"><a class="footnote-ref" href="#fn:superpowers">23</a></sup> skills &#8212; brainstorming, writing-plans, test-driven development, systematic-debugging, subagent-driven development &#8212; are the discipline that stops the agent freeballing.
+All of this is open source software / open weights so costs&nbsp;£0.00.</p>
+<p>And that&#8217;s it.
+The whole thing.
+Off the shelf hardware, a local endpoint, a harness, and a discipline.
+No subscription, no cloud, no&nbsp;bill.</p>
+<p>Let&#8217;s look closer at the implementation of a&nbsp;feature.</p>
+<h2><span class="caps">AC</span> implementation of swipe&nbsp;navigation</h2>
+<p>Let&#8217;s look closer at a feature: swipe navigation in the app.
+My handwritten version had a simple nav bar at the bottom of the screen which would toggle the current view.
+This nav bar was only interactable by clicking on buttons; fine if one is using a desktop / laptop, awkward if one is using a phone / tablet.
+This feature introduces swipe left/right navigation across the&nbsp;views.</p>
+<p>So I&nbsp;typed:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Let</span><span class="err">'</span><span class="n">s</span><span class="w"> </span><span class="n">introduce</span><span class="w"> </span><span class="n">swipe</span><span class="w"> </span><span class="n">navigation</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">app</span><span class="err">!</span>
+<span class="k">When</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Knights</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="n">swiping</span><span class="w"> </span><span class="nf">left</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">navigate</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Knaves</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="n">swiping</span><span class="w"> </span><span class="nf">right</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">no</span><span class="o">-</span><span class="n">op</span><span class="p">.</span><span class="w"> </span>
+<span class="n">Likewise</span><span class="p">,</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">Go</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="n">swiping</span><span class="w"> </span><span class="nf">left</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">no</span><span class="o">-</span><span class="n">op</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="n">swiping</span><span class="w"> </span><span class="nf">right</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">take</span><span class="w"> </span><span class="n">us</span><span class="w"> </span><span class="n">back</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Knaves</span><span class="w"> </span><span class="n">page</span><span class="p">.</span>
+<span class="k">While</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Knaves</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="n">swiping</span><span class="w"> </span><span class="nf">left</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="nf">right</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">take</span><span class="w"> </span><span class="n">us</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">Go</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">knights</span><span class="w"> </span><span class="n">pages</span><span class="w"> </span><span class="n">respectively</span><span class="p">.</span>
+<span class="k">Use</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">skills</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">plan</span><span class="w"> </span><span class="n">how</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">this</span><span class="p">.</span>
+</code></pre></div>
+
+<p>The agent then wrote a design spec, a plan (see the <a href="#appendix">Appendix</a>) with <span class="caps">TDD</span> steps naming the files, task briefs and reports, a device checklist for me to verify the swipe feature works on my devices (Android phone, iPhone, and Linux tablet), and a run ledger for task accounting.
+Following test driven development principles, the agent wrote failing tests (gates) before it wrote implementation code, checked implementation against these gates, and a separate review session read the whole branch using the&nbsp;same <code>local/swift-1.5</code> model.
+All of this is local, human-directed work, with the branch, its pre-commit gate and <span class="caps">CI</span> as the record.&nbsp;Quantified:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>commits through the merge</td>
+<td>25</td>
+</tr>
+<tr>
+<td>output tokens</td>
+<td>879,530</td>
+</tr>
+<tr>
+<td>measured session hours</td>
+<td>2.65</td>
+</tr>
+<tr>
+<td><span class="caps">GPU</span>-equivalent energy (estimate)</td>
+<td>1.75 kWh</td>
+</tr>
+<tr>
+<td>electricity at 28p/kWh (estimate)</td>
+<td>£0.49</td>
+</tr>
+<tr>
+<td>frontier-equivalent price (estimate)</td>
+<td>$66.23</td>
+</tr>
+</tbody>
+</table>
+<p>So the same feature at <strong>0.72%</strong> of its <span class="caps">API</span>-equivalent&nbsp;price.</p>
+<p><img alt="Eighteen features priced at frontier list prices, swipe-navigation highlighted at $66.23 against £0.49" src="https://ps2fino.github.io/images/agentic-post/cost-per-feature.png"></p>
+<p><em>Eighteen features, priced the same way: $699.70 total, swipe-navigation in gold at $66.23 against £0.49 (estimate). The rows are the table in the numbers file. The hours are the sessions the session-to-plan assignment gave each feature, so 3 plans have no row. These 18 rows are 81 of the 137 avalon sessions: the 56 that name no plan file carry the $67.25 between this total and the $766.96&nbsp;above.</em></p>
+<h2>What the harness&nbsp;buys</h2>
+<p>Here&#8217;s the work sketched across a timeline of git commits over the 6 day snapshot period.
+Following <span class="caps">SDD</span>, the agent wrote plans before code: <strong>21</strong> plans, each plan a series of <span class="caps">TDD</span> steps with the files named, so the test exists before the code&nbsp;does.</p>
+<p><img alt="21 plan bands of commits in each plan's feature window, 16–21 November, swipe-navigation as the highlighted case, dots coloured by Kimaki thread link and no marker" src="https://ps2fino.github.io/images/agentic-post/commit-timeline.png"></p>
+<p><em>Commits in each plan&#8217;s feature window over the six days: 21 plan files, 210 commits, one dot per commit, 97 commit messages carrying the Kimaki thread link and 113 with no marker. A band runs from the first commit that touched the plan file to the last, so the swipe-navigation band&#8217;s 25 commits include the merge that carried the plan. 25 commits sit in no window: these were clean up tasks implemented in dialogue with the agent outside of&nbsp;plans.</em></p>
+<p>The dots are one commit each, and a band owns every commit in its plan&#8217;s feature window: the first commit that touched the plan file to the last, read&nbsp;with <code>git log --full-history -- docs/superpowers/plans/&lt;plan&gt;.md</code> for the touches&nbsp;and <code>git rev-list --ancestry-path &lt;first&gt;..&lt;last&gt;</code> for the commits between them, so the merge that carried the plan&nbsp;into <code>main</code> sits in the band. A commit touching a plan file goes to that plan&#8217;s band; a commit touching two plan files goes to the band whose window opened first, and the alphabetically first plan file takes the commit when two windows open on the same day; a commit touching no plan file goes to the band with the earliest window start that contains it. A commit in no window is the 22nd row: <strong>25</strong> commits in the era, drawn as dots with no bar. The 21 bands own <strong>210</strong> commits: 97 commit messages carry the Kimaki thread link, and 113 carry no link.
+Kimaki marked bands begin on the 18th November as that&#8217;s when I introduced it; I&#8217;d seen a social video of some guy from Anthropic banging on about &#8216;chatting to his <span class="caps">AI</span>&#8217; and figured sure I&#8217;ll give that a go as before I was using OpenCode&#8217;s vanilla <span class="caps">GUI</span>.</p>
+<h2>A few points to&nbsp;note</h2>
+<ul>
+<li>11 <span class="caps">GB</span> <span class="caps">VRAM</span> and a 20k output cap make 128k context a ceiling, not a workspace: long files, wide refactors, and the whole app at once are out of reach, so plans get scoped&nbsp;small. </li>
+<li>This is not about <em>code quality</em> per se; there is no measured benchmark, so no benchmark table: nothing was measured against a frontier model on this box, and the $766.96 figure is a price comparison, not a capability comparison.
+My point is this can done <em>at all</em>, not necessarily <em>done well / efficiently</em>.</li>
+<li>The energy figure is <span class="caps">TDP</span>-based: 250 W is the card&#8217;s rated power, not a measured draw&nbsp;(<code>nvidia-smi</code> is not installed on this box), and the aggregate rate across avalon&#8217;s sessions is 92.8 tok/sec, which shows parallel sessions, so kWh is <span class="caps">GPU</span>-equivalent time, not metered&nbsp;usage.</li>
+</ul>
+<h2>Take&nbsp;away</h2>
+<p>So the honest answer to &#8220;should you do this at home&#8221;: yes, if you want a gated workflow rather than a frontier model&#8217;s judgement.
+You get a model that writes working code when the task is named, small, and gated, at under one percent of the <span class="caps">API</span> price, with you as the reviewer of every merge.
+I suggest one starts with the engine.
+Strata is at the time of writing the best I&#8217;m aware of, but I would encourage regularly scheduled &#8216;check-ups&#8217; to see what&#8217;s out there.
+Pick a quantized model that fits your card and accept throughput as the price of a single <span class="caps">GPU</span>: ~35 tok/sec on a 2080 Ti.
+Wire a harness to the endpoint, keep skills, plans, tests, and review loops as the discipline, and let the human be the gate.
+I&#8217;m not yet confident to grant this the keys to my remote repo; therefore all pushes are handled by me and I would recommend caution here rather than Yolo<sup id="fnref:no-yolo"><a class="footnote-ref" href="#fn:no-yolo">24</a></sup>.</p>
+<p><a id="conclusion"></a></p>
+<h2>So Where Do We Go From&nbsp;Here?</h2>
+<p>In case its not obvious I&#8217;ll state my position clearly: I think this is very cool and I&#8217;m excited to see what comes next.
+However, a few things to keep us&nbsp;sober.</p>
+<p>First, what I am <strong>not</strong> saying.
+I&#8217;m not saying I believe this is now the end of hand written software development.
+This product is a very straightforward mobile web app.
+By straightforward I mean it&#8217;s functionality is easily defineable, testable, relies on standard libraries, and is built using a very popular and mature framework called&nbsp;ReactJS.</p>
+<p>I&#8217;m not breaking ground; this ain&#8217;t the Riemann hypothesis<sup id="fnref:riemann"><a class="footnote-ref" href="#fn:riemann">25</a></sup>.
+Large scale software systems are not trivial, and I doubt these small models are very reliable as a project scales.
+Others have warned about the dangers of letting <span class="caps">AI</span> loose on software production at scale<sup id="fnref:software-warning"><a class="footnote-ref" href="#fn:software-warning">26</a></sup>, and I too remain cautious here.
+But that&#8217;s not the point; let&#8217;s face it, a lot of every day tasks are fairly trivial, they&#8217;re just boring, and what this shows is that local <span class="caps">AC</span> <em>is</em> up to the task for this category.
+What this <em>does</em> demonstrate is that if one can break a problem down into small chunks, specify, plan, and press Go I believe local models can now walk confidently along the line of several hundred thousand tokens just fine.
+There are real gains to be made here, and this is what piques my&nbsp;curiosity.</p>
+<p>Another way to think about it is this: now that intelligence is a commodity, how much do you really <em>need</em>?
+I once heard from a colleague<sup id="fnref:juan-and-sandy"><a class="footnote-ref" href="#fn:juan-and-sandy">27</a></sup> an interesting story about a group of researchers working on the problem of cucumber harvesting.
+Apparently this is a curious task because a) it is something humans are very good at but robots are not so good at (yet), b) it is a very well defined task and happens in a controlled environment (greenhouse), and c) it has an accepted tolerance rate of ~ 15% (even humans make mistakes but don&#8217;t quote me on that number; I haven&#8217;t got the measuered rate at hand and I&#8217;m typing from memory).
+Some have concluded its still some years and scientifc breakthroughs away from being completely automated.
+That may be&nbsp;true.</p>
+<p>But.</p>
+<p>Look at that tolerance rate again.
+A robot doesn&#8217;t need to perform at 100% success rate; it only needs to operate at ~ 86% to reach parity with a human.
+Then the dynamics change as now one can automate knowing that one&#8217;s robot is doing a &#8216;good job&#8217; as its at parity with a&nbsp;human.</p>
+<p>This is where I think a lot of small scale software projects are at.
+Once intelligence passes a checkpoint it opens up the gateway to a lot of tasks, and in my experience&nbsp;the <span class="math">\(|n|\)</span> of the set of tasks requiring sub or par intelligence is far greater than&nbsp;the <span class="math">\(|n|\)</span> of the set of tasks requiring surpar intelligence.
+And let&#8217;s face it; how many of us can truly say <em>all</em> of our time is spent on tasks requiring the latter?
+This is an interesting observation with far reaching consequences.
+For now I&#8217;m still finding my feet and identifying where I stand on this; I might blog about it in more detail another&nbsp;time.</p>
+<p>Second, I also recognize the emerging issues that come with this.
+In my opinion, real discussions are needed among educators as to what this means for our students in Computer Science, particularly w.r.t academic integrity around coding projects.
+Much has already been said by folk more equipped than I to comment on the impact of job prosperity for young people too.
+There are also phenomena we still don&#8217;t fully understand <sup id="fnref:cogley-paper"><a class="footnote-ref" href="#fn:cogley-paper">28</a></sup> and warrant more attention as this technolgy matures&nbsp;further.</p>
+<p><a id="appendix"></a></p>
+<h2>Appendix: the plan the agent worked&nbsp;from</h2>
+<p>Here&#8217;s the implementation plan that the agent wrote after brainstorming over my prompt and generating the spec: <a href="https://ps2fino.github.io/documents/2026-11-18-avalon-swipe-navigation.txt">Swipe navigation implementation plan</a>.</p>
+<h2>Footnotes and&nbsp;References</h2>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:lancometer">
+<p>For example, <a href="https://ps2fino.github.io/lancometer.html">this</a>&#160;<a class="footnote-backref" href="#fnref:lancometer" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:video-games-expensive">
+<p>Which are getting more and more expensive&#8230;&#160;<a class="footnote-backref" href="#fnref:video-games-expensive" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:gemma-3">
+<p><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/">https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/</a>&#160;<a class="footnote-backref" href="#fnref:gemma-3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:danchat">
+<p><a href="https://www.librechat.ai/">https://www.librechat.ai/</a>&#160;<a class="footnote-backref" href="#fnref:danchat" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:jsonify-please">
+<p>Don&#8217;t underestimate the utility of being able to paste a garbled mess of data into a dialogue window and typing &#8216;hey, jsonify this please&#8217;&#160;<a class="footnote-backref" href="#fnref:jsonify-please" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:gemma4">
+<p><a href="https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF">https://huggingface.co/unsloth/gemma-4-12B-it-qat-<span class="caps">GGUF</span></a>&#160;<a class="footnote-backref" href="#fnref:gemma4" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:mermaid">
+<p><a href="https://mermaid.js.org/">https://mermaid.js.org/</a>&#160;<a class="footnote-backref" href="#fnref:mermaid" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:sdd">
+<p><a href="https://developer.microsoft.com/blog/spec-driven-development-ai-native-engineering/">https://developer.microsoft.com/blog/spec-driven-development-ai-native-engineering/</a>&#160;<a class="footnote-backref" href="#fnref:sdd" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:agile-paper">
+<p><a href="https://dx.doi.org/10.1007/978-3-540-24853-8_12">https://dx.doi.org/10.1007/978-3-540-24853-8_12</a>&#160;<a class="footnote-backref" href="#fnref:agile-paper" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:big-guns">
+<p><a href="https://youtu.be/TQNx8orWjWs?si=nbNTqM_3FARBMKmV&amp;t=3372">https://youtu.be/TQNx8orWjWs?si=nbNTqM_3FARBMKmV&amp;t=3372</a>&#160;<a class="footnote-backref" href="#fnref:big-guns" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:llms">
+<p>LLMs are essential to Agentic Software. If you don&#8217;t know what they are, start here: <a href="https://en.wikipedia.org/wiki/Large_language_model">https://en.wikipedia.org/wiki/Large_language_model</a>&#160;<a class="footnote-backref" href="#fnref:llms" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:claude">
+<p><a href="https://claude.com">https://claude.com</a>&#160;<a class="footnote-backref" href="#fnref:claude" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:avalon">
+<p><a href="https://boardgamegeek.com/boardgame/128882/the-resistance-avalon">https://boardgamegeek.com/boardgame/128882/the-resistance-avalon</a>&#160;<a class="footnote-backref" href="#fnref:avalon" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:avalon-companion-app">
+<p>You can read about it <a href="https://ps2fino.github.io/avalon-callout.html">here</a>.&#160;<a class="footnote-backref" href="#fnref:avalon-companion-app" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:benchmarks">
+<p>I mean, hard to argue with this: <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next#benchmark-results">https://huggingface.co/Qwen/Qwen3.8-Flash-Next#benchmark-results</a>&#160;<a class="footnote-backref" href="#fnref:benchmarks" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:cost-caveat">
+<p>Those of you paying attention will recognize this does not factor in <em>my</em> time. You&#8217;ll have to take my word for it of course, but my honest estimate is about 1 hour writing prompts and reviewing some <span class="caps">SDD</span> plan documents the agent wrote. I looked at perhaps 3 dozen lines-of-code total. Wild.&#160;<a class="footnote-backref" href="#fnref:cost-caveat" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:qwen">
+<p><a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">https://huggingface.co/Qwen/Qwen3.8-Flash-Next</a>&#160;<a class="footnote-backref" href="#fnref:qwen" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+<li id="fn:swift">
+<p><a href="https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF">https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-<span class="caps">GSQ</span>-<span class="caps">RCO</span>-<span class="caps">GGUF</span></a>&#160;<a class="footnote-backref" href="#fnref:swift" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+</li>
+<li id="fn:strata-inkling">
+<p>If speed is of the essence then one could always refresh the hardware: <a href="https://huggingface.co/strata-engine/Inkling-2-Mini-Strata#performance-with-strata">https://huggingface.co/strata-engine/Inkling-2-Mini-Strata#performance-with-strata</a>&#160;<a class="footnote-backref" href="#fnref:strata-inkling" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+</li>
+<li id="fn:strata">
+<p><a href="https://github.com/Niko1221/Strata">https://github.com/Niko1221/Strata</a>&#160;<a class="footnote-backref" href="#fnref:strata" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+</li>
+<li id="fn:opencode">
+<p><a href="https://opencode.ai/">https://opencode.ai/</a>&#160;<a class="footnote-backref" href="#fnref:opencode" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+</li>
+<li id="fn:kimaki">
+<p><a href="https://kimaki.dev/">https://kimaki.dev/</a>&#160;<a class="footnote-backref" href="#fnref:kimaki" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+</li>
+<li id="fn:superpowers">
+<p><a href="https://www.skills.sh/obra/superpowers">https://www.skills.sh/obra/superpowers</a>&#160;<a class="footnote-backref" href="#fnref:superpowers" title="Jump back to footnote 23 in the text">&#8617;</a></p>
+</li>
+<li id="fn:no-yolo">
+<p>No kidding, while getting the agent to write Github workflow files for this very website, it leaked an ssh key.&#160;<a class="footnote-backref" href="#fnref:no-yolo" title="Jump back to footnote 24 in the text">&#8617;</a></p>
+</li>
+<li id="fn:riemann">
+<p>At the time I was investigating local <span class="caps">AC</span> and app development, more fun was happening in the frontier space with people solving really old math problems: <a href="https://en.wikipedia.org/wiki/Alpöge%27s_proof_of_the_Riemann_hypothesis">https://en.wikipedia.org/wiki/Alpöge%27s_proof_of_the_Riemann_hypothesis</a>&#160;<a class="footnote-backref" href="#fnref:riemann" title="Jump back to footnote 25 in the text">&#8617;</a></p>
+</li>
+<li id="fn:software-warning">
+<p>I had a quote here from a LinkedIn post. I was between tasks, switched tabs, then went back and LinkedIn refreshed. I scrolled for a bit but couldn&#8217;t find it. Oh well; this is the time we live in I suppose. In any case, just go on the internet and search for &#8220;<span class="caps">AI</span>, software engineering, challenges&#8221; and you&#8217;ll find something.&#160;<a class="footnote-backref" href="#fnref:software-warning" title="Jump back to footnote 26 in the text">&#8617;</a></p>
+</li>
+<li id="fn:juan-and-sandy">
+<p>It was either <a href="https://profiles.cardiff.ac.uk/staff/hernandezvegaj">Juan Hernandez Vega</a> or <a href="https://profiles.cardiff.ac.uk/staff/goulds">Sandy Gould</a>. Sorry both; I can&#8217;t remember so I&#8217;m crediting you both here.&#160;<a class="footnote-backref" href="#fnref:juan-and-sandy" title="Jump back to footnote 27 in the text">&#8617;</a></p>
+</li>
+<li id="fn:cogley-paper">
+<p>Read our recent work on chatbots <a href="https://ps2fino.github.io/britchi_2026_poster.html">here</a>&#160;<a class="footnote-backref" href="#fnref:cogley-paper" title="Jump back to footnote 28 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            
+            
+            <hr/>
+        </div>
+        <section>
+        <div class="span2" style="float:right;font-size:0.9em;">
+            <h4>Published</h4>
+            <time pubdate="pubdate" datetime="2026-11-24T00:00:00+01:00">Nov 24, 2026</time>
+
+<h4>Last Updated</h4>
+<time datetime="2026-11-25T00:00:00+01:00">Nov 25, 2026</time>
+
+            <h4>Category</h4>
+            <a class="category-link" href="https://ps2fino.github.io/categories.html#articles-ref">Articles</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://ps2fino.github.io/tags.html#agentic-coding-ref">agentic coding
+                    <span>1</span>
+</a></li>
+                <li><a href="https://ps2fino.github.io/tags.html#avalon-ref">avalon
+                    <span>1</span>
+</a></li>
+                <li><a href="https://ps2fino.github.io/tags.html#local-llm-ref">local LLM
+                    <span>1</span>
+</a></li>
+                <li><a href="https://ps2fino.github.io/tags.html#opencode-ref">OpenCode
+                    <span>1</span>
+</a></li>
+                <li><a href="https://ps2fino.github.io/tags.html#strata-ref">Strata
+                    <span>1</span>
+</a></li>
+            </ul>
+<div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
+<h4>Look me up on orcid</h4>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-1169-2842" href="https://orcid.org/0000-0003-1169-2842" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0003-1169-2842</a></div>
+
+</div>
+<div style="border-bottom: 1px solid #8f8686; margin-top: 10px;">
+<h4>Let's be social</h4>
+    <a href="https://www.linkedin.com/in/dr-daniel-j-finnegan-50727620/" title="My LinkedIn Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-linkedin sidebar-social-links"></i></a>
+    <a href="https://github.com/Ps2Fino" title="My Github Profile" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-github sidebar-social-links"></i></a>
+<!-- Manually add the cardiff icon and link -->
+    <a href="https://profiles.cardiff.ac.uk/staff/finnegand" title="My Cardiff Homepage" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-inst-link sidebar-social-links"><img src="https://ps2fino.github.io/images/cardiff-logo-icon.jpg" alt="Cardiff University Logo" title="Cardiff University Logo" /></i></a>
+
+<!-- Manually add the soundcloud icon and link -->
+    <a href="https://soundcloud.com/ps2fino" title="My soundcloud homepage" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-inst-link sidebar-social-links"><img src="https://ps2fino.github.io/images/soundcloud-logo.png" alt="Soundcloud logo" title="Soundcloud logo" /></i></a>
+</div>
+<div class="hits-box" data-code="ps2fino" data-pdf-events='["dx.doi.org/10.3389/frvir.2021.673547", "eprints.soton.ac.uk/506713/1/GALA_2025_Games_Competition_Exhibition.pdf", "journals.sagepub.com/doi/10.1177/23337214231186204", "link.springer.com/chapter/10.1007/978-3-032-11043-5_53", "orca.cardiff.ac.uk/135879/", "orca.cardiff.ac.uk/136295/", "orca.cardiff.ac.uk/id/eprint/143639/", "orca.cardiff.ac.uk/id/eprint/164470/8/s00221-023-06760-0.pdf", "orca.cardiff.ac.uk/id/eprint/170514/", "orca.cardiff.ac.uk/id/eprint/180300/", "orca.cardiff.ac.uk/id/eprint/187027/", "orca.cardiff.ac.uk/id/eprint/188609/1/494-Curtis-BCSHCI26.pdf", "ps2fino.github.io/documents/Academic_CV.pdf", "ps2fino.github.io/documents/Daniel_J._Finnegan-EngD-Thesis.pdf", "ps2fino.github.io/documents/Daniel_J._Finnegan-Thesis.pdf", "ps2fino.github.io/documents/aes-56-conference.pdf", "ps2fino.github.io/documents/chi-2016.pdf", "ps2fino.github.io/documents/chi-2018.pdf", "ps2fino.github.io/documents/chiplay-2014.pdf", "ps2fino.github.io/documents/chiplay-2018.pdf", "ps2fino.github.io/documents/cubric-2018.pdf", "ps2fino.github.io/documents/eccv-2018.pdf", "ps2fino.github.io/documents/game-jam-inclusive-pd-2020.pdf", "ps2fino.github.io/documents/sive-2017.pdf", "ps2fino.github.io/documents/teaching-research-statement.pdf", "quod.lib.umich.edu/j/jcms/18261332.0064.909/--playful-heritage-video-game-creation-as-interdisciplinary", "research-information.bris.ac.uk/ws/portalfiles/portal/474231966/Final_Copy_2025_09_30_Grafton_R_J_PhD.pdf", "theses.gla.ac.uk/84029/1/2023DingPhD.pdf", "www.aes.org/events/reports/56thConference.pdf", "www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2026.1897543/full", "www.scienceopen.com/hosted-document"]'>
+  <p class="hits-label">Views for this page</p><p class="hits-number" data-hits="page"></p>
+  <p class="hits-label">Site total</p><p class="hits-number" data-hits="site"></p>
+  <p class="hits-label">PDF downloads</p><p class="hits-number" data-hits="pdf"></p>
+  <p class="hits-brand"><a href="https://www.goatcounter.com">stats by GoatCounter</a></p>
+</div>
+<script>window.goatcounter = {no_onload: true};</script>
+<script data-goatcounter="https://ps2fino.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="https://ps2fino.github.io/theme/js/visits.js"></script>
+<script>
+(function () {
+  // The real deps: the box, the page, the browser's storage and fetch. All the logic is in
+  // visits.js, which the node tests run; this block only hands it the page.
+  var box = document.querySelector(".hits-box");
+  if (!box || !window.Visits) { return; }
+  // Firefox with storage disabled, ETP "block all", and a cookie-blocked origin throw on
+  // the localStorage getter, so a null store means no cache: init hides the box, and the
+  // page keeps its content.
+  var store = null;
+  try {
+    store = window.localStorage;
+  } catch (e) {
+    store = null;
+  }
+  try {
+    window.Visits.init({
+      code: box.dataset.code,
+      pdf_names: JSON.parse(box.dataset.pdfEvents),
+      pathname: location.pathname,
+      origin: location.origin,
+      store: store,
+      now: Date.now,
+      get_goatcounter: function () { return window.goatcounter; },
+      fetch_impl: function (u) { return fetch(u); },
+      bind_delegated: function (handler) {
+        document.addEventListener("click", handler);
+      },
+      render: function (texts) {
+        if (!texts) { box.style.display = "none"; return; }
+        ["page", "site", "pdf"].forEach(function (key) {
+          var number = box.querySelector('[data-hits="' + key + '"]');
+          var label = number.previousElementSibling;
+          var shown = texts[key] ? true : false;
+          number.textContent = shown ? texts[key] : "";
+          number.style.display = shown ? "" : "none";
+          if (label) { label.style.display = shown ? "" : "none"; }
+        });
+      }
+    });
+  } catch (e) {
+    // The counting setup throwing must not touch the page: hide the box.
+    box.style.display = "none";
+  }
+}());
+</script>
+        </div>
+        </section>
+</div>
+</article>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-license">Content by Daniel J. Finnegan. All articles licensed under the <a href=https://opensource.org/licenses/BSD-3-Clause>BSD-3-Clause</a></li>
+        <li class="elegant-power">Powered by <a href="https://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: A customized version of <a href="https://github.com/Pelican-Elegant/elegant" title="Theme Elegant Github Page">Elegant</a> by <a href="https://talhamansoor.com/" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>            <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : https://oncrashreboot.com/pelican-elegant -->
+</html>

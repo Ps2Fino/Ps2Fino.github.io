@@ -1,0 +1,375 @@
+# Swipe navigation implementation plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** A horizontal swipe moves between the Knights, Knaves, and Go pages with the page following the thumb, and swipes past the ends do nothing.
+
+**Architecture:** `Home` becomes a track of three panels, one per tab, in `Home`'s own CSS module; `.PageContainer` stays as the fixed shell for the QR and 404 pages. A hook reads the touch, translates the track with the finger, and on a committed swipe calls App's existing `switchView`, so narration stop, sheet close, and tab move stay written once and are shared with the bottom bar's taps.
+
+**Tech Stack:** React 18 (Create React App), TypeScript 4.9, CSS modules, MUI v5, react-router 6, Jest + React Testing Library, pointer events, `inert`.
+
+**Spec:** `docs/superpowers/specs/2026-11-18-avalon-swipe-navigation-design.md`. The picker-scale spec (`docs/superpowers/specs/2026-11-18-avalon-picker-scale-design.md`) holds the grid geometry the strip must not move, and the device checklist (`docs/superpowers/plans/2026-11-16-device-checklist.md`) is the gate the narrator work used.
+
+## Global Constraints
+
+-   Branch: `swipe-navigation`, from `main` at `89abcb6`. Commits are `feat: …` / `fix: …`, imperative, saying what the code does.
+-   Never run a dev server. Every visual check runs on a served production build: `CI=true npx --no-install react-scripts build`, then `rm -rf /tmp/opencode/serve/avalon-narrator && mkdir -p /tmp/opencode/serve && cp -r build /tmp/opencode/serve/avalon-narrator`, then `python3 -m http.server 8899 --directory /tmp/opencode/serve` in the background, opened at `http://localhost:8899/avalon-narrator/`. Kill the server by the pid listening on 8899 (`ss -ltnp | grep 8899`).
+-   The build is the only type-check: `CI=true npx --no-install react-scripts build` compiles TypeScript, there is no separate `tsc` step.
+-   Focused tests: `npx --no-install react-scripts test --ci --watchAll=false <path>`. Full suite: `npm test -- --ci --watchAll=false`. Today, measured on `89abcb6`: 18 suites, 165 tests, pristine output; it must stay pristine through every task.
+-   No new dependencies, and no animation, gesture, or carousel library. The bundle precaches offline, so anything added ships in the install.
+-   jsdom does not cascade CSS modules against MUI's emotion classes, and `identity-obj-proxy` returns literal class names, so no test asserts CSS values, `transform` px, or geometry: those are proven on the served build in a real browser. In the built app the CSS module classes are scoped (`Home_PageTrack__…`), so browser DOM queries use `[class*="PageTrack"]`.
+-   jsdom has **no `PointerEvent` constructor** (checked: `'PointerEvent' in jsdom.window` is false), so `fireEvent.pointerDown(el, {clientX, pointerType, pointerId, timeStamp})` produces a plain `Event` and React's handler sees `clientX`, `pointerType`, and `pointerId` as **undefined** — measured in this repo, against React 18.2 and `@testing-library/dom` 7.x, by a scratch test that was then deleted. The tests must build their own events: `new Event('pointerdown', {bubbles: true, cancelable: true})` with `Object.defineProperty` for `pointerId`, `pointerType`, `clientX`, `clientY`, and `timeStamp`, then `target.dispatchEvent(event)`. Measured: React's `onPointerDown` and `onPointerMove` fire from that event and read all five properties, including `timeStamp` (a real `Event`'s own `timeStamp` is the epoch clock, so the hook's velocity must come from the events' `timeStamp` values, never mixed with `performance.now()`). jsdom has no `ResizeObserver`, so `useTrackWidth` must return 0 when it is undefined.
+-   `touch-action` is the **intersection** of the values from the touch target up to the root: a `none` on an ancestor kills a `pan-y` on a child. So the shell's `touch-action: none` (`src/App.css:22` on `.App`, `:31` on `.AppContainer`, and `src/index.css:9` on `body`) becomes `pan-y` at all three, the track carries `pan-y`, and the horizontal axis is captured by the hook. This is the one place the design's line "the `touch-action: none` stays" cannot hold: with `none` above the panels, the Go panel cannot scroll, and `Narrate` is a scroll away from the cast grid at 390px (measured in the picker-scale plan, Task 2 Step 4). **The author's ruling, in this run:** `src/index.css`'s `body` rule changes too, because the plan's CI gate counts `touch-action: none` in the built CSS as 0, and `pan-y` at `body` keeps horizontal body pans and pinch-zoom blocked while `overflow: hidden` and `overscroll-behavior: none` stay. **Corrected in this run, from real-touch measurements on the served build (controller and Task 3 reviewer, CDP `Input.dispatchTouchEvent`):** `.PagePanel` also carries `touch-action: pan-y`. A scrollable panel with the default `auto` hands the touch to the compositor: a horizontal drag over it gets `pointercancel` after 2 moves, so `useSwipeNav` snaps back and commits nothing; with `pan-y` on the panel the same drag keeps its pointer (10 moves, `pointerup`, commit). And the strip needs a **clip element that does not move**: `transform` on a fixed, clipping element moves its clip window off the viewport, so at tabs 1 and 2 the content area paints blank and `elementFromPoint` in the middle of the screen returns `AppContainer` — no touch reaches the panel, so no swipe can start. `.PageClip` is the fixed element with `overflow: hidden` and `width: 100vw`; `.PageTrack` is the flex row of the three panels inside it (`width: 100%`, panels `flex: 0 0 100%`), and carries the `transform`.
+-   Prettier runs on commit through lint-staged (tabWidth 4, no semicolons, single quotes, printWidth 80).
+-   `docs/superpowers/specs/2026-11-1[67]-…` and `docs/superpowers/plans/2026-11-1[67]-…` are historical: never edit them.
+
+## Review Focus
+
+The five things no task's unit tests exercise that a person using the app would notice:
+
+1.  **iOS Safari takes the gesture mid-drag.** A drag that starts horizontal and turns into the panel's scroll gets `pointercancel`. Expected: the strip snaps back, `tab` does not move, `switchView` is never called, so the narration keeps playing and the sheet stays open. Pinned by Task 2 Step 1 (the cancel test), Task 3 Step 1 (the App-level cancel assertion), Task 4 row 6.
+2.  **A vertical drag on the Go panel.** Expected: the strip does not move, the panel's own scroll runs, and `Narrate` is reachable by scrolling on a phone. Pinned by Task 2 Step 1 (axis lock), Task 3 Step 3 (`pan-y` at the shell), Task 3 Step 6 (`panel.scrollTop`), Task 4 row 6.
+3.  **A swipe that starts on a card tile.** Expected: the page moves, the tile is not toggled — no ring, no check disc, no count-bar change. jsdom cannot prove browser click suppression after a drag; it is a device check. Pinned by Task 2 Step 3 (`preventDefault` on the locked axis), Task 4 row 5.
+4.  **A screen reader, and a keyboard on a tablet.** Expected: the two panels you are not on are out of the reading order and out of tab order, so the hidden `Narrate`, `Stop`, 13 picker tiles, and 7 cast tiles never get focus. Pinned by Task 1 Step 1, Task 4 row 7.
+5.  **The narrowest phone (320px) and a tablet window (1000px).** Expected: three panels at full width inside a clipped track, no sideways overflow, the grid's columns as the picker-scale spec measured, `Narrate` on the Go panel inside the panel. Pinned by Task 1 Step 7, Task 3 Step 6, Task 4 row 8.
+6.  **The page you are on is painted and touchable.** The clip must stay on the viewport: `elementFromPoint` at the centre of the content area is inside the active panel at every tab, and the two `inert` panels are outside it. A `transform` on the fixed element itself takes the clip window off screen and the app shows a blank content area. Pinned by Task 1 Step 7 and Task 3 Step 6, both measured in a real browser.
+
+---
+
+## Task 1: The strip in the DOM
+
+**Deliverable:** `Home` renders a track of three panels, one per tab, all in the tree, with the two panels the player is not on `inert` and `aria-hidden`. `CharactersView` and `PlayView` render their content into the panel `Home` gives them; `QR` and `NotFound` keep `.PageContainer` untouched.
+
+**Files:**
+
+-   Create `src/views/Home/Home.module.css`
+-   Create `src/inert.d.ts`
+-   Create `src/views/Home/Home.test.tsx`
+-   Modify `src/views/Home/Home.tsx`
+-   Modify `src/views/Characters/CharactersView.tsx:1` (drop the `Box` import) and `:32, 45` (the container `Box`)
+-   Modify `src/views/Play/PlayView.tsx:2` (drop the `Box` import), `:57` and `:82` (the two container `Box`es)
+-   Modify `src/App.test.tsx` (the panel-scoped queries)
+
+**Interfaces:**
+
+-   Consumes: `useApp()`'s `tab`, `selected`, `toggle`, `script`, `narration`, `openInfo` (`src/state/AppState.tsx`), unchanged.
+-   Produces: `.PageClip` in `Home.module.css` (the fixed, non-moving clip; Task 3 puts the ref, the pointer binding, and `touch-action: pan-y` on it), `.PageTrack` inside it (Task 3 puts the `transform` on it), and `.PagePanel`, three of them, in document order tab 0, tab 1, tab 2. The active panel is the one with no `aria-hidden`, so tests find it as `.PagePanel:not([aria-hidden])`. `App.test.tsx`'s `panel()` helper is `within(document.querySelector('.PagePanel:not([aria-hidden])') as Element)`, used by Tasks 2–3's tests.
+
+-   [ ] **Step 1: Write the failing tests** in `src/views/Home/Home.test.tsx`. The harness renders `Home` inside `AppProvider` with a stub state; `narration` is the idle `Narration` shape (`isPlaying: false, noVoices: false, currentStep: -1, totalSteps: 0, start: jest.fn(), stop: jest.fn()`), `tab` is the argument, and `selected` is the argument with the default a **valid** 7-player game (4 knights and 3 knaves, so `PlayView` renders the cast grid and not the problem list; the roster names are `Merlin`, `Percival`, `Knight of Arthur #1`, `Knight of Arthur #2`, `Assassin`, `Morgana`, `Mordred`):
+
+```tsx
+const VALID = new Set([
+    'Merlin',
+    'Percival',
+    'Knight of Arthur #1',
+    'Knight of Arthur #2',
+    'Assassin',
+    'Morgana',
+    'Mordred',
+])
+
+const renderHome = (tab: number, selected = VALID) =>
+    render(
+        <AppProvider
+            value={{
+                selected,
+                toggle: jest.fn(),
+                script: generateScript(selected),
+                narration: idle,
+                tab,
+                switchView: jest.fn(),
+                openInfo: jest.fn(),
+            }}
+        >
+            <Home />
+        </AppProvider>,
+    )
+```
+
+The assertions, each its own `test`, in the file's style of a sentence-name test:
+
+-   `renderHome(0)`: `container.querySelectorAll('.PagePanel')` is 3, and the first panel holds the `Merlin` tile (`getByRole('button', {name: 'Merlin'})` inside it), so the panels are in tab order.
+-   `renderHome(0)`: the Go panel is in the tree, so `screen.getByRole('button', {name: /narrate/i})` is in the DOM while the Knights tab is the active one.
+-   `renderHome(0)`: panels 2 and 3 carry `aria-hidden="true"` and `inert`; panel 1 carries neither.
+-   `renderHome(2)`: the third panel is the active one (the only `.PagePanel:not([aria-hidden])`), and it holds `getByRole('button', {name: 'Knight of Arthur ×2'})`; the first panel carries `inert`.
+-   `renderHome(2, new Set(['Merlin', 'Assassin']))`: the Go panel shows `Avalon needs at least 5 players.`, so `PlayView`'s blocked view renders in the strip, and `screen.queryByRole('button', {name: /narrate/i})` is null.
+
+-   [ ] **Step 2: Run them, confirm they fail** — `npx --no-install react-scripts test --ci --watchAll=false src/views/Home/Home.test.tsx` → 3 panels found is 1, and no `inert` attribute, so every assertion fails.
+-   [ ] **Step 3: Write `Home.module.css`** — `.PageClip` is the fixed shell region today's `.PageContainer` occupies (`top: calc(var(--navbar-height) + var(--countline-height))`, `bottom: var(--bottom-nav-height)`, `width: 100vw`), `overflow: hidden`, `touch-action: pan-y`, and it carries no `transform`: the clip window must stay on the viewport. `.PageTrack` is the row inside it, `display: flex`, `width: 100%`, `height: 100%`, `touch-action: pan-y`, `will-change: transform`, and the `transition` Task 3 adds. `.PagePanel` carries `.PageContainer`'s inner rules, plus `touch-action: pan-y` (a scrollable panel with `auto` gets `pointercancel` on a horizontal drag), (flex column, `align-items: center`, `gap: 1rem`, `overflow-y: auto`, `-webkit-overflow-scrolling: touch`, `padding: 1rem 1rem 2rem 1rem`, the background, the `ul > li` rule) plus `width: 100vw`, `flex: 0 0 100%`, `height: 100%`. A comment names why the track is the fixed element and why the padding lives on the panel once: the grid's `width: 100%` and the 114.0px columns the picker-scale spec measured hold only with one inset.
+-   [ ] **Step 4: Write `Home.tsx`** — `Home` reads `useApp()` and renders the clip with the track inside it, and the track carries the three panels; a local helper gives the inactive panels their attributes:
+
+```ts
+/** The panel the player is not on is out of the reading order and the tab order. */
+function panelProps(active: boolean) {
+    return active ? {} : {'aria-hidden': 'true', 'inert': ''}
+}
+```
+
+`inert` is not in `@types/react` 18.2.79, so `src/inert.d.ts` augments React's attribute set:
+
+```ts
+import 'react'
+
+declare module 'react' {
+    interface HTMLAttributes<T> {
+        inert?: string
+    }
+}
+```
+
+-   [ ] **Step 5: Drop the two views' containers** — `CharactersView.tsx` returns the grid `div` at `:33` alone (the `Box` wrapper at `:32` and the `Box` import at `:1` go); `PlayView.tsx` returns its content in a fragment at `:82` and its problem list in a fragment at `:57` (both `Box`es and the `Box` import go). `QR.tsx:26` and `NotFound.tsx:7` keep `PageContainer`.
+-   [ ] **Step 6: Make the App tests panel-scoped, then run the suite** — mounting all three panels puts every tile in the DOM at all times, and `getByText`/`getByLabelText` do not consult `aria-hidden`, so the tile queries stop being unique. The six sites in `src/App.test.tsx`: `select()`'s `screen.getByLabelText(name)` at `:104` (used by `buildSevenPlayerGame`), `screen.getByText('Merlin')` at `:127`, `:137`, `:156`, `:207`, `screen.getByLabelText('Merlin')` at `:228`, and `screen.getByLabelText('Percival')` at `:331`. Add the `panel()` helper to `App.test.tsx` and route all six through it. `select()` stays panel-scoped: `buildSevenPlayerGame` taps `Knaves` on the bar before it selects knaves, so the knaves panel is the active one when those labels are read. `getByRole` queries need no change: `@testing-library/dom`'s role queries skip `aria-hidden` nodes, so the inactive panels' tiles are already out. And `getByRole('button', {name: 'Knight of Arthur #1'})` (`:129`, `:386`, `:394`) stays unique because the cast grid groups that face as `Knight of Arthur ×2`. Run `npm test -- --ci --watchAll=false` → 19 suites (18 + the new Home suite), 170 tests, all green.
+-   [ ] **Step 7: Measure the strip on the served build** — serve the build (Global Constraints). Open `http://localhost:8899/avalon-narrator/`, and in a same-origin iframe at **390px** and **320px**, and in the **1000px** window, read `f.contentDocument` and `f.contentWindow.getComputedStyle`: the clip's `top`, `bottom`, `width`, and `overflow`; the panel's `padding`, `overflow-y`, `touch-action`, and background; the number of `.PagePanel`s; the grid's `gridTemplateColumns` count and column width; and `document.body.scrollWidth == document.body.clientWidth`. Expected at 390px: clip top 116 (navbar 60 + count bar 56), bottom 76, panel padding `16px 16px 32px 16px`, 3 columns of 114.0px on the knights panel, 3 of 114.0px on the knaves panel, no sideways overflow. At 320px: 3 columns of 90.67px. At 1000px: 10 columns of 89.6px. Then, at 390px, tap `Knaves` and `Go` on the bottom bar and read `elementFromPoint(195, 400)`: it must be inside the active panel (`closest('[class*="PagePanel"]')` is not null), the active panel's rect must cover x 0..390, and the clip's rect must stay `left 0, width 390` at every tab. Report the numbers you get.
+-   [ ] **Step 8: Commit** — `git add -A && git commit -m "feat: the three pages ride in a track, the panels you are not on are inert"`
+
+## Task 2: The swipe rules
+
+**Deliverable:** `useSwipeNav` turns one touch into a track translation and a commit, with the spec's thresholds, the axis lock, the ends, and the cancel rule.
+
+**Files:**
+
+-   Create `src/views/Home/pointer-events.ts`
+-   Create `src/views/Home/use-swipe-nav.ts`
+-   Create `src/views/Home/use-swipe-nav.test.ts`
+
+**Interfaces:**
+
+-   Consumes: nothing.
+-   Produces, the event builder every pointer test in this plan uses:
+
+```ts
+// src/views/Home/pointer-events.ts
+/** One pointer event jsdom cannot build: a plain Event carrying the pointer props. */
+export function pointerEvent(
+    name: 'pointerdown' | 'pointermove' | 'pointerup' | 'pointercancel',
+    x: number,
+    timeStamp: number,
+    opts: {pointerId?: number; pointerType?: string} = {},
+): Event {
+    const event = new Event(name, {bubbles: true, cancelable: true})
+    const props = {
+        pointerId: opts.pointerId ?? 1,
+        pointerType: opts.pointerType ?? 'touch',
+        clientX: x,
+        clientY: 300,
+        timeStamp,
+    }
+    for (const key of Object.keys(props)) {
+        Object.defineProperty(event, key, {
+            value: props[key],
+            configurable: true,
+        })
+    }
+    return event
+}
+```
+
+-   Produces, the hook Task 3 wires into `Home`:
+
+```ts
+export function useTrackWidth(ref: RefObject<HTMLDivElement>): number
+
+export function useSwipeNav(
+    tab: number,
+    commit: (direction: 1 | -1) => void,
+    width: number,
+): {
+    bind: {
+        onPointerDown: (event: PointerEvent<HTMLDivElement>) => void
+        onPointerMove: (event: PointerEvent<HTMLDivElement>) => void
+        onPointerUp: (event: PointerEvent<HTMLDivElement>) => void
+        onPointerCancel: (event: PointerEvent<HTMLDivElement>) => void
+    }
+    transform: number
+    dragging: boolean
+}
+```
+
+`transform` is `-(tab * width) + dragX`, in px, the value Task 3 puts on `.PageTrack`. The constants are `AXIS_LOCK = 10` (px before the dominant axis is fixed), `COMMIT_DISTANCE = 120`, `FLING_DISTANCE = 60`, `FLING_VELOCITY = 0.6` (px per ms), `END_PULL = 60`, `FIRST_TAB = 0`, `LAST_TAB = 2`. **The author's ruling, in this run:** the end offset saturates at 60px (`END_PULL`), not a proportional 0.3. A proportional 0.3 cannot satisfy the mid-drag assertion below (`40px` → `40`), so the design's "0.3 at the ends" is expressed as the pull saturating at 0.3 of a 200px drag. The offset's sign follows the drag's sign, so the blank gap appears on the side being swiped towards. `useTrackWidth` observes the ref's `clientWidth` with `ResizeObserver` when it exists, and returns 0 when it does not (jsdom), so the hook's math never divides by an unmeasured width.
+
+-   [ ] **Step 1: Write the failing tests** in `use-swipe-nav.test.ts`. The harness is a component, because the hook is a hook, and the assertions read the transform and the drag flag off `dataset`, since jsdom cannot measure the track:
+
+```tsx
+const Track = ({
+    tab,
+    commit,
+    width,
+}: {
+    tab: number
+    commit: (d: 1 | -1) => void
+    width: number
+}) => {
+    const {bind, transform, dragging} = useSwipeNav(tab, commit, width)
+    return (
+        <div
+            {...bind}
+            data-testid="track"
+            data-transform={Math.round(transform)}
+            data-dragging={dragging ? 'yes' : 'no'}
+        />
+    )
+}
+
+const drag = (
+    from: number,
+    to: number,
+    tDown: number,
+    tUp: number,
+    opts?: {pointerId?: number; pointerType?: string},
+) => {
+    const track = screen.getByTestId('track')
+    track.dispatchEvent(pointerEvent('pointerdown', from, tDown, opts))
+    track.dispatchEvent(pointerEvent('pointermove', to, tUp, opts))
+    track.dispatchEvent(pointerEvent('pointerup', to, tUp, opts))
+}
+
+const state = () => {
+    const track = screen.getByTestId('track')
+    return {
+        transform: Number(track.dataset.transform),
+        dragging: track.dataset.dragging === 'yes',
+    }
+}
+```
+
+`width` is 390, so `drag(from, to, 0, ms)` has velocity `(to - from) / ms`. Every test renders `<Track tab={…} commit={commit} width={390} />` with `commit = jest.fn()`. Assert: - `tab 0`, drag 130px left (`from 300, to 170`): `commit` called once with `1`, `transform` ends at `-390`. - `tab 2`, drag 130px right (`from 100, to 230`): `commit` called with `-1`, `transform` ends at `-390` (the `-780 → -390` move is the tab change). - `tab 0`, drag 130px right: `commit` not called, `transform` back to `0` (the no-op the request names). - `tab 2`, drag 130px left: `commit` not called, `transform` back to `-780`. - `tab 1`, drag 70px in 100ms (velocity 0.7 px/ms): `commit` called (the fling). - `tab 1`, drag 70px **left** in 100ms (velocity -0.7): `commit` called with `1` (the fling rule uses the speed, not its sign). - `tab 1`, drag 70px in 300ms (velocity 0.23): `commit` not called (under both rules), `transform` back to `-390`. - `tab 0`, `dragging` true mid-drag at 40px, `transform` at `40` (the finger drives it). - `tab 2`, drag 200px left (`from 300, to 100`): `commit` not called, and the whole drag moves at the end pull, so `transform` is `-(2 * 390) + (-200 resisted to -60)` = `-840`: the track's right edge pulls away from the screen's right edge, which is the visible signal there is nothing on that side. - `tab 2`, drag 300px left: `commit` not called, `transform` still `-840` (the pull saturates). - `tab 0`, drag 200px right (`from 100, to 300`): `commit` not called, `transform` at the capped `60`. - `pointercancel` mid-drag at 100px: `commit` not called, `dragging` false, `transform` back to `-(tab * width)`. - `pointerType: 'mouse'`, same drag: no `commit`, `dragging` false. - A second `pointerDown` with a different `pointerId` during a drag, **on `tab 1`** (so the end gate cannot be what makes the assertion pass): the drag ends, `commit` not called, `dragging` false. - A vertical drag (`dx` 4, `dy` 60): `commit` not called, `dragging` false, `transform` unchanged (the panel's scroll owns it).
+
+-   [ ] **Step 2: Run them, confirm they fail** — `npx --no-install react-scripts test --ci --watchAll=false src/views/Home/use-swipe-nav.test.ts` → the module does not exist.
+-   [ ] **Step 3: Implement the hook** in `use-swipe-nav.ts`: `useTrackWidth` with a `useEffect` that reads `clientWidth` and subscribes to `ResizeObserver` behind `typeof ResizeObserver !== 'undefined'`; `useSwipeNav` with a ref for the active pointer (`id`, start `x`, `y`, `t`), the last move's `x` and `t` for the velocity, `axis` null until the 10px lock, `dragX` state, and the release decision:
+
+```ts
+const commit = |dragX| >= COMMIT_DISTANCE || (|dragX| >= FLING_DISTANCE && |velocity| >= FLING_VELOCITY)
+const direction = dragX < 0 ? 1 : -1
+```
+
+Then `tab + direction` inside `[FIRST_TAB, LAST_TAB]` calls `commit(direction)`; outside it, nothing. The transform is the tab's offset plus the drag, resisted at an end:
+
+```ts
+const direction = dragX < 0 ? 1 : -1
+const atEnd =
+    (tab === LAST_TAB && direction === 1) ||
+    (tab === FIRST_TAB && direction === -1)
+const offset = atEnd
+    ? Math.sign(dragX) * Math.min(Math.abs(dragX), END_PULL)
+    : dragX
+const transform = -(tab * width) + offset
+```
+
+Velocity is `(lastMoveX - downX) / (lastMoveT - downT)`, from the pointer-down record and the last pointer-move. Read the stamps from `event.nativeEvent.timeStamp`: React copies `timeStamp` as `event.timeStamp || Date.now()`, so a test event stamped `0` reads as the epoch clock through the synthetic event. `pointercancel` and a pointer id that is not the active one reset `dragX` and `axis` without calling `commit`. `onPointerMove` calls `event.preventDefault()` once the axis is locked horizontal, which is what stops a tile's tap on a swipe. A comment in the file names the four thresholds and the end pull.
+
+-   [ ] **Step 4: Run the tests, confirm they pass** — the same command → 15 tests green. Run the full suite → 20 suites, 185 tests, no failures.
+-   [ ] **Step 5: Commit** — `git add -A && git commit -m "feat: the swipe hook locks the axis, follows the finger, and commits at 120px"`
+
+## Task 3: Wire the strip into `Home`, the shell's `touch-action`, App's integration tests, CI
+
+**Deliverable:** The strip translates with the finger and snaps to the nearest page; a committed swipe behaves exactly like a tap on the bottom bar; the Go panel scrolls; the built CSS carries the strip.
+
+**Files:**
+
+-   Modify `src/views/Home/Home.tsx` (the `trackRef`, `useTrackWidth`, `useSwipeNav`, `bind` on the track, `style={{transform}}`)
+-   Modify `src/views/Home/Home.module.css` (the transition on `.PageTrack`, `.Dragging` with no transition, `@media (prefers-reduced-motion: reduce)` with no transition, `touch-action: pan-y`)
+-   Modify `src/App.css:22` and `:31` (`.App` and `.AppContainer` `touch-action: none` becomes `pan-y`)
+-   Modify `src/index.css:9` (`body`'s `touch-action: none` becomes `pan-y`; the plan's original file list missed this ancestor, and the CI gate below counts `touch-action: none` as 0, so the gate is red until it changes)
+-   Modify `src/App.test.tsx` (the swipe integration tests)
+-   Modify `.github/workflows/production.yml` (the strip check step)
+
+**Interfaces:** Consumes Task 1's `.PageTrack`, `.PagePanel`, and `panel()` helper, and Task 2's `useSwipeNav(tab, commit, width)` and `useTrackWidth(ref)`. Produces the wired strip the device gate checks. `commit` is `(direction) => switchView(tab + direction)`, App's `switchView` at `src/App.tsx:86`.
+
+-   [ ] **Step 1: Write the failing App integration tests** in `src/App.test.tsx`, with a helper:
+
+```tsx
+import {pointerEvent} from './views/Home/pointer-events'
+
+/** One horizontal drag on the strip: `from` is clientX, `dx` the delta. */
+const swipe = (
+    from: number,
+    dx: number,
+    ms: number,
+    type: 'mouse' | 'touch' = 'touch',
+) => {
+    const track = document.querySelector('.PageTrack') as Element
+    track.dispatchEvent(
+        pointerEvent('pointerdown', from, 0, {pointerType: type}),
+    )
+    track.dispatchEvent(
+        pointerEvent('pointermove', from + dx, ms, {pointerType: type}),
+    )
+    track.dispatchEvent(
+        pointerEvent('pointerup', from + dx, ms, {pointerType: type}),
+    )
+}
+
+/** A drag the browser takes over: down, move, then `pointercancel`. */
+const cancelDrag = (dx: number) => {
+    const track = document.querySelector('.PageTrack') as Element
+    track.dispatchEvent(pointerEvent('pointerdown', 300, 0))
+    track.dispatchEvent(pointerEvent('pointermove', 300 + dx, 100))
+    track.dispatchEvent(pointerEvent('pointercancel', 300 + dx, 100))
+}
+
+/** The panel the player is on: the only panel not marked `aria-hidden`. */
+const activePanelIndex = () =>
+    Array.from(document.querySelectorAll('.PagePanel')).findIndex(
+        (panel) => !panel.hasAttribute('aria-hidden'),
+    )
+
+/** The count bar's visibility is App's gate on `tab`, so it is the bar's proof. */
+const barVisible = () =>
+    document
+        .querySelector('.AppContainer')!
+        .classList.contains('CountBarVisible')
+```
+
+`fireEvent`'s pointer helpers are not used here: in jsdom they build a plain `Event` with no `clientX` and no `pointerType` (Global Constraints), so every pointer test in this plan dispatches `pointerEvent`'s events. In jsdom `useTrackWidth` returns 0, so the transform is `0` at every tab and these tests assert state, not px. `MUI`'s `BottomNavigationAction` has no `aria-selected` (checked in `node_modules/@mui/material/BottomNavigationAction/BottomNavigationAction.js`), so the bar's tab is proved by the active panel and the count bar, not by the bar's DOM. The assertions:
+
+-   `swipe(300, -130, 100)` on the Knights view: `activePanelIndex()` is 1, `panel().getByRole('button', {name: 'Morgana'})` is in the tree, and `barVisible()` is true, because tab 1 is a roster tab.
+-   `swipe(100, 130, 100)` from Go: with `buildSevenPlayerGame()` and `Narrate` tapped first, `activePanelIndex()` is 1, `fake.cancelCalls` grows by 1, `barVisible()` is true, and the Play view is back to idle, so `panel()` has no `Stop` button.
+-   `swipe(300, -130, 100)` on Go mid-script (the end): `activePanelIndex()` is 2, `fake.cancelCalls` is unchanged, and the `Stop` button is still in the tree.
+-   `swipe(100, -60, 400)` on Go mid-script (under the threshold): `activePanelIndex()` is 2, `fake.cancelCalls` unchanged, `Stop` still there.
+-   `pointercancel` mid-drag on Go mid-script: `activePanelIndex()` is 2, `fake.cancelCalls` unchanged.
+-   `swipe(300, -130, 100, 'mouse')` on the Knights view: `activePanelIndex()` is 0, `fake.cancelCalls` unchanged.
+-   `swipe(300, -130, 100)` from the sheet-open state, mirroring the bar's sheet test at `src/App.test.tsx:403`: open Merlin's sheet on Knights, swipe, and `screen.queryByText(/Sees the knaves' thumbs/)` is null, `activePanelIndex()` is 1, `fake.cancelCalls` grows by 1.
+-   The QR page renders no strip: after `tapShare()`, `document.querySelector('.PagePanel')` is null, `screen.getByText(QR_COPY)` is in the document, and `document.querySelector('.PageTrack')` is null, so the swipe helper finds nothing.
+-   [ ] **Step 2: Run them, confirm they fail** — `npx --no-install react-scripts test --ci --watchAll=false src/App.test.tsx` → `document.querySelector('.PageTrack')` is null, so the swipe helper throws on a null node, and `activePanelIndex()` is -1.
+-   [ ] **Step 3: Wire it** — in `Home.tsx`, `const trackRef = useRef<HTMLDivElement>(null)`, `const width = useTrackWidth(trackRef)`, `const {bind, transform, dragging} = useSwipeNav(tab, (dir) => switchView(tab + dir), width)`, the **clip** carries `ref`, `bind`, and `className={styles.PageClip}`: the ref is on the clip, so `width` is one page (390 at 390px) and not the 3-wide row (1170), and `-(tab * width)` lands on the right page; a comment names that. The track inside it carries `className={\`${styles.PageTrack} ${dragging ? styles.Dragging : ''}\`}` and `style={{transform: \`translateX(${transform}px)\`}}`. In `Home.module.css`, `.PageTrack`gets`transition: transform 250ms ease-out`, `.Dragging`gets`transition: none`, and the reduced-motion media query removes the transition; `.PageClip`and`.PagePanel`both carry`touch-action: pan-y`, and `src/App.css`'s `.App`and`.AppContainer`change from`touch-action: none`to`pan-y`, with a comment naming the intersection rule: a `none`above the panels makes`pan-y`below it dead, and the Go panel's scroll is what puts`Narrate`a scroll away.`src/index.css`'s `body`rule changes from`touch-action: none`to`pan-y`too, because`body` is above the panels on the ancestor chain, and a comment there names the same intersection rule.
+-   [ ] **Step 4: Run the suite, confirm green** — `npm test -- --ci --watchAll=false` → 20 suites, 193 tests, pristine output.
+-   [ ] **Step 5: Add the strip check to CI** — in `.github/workflows/production.yml`, after the info-disc step, a `Check the strip is Home's` bash step, same `pipefail` rule (every count ends in `|| true`): the built CSS contains exactly one `.PageTrack` rule carrying `display:flex`, exactly one `.PagePanel` rule carrying `flex:0 0 100%`, `touch-action:pan-y` count 3 (`.App`, `.AppContainer`, `.PageTrack`), `touch-action:none` count 0, and no `.PageContainer` rule lost (count 1). **Corrected in this run:** cssnano merges the identical `.App` and `.AppContainer` blocks into one rule listing both selectors, so the literal `pan-y` count is 2. Assert the merged shell rule listing both selectors (count 1) **plus** the track rule (count 1), which proves all three elements, add `.Dragging`'s `transition:none` (count 1), and count `touch-action:none` as 0 — the `body` rule in `src/index.css` must be `pan-y` for that count to hold. **Corrected in this run, with the clip fix:** also assert exactly one `.PageClip` rule carrying `position:fixed`, `overflow:hidden`, and `touch-action:pan-y` (count 1), exactly one `.PagePanel` rule carrying `touch-action:pan-y` (count 1), and exactly one `.PageTrack` rule carrying `width:100%` (count 1) — the clip that stays on the viewport and the panel that keeps the pointer are the two rules jsdom cannot see. **Corrected in this run, after the fix round's CI was mutation-tested:** presence-only counts go green on the very bugs the step exists to catch, so add two more assertions and prove them with mutations. Count `transform:` tokens **inside the `.PageClip` rule** (count 0) — `will-change:transform` does not contain that token, `transform:translateX(…)` does, so a `transform` on the clip is a red step. Anchor the row's width, because `grep -F 'width:100%'` matches the substring inside `min-width:100%` on the same rule: turn the rule body's braces into `;` separators, then match `(^|;)width:100%;`. **Mutation gate for this step:** copy the built CSS to a scratch file, mutate it one rule at a time, and run the step's bash against the mutated copy; `transform` on `.PageClip`, `width:300vw` with `min-width:100%` on `.PageTrack`, `touch-action:auto` on `.PagePanel`, and `body: none` must all exit non-zero, and the unmutated build must exit 0. Report each mutation's exit code.
+-   [ ] **Step 6: Measure the strip on the served build with real touch** — rebuild and serve (Global Constraints), open the served app in headless Chrome with `hasTouch: true` at 390×800, and drive the gestures with CDP `Input.dispatchTouchEvent` (`touchStart`, `touchMove`, `touchEnd`), **not** `dispatchEvent`: dispatching a synthetic `PointerEvent` on the track bypasses hit-testing, `touch-action`, and the gesture recognizer, so it proves the hook's arithmetic and nothing about the finger. With 7 players in play: `elementFromPoint(195, 400)` is inside the active panel at all three tabs (`closest('[class*="PagePanel"]')` is not null), the clip's rect stays `left 0, width 390` at every tab, and the active panel's rect covers x 0..390. A **vertical** touch drag on the Go panel raises `panel.scrollTop` (so `Narrate` is reachable with a finger) and leaves `getComputedStyle(track).transform` at `matrix(1, 0, 0, 1, -780, 0)`. A **horizontal** touch drag 130px to the right from Go reads `-650` mid-drag and lands on `-390` with the Go panel no longer active after `touchEnd`, and the pointer reaches `pointerup` with no `pointercancel` (that is what the panel's `pan-y` buys). At Go, a 200px and a 300px left drag both read `e` at `-840` — 60 past the `-780` tab offset, so the gap is at the **right** edge — the pull saturates. At **320px** and **1000px**: the panel fills the clip's region, no sideways overflow (`body.scrollWidth == body.clientWidth`), the grid columns as Task 1 Step 7 measured. Report every number, and name what headless Chrome cannot show here: its touch pipeline gates on the element's own `touch-action` and not the intersection up the chain, so the `body` `pan-y` fix is invisible to it and Task 4 row 6 must check it on a phone.
+-   [ ] **Step 7: Commit** — `git add -A && git commit -m "feat: the strip follows the thumb and a committed swipe runs App's nav"`
+
+## Task 4: The device gate
+
+**Deliverable:** The swipe is checked on the installed PWA on iPhone Safari and Android Chrome, and the rows are recorded in the repo as this branch's checklist.
+
+**Files:**
+
+-   Create `docs/superpowers/plans/2026-11-18-swipe-device-checklist.md`
+
+**Interfaces:** Consumes Task 3's wired strip. Produces the acceptance record for the merge.
+
+-   [ ] **Step 1: Write the checklist rows** in the file, in the device checklist's table form (Check verbatim, Device, Expected result, Automated, Pass), for iPhone Safari installed PWA and Android Chrome installed PWA, on `https://sandbox.echogames.co.uk/avalon-narrator/`:
+    1.  Cold load on Knights, swipe left: the Knaves page follows the thumb, peeks in from the right edge, lands on release. Swipe left again: the Go page. Swipe left on Go: nothing moves, the track resists and springs back, and the blank gap appears at the **right** edge, not the left. Swipe right on Knights: the gap appears at the **left** edge.
+    2.  Swipe right from Go: Knaves, then Knights; a swipe right on Knights does nothing.
+    3.  Mid-script on Go, swipe right: audio stops within a second, the Knaves view shows, the Play view returns to `Narrate` (the same expectation as row 5 of the 2026-11-16 checklist, by swipe).
+    4.  A short swipe on Go, released before the threshold: the page springs back, the audio keeps playing, the step line stays.
+    5.  A swipe that starts on a card tile on Knights: the page moves, the tile is not toggled, the count bar does not change.
+    6.  A vertical drag on the Go panel: the script scrolls, `Narrate` is reachable, the strip does not move. On iOS, a drag that turns vertical: `pointercancel` path, springs back, audio keeps playing. With `pan-y` at `body`, also check no rubber-band and no document shift, which `none` blocked.
+    7.  Screen reader (VoiceOver on iPhone, Talkback on Android) on the Knights view: the reading order is the 6 knights, no hidden cast tile and no hidden `Narrate` button; swipe with the reader's own gesture moves the page, and the reader reads the Knaves page.
+    8.  13 cards in play, 320px phone, tablet window: no sideways overflow, the cast's 7 faces inside the panel, `Narrate` reachable by scrolling.
+    9.  On the QR page (reached from the drawer's Share), swiping left and right does nothing: no strip is on that page, so the page stays QR, and the bottom bar's Go tap takes the player back to the strip.
+    10. Offline: airplane mode, reload, the picker, cast, and sheet show art from the cache, and a swipe works with no network.
+    11. A laptop, no touch: taps on the bottom bar navigate, dragging with the mouse does nothing.
+-   [ ] **Step 2: Record the run** — the author runs the rows on the deployed build and fills the `Pass` column. The `Automated` column names the task test that covers each row, from Tasks 1–3.
+-   [ ] **Step 3: Commit and open the pull request against `production`** — `git add -A && git commit -m "docs: the swipe device checklist"`, then the pull request, where `Production / check` runs the suite, the build, the grid rule, the info-disc rule, and the strip rule, and merging runs the deploy.
+
+## Self-Review
+
+Checked against the spec: the three-page strip and the tab order → Task 1 (the panels in track order) and Task 3 Step 1; the ends as no-op, no wrap → Task 2 Steps 1 and 3, Task 3 Step 1; QR out of the strip → Task 3 Step 1's last assertion (no `.PageTrack` and no `.PagePanel` at `/qr`), Task 4 row 9; a mouse drag does nothing → Task 2 Step 1 (the `pointerType` test), Task 3 Step 1 (the App-level mouse assertion), Task 4 row 11; the page following the thumb, the neighbour peeking, the snap → Task 2 Step 1 (mid-drag `dragging` and `transform`), Task 3 Step 3, Task 4 rows 1–2; commit running `switchView` (narration stop, sheet close, tab move, count bar, route stays `/home`) → Task 3 Step 1, Task 4 row 3; a sub-threshold release and `pointercancel` changing nothing → Task 2 Step 1, Task 3 Step 1, Task 4 rows 4 and 6; taps inside a page surviving a swipe → Task 2 Step 3 (`preventDefault`), Task 4 row 5; `inert` and `aria-hidden` → Task 1 Steps 1 and 4, Task 4 row 7; the panel geometry and the grid measurements the picker-scale spec pinned → Task 1 Step 7, Task 3 Step 6; the count bar following `tab` → Task 1 Step 6 (the existing count-bar tests stay green) and Task 3 Step 1's `barVisible()` assertion; the reduced-motion rule → Task 3 Step 3; no new dependency → Global Constraints, verified by `package.json` unchanged in every task; the QR and 404 pages keeping `.PageContainer` → Task 1 Step 5, and the existing QR deep-link tests (`src/App.test.tsx:141-175`) unchanged.
+
+The design's `touch-action` line is the one place this plan goes further than the spec says: the intersection rule makes `none` above the panels fatal to the Go panel's scroll, so the shell moves to `pan-y`. That is recorded in the Global Constraints and pinned by Task 3 Step 3, Task 4 row 6, and the CI count in Task 3 Step 5.
+
+No task asserts `transform` px in jsdom, because jsdom never measures the track's width: the px values are the hook's math (Task 2, with `width` passed in) and the served-build measurement (Task 3 Step 6). A shipped mistake here is felt at the table: a swipe that does not move the page, a swipe that stops the narrator when it should not, a tile toggled by a swipe, a hidden `Narrate` button a screen reader reaches.
+
+## Execution Handoff
+
+Four tasks, in order: Task 1 puts the pages in the tree, Task 2 is the hook's rules with no UI, Task 3 wires them and proves them at App level, Task 4 is the device gate the author runs on the deployed build. Task 3 cannot start before both, since it consumes Task 1's `.PageTrack` and Task 2's hook signatures. The interfaces are named in the plan, so a fresh implementer per task sees the exact `useSwipeNav`, `useTrackWidth`, `panel()`, `.PageTrack`, and `.PagePanel` names. Recommended: subagent-driven, because Tasks 1–3 each end in a gate the next task depends on, and a shipped mistake lands on the game table.
